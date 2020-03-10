@@ -1,4 +1,5 @@
 import Common
+import HerosList
 
 /**
  Handles coordination between the main app states (Heros list, and hero detail)
@@ -25,4 +26,11 @@ public class MHAppCoordinator: Coordinator {
     
     /// Finishes the app coordinator flow
     public func finish(completionHandler: CoordinatorStartCompletionHandler? = nil) {}
+}
+
+// MARK: - HerosListNavigator
+extension MHAppCoordinator: HerosListNavigator {
+    public func navigate(to view: HerosListViewState) {
+        
+    }
 }

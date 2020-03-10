@@ -14,6 +14,8 @@
 		CFAD3FD72417DA8D0096C7AB /* Common.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CFAD3FD52417DA8D0096C7AB /* Common.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CFAD3FDA2417DA910096C7AB /* MarvelHerosKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFAD3FD92417DA910096C7AB /* MarvelHerosKit.framework */; };
 		CFAD3FDB2417DA910096C7AB /* MarvelHerosKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CFAD3FD92417DA910096C7AB /* MarvelHerosKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CFAD3FE92417E97F0096C7AB /* HerosListViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD3FE82417E97F0096C7AB /* HerosListViewState.swift */; };
+		CFAD3FEB2417E9E60096C7AB /* HerosListNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD3FEA2417E9E60096C7AB /* HerosListNavigator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -40,6 +42,8 @@
 		CFAD3FD32417DA610096C7AB /* HerosListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HerosListViewModel.swift; sourceTree = "<group>"; };
 		CFAD3FD52417DA8D0096C7AB /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFAD3FD92417DA910096C7AB /* MarvelHerosKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MarvelHerosKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFAD3FE82417E97F0096C7AB /* HerosListViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HerosListViewState.swift; sourceTree = "<group>"; };
+		CFAD3FEA2417E9E60096C7AB /* HerosListNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HerosListNavigator.swift; sourceTree = "<group>"; };
 		EBD441625796A763BC54EB4B /* Pods_HerosList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HerosList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -119,6 +123,7 @@
 		CFAD3FCF2417DA380096C7AB /* State */ = {
 			isa = PBXGroup;
 			children = (
+				CFAD3FE82417E97F0096C7AB /* HerosListViewState.swift */,
 			);
 			path = State;
 			sourceTree = "<group>";
@@ -126,6 +131,7 @@
 		CFAD3FD02417DA3E0096C7AB /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				CFAD3FEA2417E9E60096C7AB /* HerosListNavigator.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -252,7 +258,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFAD3FE92417E97F0096C7AB /* HerosListViewState.swift in Sources */,
 				CFAD3FD42417DA610096C7AB /* HerosListViewModel.swift in Sources */,
+				CFAD3FEB2417E9E60096C7AB /* HerosListNavigator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

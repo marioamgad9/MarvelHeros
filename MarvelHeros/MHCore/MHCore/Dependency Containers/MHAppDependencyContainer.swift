@@ -1,5 +1,6 @@
 import Common
 import MarvelHerosKit
+import HerosList
 
 /**
  The root dependency container that contains the whole dependency graph for the app.
@@ -26,5 +27,11 @@ public class MHAppDependencyContainer {
         
         sharedAppCoordinator = makeAppCoordinator()
         sharedContentRepository = makeContentRepository()
+    }
+    
+    // MARK: - Heros List
+    public func makeHerosListViewModel() -> HerosListViewModel {
+        return HerosListViewModel(contentRepository: sharedContentRepository,
+                                  herosListNavigator: sharedAppCoordinator)
     }
 }

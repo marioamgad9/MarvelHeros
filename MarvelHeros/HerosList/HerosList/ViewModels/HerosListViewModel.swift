@@ -20,6 +20,7 @@ public class HerosListViewModel: ViewModelType {
     
     // MARK: - Properties
     private let contentRepository: ContentRepository
+    private let herosListNavigator: HerosListNavigator
     private let disposeBag = DisposeBag()
     
     // MARK: - Subjects
@@ -27,8 +28,10 @@ public class HerosListViewModel: ViewModelType {
     private let errorMessageSubject = PublishSubject<ErrorMessage>()
     
     // MARK: - Initializer
-    public init(contentRepository: ContentRepository) {
+    public init(contentRepository: ContentRepository,
+                herosListNavigator: HerosListNavigator) {
         self.contentRepository = contentRepository
+        self.herosListNavigator = herosListNavigator
         
         input = Input()
         output = Output(characters: charactersSubject.asObservable(),
