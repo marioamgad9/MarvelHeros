@@ -19,10 +19,10 @@
 		CFAD3FC62417DA000096C7AB /* HerosList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFAD3FC52417DA000096C7AB /* HerosList.framework */; };
 		CFAD3FC72417DA000096C7AB /* HerosList.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CFAD3FC52417DA000096C7AB /* HerosList.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CFAD3FE72417E7EC0096C7AB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CFAD3FE62417E7EC0096C7AB /* Localizable.strings */; };
-		CFAD40052418059A0096C7AB /* Cairo-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CFAD40012418059A0096C7AB /* Cairo-Light.ttf */; };
-		CFAD40062418059A0096C7AB /* Cairo-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CFAD40022418059A0096C7AB /* Cairo-Bold.ttf */; };
-		CFAD40072418059A0096C7AB /* Cairo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CFAD40032418059A0096C7AB /* Cairo-Regular.ttf */; };
-		CFAD40082418059A0096C7AB /* Cairo-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CFAD40042418059A0096C7AB /* Cairo-SemiBold.ttf */; };
+		CFAD4011241807010096C7AB /* Cairo-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CFAD400D241807000096C7AB /* Cairo-SemiBold.ttf */; };
+		CFAD4012241807010096C7AB /* Cairo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CFAD400E241807000096C7AB /* Cairo-Regular.ttf */; };
+		CFAD4013241807010096C7AB /* Cairo-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CFAD400F241807000096C7AB /* Cairo-Bold.ttf */; };
+		CFAD4014241807010096C7AB /* Cairo-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CFAD4010241807000096C7AB /* Cairo-Light.ttf */; };
 		E7C566086DAE3D4E18E146E1 /* Pods_MarvelHeros.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D59D7745566A82C8BD743A4 /* Pods_MarvelHeros.framework */; };
 /* End PBXBuildFile section */
 
@@ -57,10 +57,10 @@
 		CFAD3F722417CADA0096C7AB /* MarvelHerosKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MarvelHerosKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFAD3FC52417DA000096C7AB /* HerosList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = HerosList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFAD3FE62417E7EC0096C7AB /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
-		CFAD40012418059A0096C7AB /* Cairo-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Cairo-Light.ttf"; path = "../../../../../../../../System/Volumes/Data/Files/ProgrammingStuff/Fonts/fonts/Cairo/Cairo-Light.ttf"; sourceTree = "<group>"; };
-		CFAD40022418059A0096C7AB /* Cairo-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Cairo-Bold.ttf"; path = "../../../../../../../../System/Volumes/Data/Files/ProgrammingStuff/Fonts/fonts/Cairo/Cairo-Bold.ttf"; sourceTree = "<group>"; };
-		CFAD40032418059A0096C7AB /* Cairo-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Cairo-Regular.ttf"; path = "../../../../../../../../System/Volumes/Data/Files/ProgrammingStuff/Fonts/fonts/Cairo/Cairo-Regular.ttf"; sourceTree = "<group>"; };
-		CFAD40042418059A0096C7AB /* Cairo-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Cairo-SemiBold.ttf"; path = "../../../../../../../../System/Volumes/Data/Files/ProgrammingStuff/Fonts/fonts/Cairo/Cairo-SemiBold.ttf"; sourceTree = "<group>"; };
+		CFAD400D241807000096C7AB /* Cairo-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cairo-SemiBold.ttf"; sourceTree = "<group>"; };
+		CFAD400E241807000096C7AB /* Cairo-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cairo-Regular.ttf"; sourceTree = "<group>"; };
+		CFAD400F241807000096C7AB /* Cairo-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cairo-Bold.ttf"; sourceTree = "<group>"; };
+		CFAD4010241807000096C7AB /* Cairo-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cairo-Light.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,10 +134,10 @@
 		CFAD4000241805550096C7AB /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				CFAD40022418059A0096C7AB /* Cairo-Bold.ttf */,
-				CFAD40012418059A0096C7AB /* Cairo-Light.ttf */,
-				CFAD40032418059A0096C7AB /* Cairo-Regular.ttf */,
-				CFAD40042418059A0096C7AB /* Cairo-SemiBold.ttf */,
+				CFAD400F241807000096C7AB /* Cairo-Bold.ttf */,
+				CFAD4010241807000096C7AB /* Cairo-Light.ttf */,
+				CFAD400E241807000096C7AB /* Cairo-Regular.ttf */,
+				CFAD400D241807000096C7AB /* Cairo-SemiBold.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -203,13 +203,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFAD40072418059A0096C7AB /* Cairo-Regular.ttf in Resources */,
+				CFAD4011241807010096C7AB /* Cairo-SemiBold.ttf in Resources */,
 				CFAD3EBF2417ADA70096C7AB /* LaunchScreen.storyboard in Resources */,
-				CFAD40062418059A0096C7AB /* Cairo-Bold.ttf in Resources */,
 				CFAD3FE72417E7EC0096C7AB /* Localizable.strings in Resources */,
-				CFAD40052418059A0096C7AB /* Cairo-Light.ttf in Resources */,
 				CFAD3EBC2417ADA70096C7AB /* Assets.xcassets in Resources */,
-				CFAD40082418059A0096C7AB /* Cairo-SemiBold.ttf in Resources */,
+				CFAD4013241807010096C7AB /* Cairo-Bold.ttf in Resources */,
+				CFAD4012241807010096C7AB /* Cairo-Regular.ttf in Resources */,
+				CFAD4014241807010096C7AB /* Cairo-Light.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

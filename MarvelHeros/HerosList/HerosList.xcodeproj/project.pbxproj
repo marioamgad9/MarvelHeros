@@ -19,6 +19,9 @@
 		CFAD3FED2417EAD90096C7AB /* HerosListRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD3FEC2417EAD90096C7AB /* HerosListRootView.swift */; };
 		CFAD3FEF2417EB8A0096C7AB /* HerosListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD3FEE2417EB8A0096C7AB /* HerosListViewController.swift */; };
 		CFAD3FF12417EC800096C7AB /* HerosListNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD3FF02417EC800096C7AB /* HerosListNavigationController.swift */; };
+		CFAD3FFF2417FAB80096C7AB /* CharacterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD3FFE2417FAB80096C7AB /* CharacterTableViewCell.swift */; };
+		CFAD401A24180AB90096C7AB /* CharacterTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD401924180AB90096C7AB /* CharacterTableViewCellViewModel.swift */; };
+		CFAD401F241812A10096C7AB /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD401E241812A10096C7AB /* ImageLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -50,6 +53,9 @@
 		CFAD3FEC2417EAD90096C7AB /* HerosListRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HerosListRootView.swift; sourceTree = "<group>"; };
 		CFAD3FEE2417EB8A0096C7AB /* HerosListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HerosListViewController.swift; sourceTree = "<group>"; };
 		CFAD3FF02417EC800096C7AB /* HerosListNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HerosListNavigationController.swift; sourceTree = "<group>"; };
+		CFAD3FFE2417FAB80096C7AB /* CharacterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterTableViewCell.swift; sourceTree = "<group>"; };
+		CFAD401924180AB90096C7AB /* CharacterTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterTableViewCellViewModel.swift; sourceTree = "<group>"; };
+		CFAD401E241812A10096C7AB /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		EBD441625796A763BC54EB4B /* Pods_HerosList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HerosList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -109,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				CFAD3FD12417DA420096C7AB /* Controllers */,
+				CFAD3FFC2417FA860096C7AB /* Table Views */,
 				CFAD3FD02417DA3E0096C7AB /* Protocols */,
 				CFAD3FCF2417DA380096C7AB /* State */,
 				CFAD3FCE2417DA330096C7AB /* ViewModels */,
@@ -122,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				CFAD3FD32417DA610096C7AB /* HerosListViewModel.swift */,
+				CFAD401924180AB90096C7AB /* CharacterTableViewCellViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -138,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				CFAD3FEA2417E9E60096C7AB /* HerosListNavigator.swift */,
+				CFAD401E241812A10096C7AB /* ImageLoader.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -158,6 +167,22 @@
 				CFAD3FEC2417EAD90096C7AB /* HerosListRootView.swift */,
 			);
 			path = "Heros List Screen";
+			sourceTree = "<group>";
+		};
+		CFAD3FFC2417FA860096C7AB /* Table Views */ = {
+			isa = PBXGroup;
+			children = (
+				CFAD3FFD2417FA9D0096C7AB /* MarvelCharactersTableView */,
+			);
+			path = "Table Views";
+			sourceTree = "<group>";
+		};
+		CFAD3FFD2417FA9D0096C7AB /* MarvelCharactersTableView */ = {
+			isa = PBXGroup;
+			children = (
+				CFAD3FFE2417FAB80096C7AB /* CharacterTableViewCell.swift */,
+			);
+			path = MarvelCharactersTableView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,11 +292,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFAD401A24180AB90096C7AB /* CharacterTableViewCellViewModel.swift in Sources */,
+				CFAD401F241812A10096C7AB /* ImageLoader.swift in Sources */,
 				CFAD3FE92417E97F0096C7AB /* HerosListViewState.swift in Sources */,
 				CFAD3FF12417EC800096C7AB /* HerosListNavigationController.swift in Sources */,
 				CFAD3FD42417DA610096C7AB /* HerosListViewModel.swift in Sources */,
 				CFAD3FED2417EAD90096C7AB /* HerosListRootView.swift in Sources */,
 				CFAD3FEB2417E9E60096C7AB /* HerosListNavigator.swift in Sources */,
+				CFAD3FFF2417FAB80096C7AB /* CharacterTableViewCell.swift in Sources */,
 				CFAD3FEF2417EB8A0096C7AB /* HerosListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

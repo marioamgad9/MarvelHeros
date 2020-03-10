@@ -33,6 +33,7 @@
 		CFAD3FDF2417DCAF0096C7AB /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD3FDE2417DCAF0096C7AB /* ViewModelType.swift */; };
 		CFAD3FE12417E7730096C7AB /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD3FE02417E7730096C7AB /* ErrorMessage.swift */; };
 		CFAD3FE52417E7BE0096C7AB /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD3FE42417E7BE0096C7AB /* String+Localized.swift */; };
+		CFAD401D24180CA40096C7AB /* Thumbnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD401C24180CA40096C7AB /* Thumbnail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -79,6 +80,7 @@
 		CFAD3FDE2417DCAF0096C7AB /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
 		CFAD3FE02417E7730096C7AB /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
 		CFAD3FE42417E7BE0096C7AB /* String+Localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localized.swift"; sourceTree = "<group>"; };
+		CFAD401C24180CA40096C7AB /* Thumbnail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thumbnail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +164,7 @@
 				CFAD3F7B2417CC150096C7AB /* Series */,
 				CFAD3F802417CCCC0096C7AB /* Story */,
 				CFAD3F852417CD120096C7AB /* Event */,
+				CFAD401B24180C940096C7AB /* Thumbnail */,
 				CFAD3F962417D4660096C7AB /* MarvelHerosError.swift */,
 				CFAD3FE02417E7730096C7AB /* ErrorMessage.swift */,
 			);
@@ -256,6 +259,14 @@
 				CFAD3FDE2417DCAF0096C7AB /* ViewModelType.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		CFAD401B24180C940096C7AB /* Thumbnail */ = {
+			isa = PBXGroup;
+			children = (
+				CFAD401C24180CA40096C7AB /* Thumbnail.swift */,
+			);
+			path = Thumbnail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -383,6 +394,7 @@
 				CFAD3FE52417E7BE0096C7AB /* String+Localized.swift in Sources */,
 				CFAD3F892417CDAB0096C7AB /* EventsAPIResponse.swift in Sources */,
 				CFAD3F7D2417CC200096C7AB /* Series.swift in Sources */,
+				CFAD401D24180CA40096C7AB /* Thumbnail.swift in Sources */,
 				CFAD3F932417D4360096C7AB /* ContentRepository.swift in Sources */,
 				CFAD3F822417CCDC0096C7AB /* Story.swift in Sources */,
 				CFAD3F952417D4480096C7AB /* Alamofire+PromiseKit.swift in Sources */,

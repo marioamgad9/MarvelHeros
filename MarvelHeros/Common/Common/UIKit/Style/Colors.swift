@@ -1,9 +1,15 @@
 import UIKit
 
 /// Holds all the colors used by the app
-struct Colors {
+public struct Colors {
     /// Holds all background colors
-    struct Backgrounds {
+    public struct Backgrounds {
         public static let marvelNavigationBar = UIColor(named: "background-marvel-navigation-bar")!
+        public static let marvelCharacterName = UIColor(named: "background-marvel-character-name")!
+    }
+    
+    /// Holds all text colors
+    public struct Text {
+        public static let marvelCharacterName = UIColor(named: "text-marvel-character-name")!
     }
 }

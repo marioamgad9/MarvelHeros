@@ -7,6 +7,7 @@ public struct MarvelCharacter: Codable {
     public let id: Int
     public let name: String
     public let description: String
+    public let thumbnail: Thumbnail
     public let comics: ComicsAPIResponse
     public let series: SeriesAPIResponse
     public let stories: StoriesAPIResponse
