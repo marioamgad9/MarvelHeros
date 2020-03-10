@@ -3,15 +3,31 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		CFAD3EB32417AD9C0096C7AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD3EB22417AD9C0096C7AB /* AppDelegate.swift */; };
 		CFAD3EBC2417ADA70096C7AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFAD3EBB2417ADA70096C7AB /* Assets.xcassets */; };
 		CFAD3EBF2417ADA70096C7AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFAD3EBD2417ADA70096C7AB /* LaunchScreen.storyboard */; };
+		CFAD3F1F2417B7600096C7AB /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFAD3F1E2417B7600096C7AB /* Common.framework */; };
+		CFAD3F202417B7600096C7AB /* Common.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CFAD3F1E2417B7600096C7AB /* Common.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E7C566086DAE3D4E18E146E1 /* Pods_MarvelHeros.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D59D7745566A82C8BD743A4 /* Pods_MarvelHeros.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CFAD3F212417B7600096C7AB /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CFAD3F202417B7600096C7AB /* Common.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		78D0DE35847278E31F052DA8 /* Pods-MarvelHeros.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarvelHeros.debug.xcconfig"; path = "Target Support Files/Pods-MarvelHeros/Pods-MarvelHeros.debug.xcconfig"; sourceTree = "<group>"; };
@@ -22,6 +38,7 @@
 		CFAD3EBB2417ADA70096C7AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CFAD3EBE2417ADA70096C7AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CFAD3EC02417ADA70096C7AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFAD3F1E2417B7600096C7AB /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +47,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7C566086DAE3D4E18E146E1 /* Pods_MarvelHeros.framework in Frameworks */,
+				CFAD3F1F2417B7600096C7AB /* Common.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -39,6 +57,7 @@
 		97BF1D16DF4F5FDAE813ECC9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CFAD3F1E2417B7600096C7AB /* Common.framework */,
 				8D59D7745566A82C8BD743A4 /* Pods_MarvelHeros.framework */,
 			);
 			name = Frameworks;
@@ -50,7 +69,6 @@
 				78D0DE35847278E31F052DA8 /* Pods-MarvelHeros.debug.xcconfig */,
 				B6C495ED130873412D3AFAF6 /* Pods-MarvelHeros.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -95,6 +113,7 @@
 				CFAD3EAC2417AD9C0096C7AB /* Frameworks */,
 				CFAD3EAD2417AD9C0096C7AB /* Resources */,
 				F4CC3CF0C28AEC0D4434D734 /* [CP] Embed Pods Frameworks */,
+				CFAD3F212417B7600096C7AB /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
