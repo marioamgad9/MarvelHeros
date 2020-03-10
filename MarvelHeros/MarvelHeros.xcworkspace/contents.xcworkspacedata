@@ -4,6 +4,10 @@
    <FileRef
       location = "group:MarvelHeros.xcodeproj">
    </FileRef>
+   <Group
+      location = "container:"
+      name = "Features">
+   </Group>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
