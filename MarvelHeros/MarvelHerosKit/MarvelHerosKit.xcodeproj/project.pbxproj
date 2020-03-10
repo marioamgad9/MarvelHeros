@@ -111,7 +111,6 @@
 			children = (
 				CFAD3F592417BE040096C7AB /* MarvelHerosKit */,
 				CFAD3F582417BE040096C7AB /* Products */,
-				CFAD3FE42417E7BE0096C7AB /* String+Localized.swift */,
 				CFAD3F622417BE120096C7AB /* Frameworks */,
 				6AA0C9D83C0AFFEE0B0AD4D8 /* Pods */,
 			);
@@ -247,6 +246,7 @@
 		CFAD3FDC2417DC9E0096C7AB /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				CFAD3FE42417E7BE0096C7AB /* String+Localized.swift */,
 				CFAD3F682417C80F0096C7AB /* String+MD5Hashing.swift */,
 				CFAD3F942417D4480096C7AB /* Alamofire+PromiseKit.swift */,
 			);

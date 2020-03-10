@@ -14,23 +14,15 @@ class CharacterTableViewCellViewModel: ViewModelType {
     
     struct Output {
         let name: String
-        let image: Driver<UIImage>
+        let imageURL: URL?
     }
-    
-    // MARK: - Properties
-    private let imageLoader: ImageLoader
     
     // MARK: - Subjects
     private let imageSubject = PublishSubject<UIImage>()
     
     // MARK: - Methods
-    init(character: MarvelCharacter, imageLoader: ImageLoader) {
-        self.imageLoader = imageLoader
+    init(character: MarvelCharacter) {
         input = Input()
-        output = Output(name: character.name, image: imageSubject.asDriver(onErrorJustReturn: UIImage()))
-        
-        if let imageUrl = character.thumbnail.url {
-            _ = imageLoader.loadImage(url: imageUrl).done { self.imageSubject.onNext($0) }
-        }
+        output = Output(name: character.name, imageURL: character.thumbnail.url)
     }
 }

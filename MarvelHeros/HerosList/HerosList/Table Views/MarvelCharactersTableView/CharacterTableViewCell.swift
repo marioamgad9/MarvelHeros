@@ -1,6 +1,7 @@
 import UIKit
 import Common
 import RxSwift
+import SDWebImage
 
 /// The cell representing a marvel character in a table view
 class CharacterTableViewCell: NiblessTableViewCell {
@@ -36,7 +37,13 @@ class CharacterTableViewCell: NiblessTableViewCell {
     // MARK: - Methods
     func configure(withViewModel viewModel: CharacterTableViewCellViewModel) {
         characterNameLabel.text = viewModel.output.name
-        viewModel.output.image.drive(characterImageView.rx.image).disposed(by: disposeBag)
+        characterImageView.sd_setImage(with: viewModel.output.imageURL)
+    }
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        
+        
     }
     
     override func configureViewHierarchy() {

@@ -9,7 +9,7 @@ public struct Thumbnail: Codable {
     
     // MARK: - Computed properties
     public var url: URL? {
-        let httpsPath = "https" + path.dropFirst(4) + "/landscape_xlarge"
+        let httpsPath = "https" + path.dropFirst(4) + "/landscape_incredible"
         return URL(string: "\(httpsPath).\(fileExtension)")
     }
 }

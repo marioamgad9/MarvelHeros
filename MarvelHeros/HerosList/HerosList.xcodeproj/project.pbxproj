@@ -21,7 +21,6 @@
 		CFAD3FF12417EC800096C7AB /* HerosListNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD3FF02417EC800096C7AB /* HerosListNavigationController.swift */; };
 		CFAD3FFF2417FAB80096C7AB /* CharacterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD3FFE2417FAB80096C7AB /* CharacterTableViewCell.swift */; };
 		CFAD401A24180AB90096C7AB /* CharacterTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD401924180AB90096C7AB /* CharacterTableViewCellViewModel.swift */; };
-		CFAD401F241812A10096C7AB /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD401E241812A10096C7AB /* ImageLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -55,7 +54,6 @@
 		CFAD3FF02417EC800096C7AB /* HerosListNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HerosListNavigationController.swift; sourceTree = "<group>"; };
 		CFAD3FFE2417FAB80096C7AB /* CharacterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterTableViewCell.swift; sourceTree = "<group>"; };
 		CFAD401924180AB90096C7AB /* CharacterTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterTableViewCellViewModel.swift; sourceTree = "<group>"; };
-		CFAD401E241812A10096C7AB /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		EBD441625796A763BC54EB4B /* Pods_HerosList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HerosList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -146,7 +144,6 @@
 			isa = PBXGroup;
 			children = (
 				CFAD3FEA2417E9E60096C7AB /* HerosListNavigator.swift */,
-				CFAD401E241812A10096C7AB /* ImageLoader.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -293,7 +290,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFAD401A24180AB90096C7AB /* CharacterTableViewCellViewModel.swift in Sources */,
-				CFAD401F241812A10096C7AB /* ImageLoader.swift in Sources */,
 				CFAD3FE92417E97F0096C7AB /* HerosListViewState.swift in Sources */,
 				CFAD3FF12417EC800096C7AB /* HerosListNavigationController.swift in Sources */,
 				CFAD3FD42417DA610096C7AB /* HerosListViewModel.swift in Sources */,

@@ -49,7 +49,7 @@ public class HerosListViewModel: ViewModelType {
     
     // MARK: - Methods
     func characterCellViewModel(for character: MarvelCharacter) -> CharacterTableViewCellViewModel {
-        return CharacterTableViewCellViewModel(character: character, imageLoader: self)
+        return CharacterTableViewCellViewModel(character: character)
     }
     
     private func subscribeForFetch() {
@@ -77,11 +77,5 @@ public class HerosListViewModel: ViewModelType {
             errorMessageSubject.onNext(ErrorMessage(title: "error_title.cannot_load_characters".localized,
                                                     message: "error_message.cannot_load_characters".localized))
         }
-    }
-}
-
-extension HerosListViewModel: ImageLoader {
-    func loadImage(url: URL) -> Promise<UIImage> {
-        contentRepository.getImage(url: url)
     }
 }
