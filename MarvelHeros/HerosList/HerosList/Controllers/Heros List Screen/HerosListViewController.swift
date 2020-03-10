@@ -17,8 +17,6 @@ public class HerosListViewController: NiblessViewController {
     public init(viewModel: HerosListViewModel) {
         self.viewModel = viewModel
         super.init()
-        
-        viewModel.input.fetch.onNext(())
     }
     
     public override func loadView() {
@@ -26,8 +24,19 @@ public class HerosListViewController: NiblessViewController {
         view = rootView
     }
     
-    private func configureCharactersTableView(_ tableView: UITableView) {
+    public override func viewDidLoad() {
+        super.viewDidLoad()
         
+        // Bind isLoading to activity indicator
+        viewModel.output.isLoading
+            .drive(rootView.activityIndicator.rx.isAnimating)
+            .disposed(by: disposeBag)
+        
+        // Trigger fetch
+        viewModel.input.fetch.onNext(())
+    }
+    
+    private func configureCharactersTableView(_ tableView: UITableView) {
         viewModel.output.characters
             .drive(tableView.rx.items(cellIdentifier: CharacterTableViewCell.reuseIdentifier,
                                       cellType: CharacterTableViewCell.self)) { (_, character, cell) in

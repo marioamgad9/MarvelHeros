@@ -14,6 +14,11 @@ class HerosListRootView: NiblessView {
         tableView.backgroundColor = .clear
         return tableView
     }()
+    let activityIndicator: UIActivityIndicatorView = {
+        let activityIndicator = UIActivityIndicatorView(style: .large)
+        activityIndicator.hidesWhenStopped = true
+        return activityIndicator
+    }()
     
     // MARK: - Methods
     init(charactersTableViewConfigurator: CharactersTableViewConfigurator) {
@@ -41,6 +46,14 @@ class HerosListRootView: NiblessView {
                 $0.leadingAnchor.constraint(equalTo: leadingAnchor),
                 $0.trailingAnchor.constraint(equalTo: trailingAnchor),
                 $0.bottomAnchor.constraint(equalTo: bottomAnchor)
+            ])
+        })
+        
+        add(activityIndicator, then: {
+            $0.translatesAutoresizingMaskIntoConstraints = false
+            NSLayoutConstraint.activate([
+                $0.centerYAnchor.constraint(equalTo: charactersTableView.centerYAnchor),
+                $0.centerXAnchor.constraint(equalTo: charactersTableView.centerXAnchor)
             ])
         })
     }

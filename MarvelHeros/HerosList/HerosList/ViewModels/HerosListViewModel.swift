@@ -16,6 +16,7 @@ public class HerosListViewModel: ViewModelType {
     
     public struct Output {
         let characters: Driver<[MarvelCharacter]>
+        let isLoading: Driver<Bool>
         let errorMessage: Observable<ErrorMessage>
     }
     
@@ -26,6 +27,7 @@ public class HerosListViewModel: ViewModelType {
     
     // MARK: - Subjects
     private let charactersSubject = PublishSubject<MarvelCharactersAPIResponse>()
+    private let isLoadingSubject = PublishSubject<Bool>()
     private let errorMessageSubject = PublishSubject<ErrorMessage>()
     
     // MARK: - Initializer
@@ -38,18 +40,28 @@ public class HerosListViewModel: ViewModelType {
         output = Output(characters: charactersSubject
             .map({$0.data.results})
             .asDriver(onErrorJustReturn: []),
+                        isLoading: isLoadingSubject.asDriver(onErrorJustReturn: false),
                         errorMessage: errorMessageSubject.asObservable())
         
         subscribeForFetch()
+        subscribeForCharactersSubjectToUpdateIsLoading()
     }
     
     // MARK: - Methods
     func characterCellViewModel(for character: MarvelCharacter) -> CharacterTableViewCellViewModel {
         return CharacterTableViewCellViewModel(character: character, imageLoader: self)
     }
+    
     private func subscribeForFetch() {
         input.fetch.subscribe(onNext: {
+            self.isLoadingSubject.onNext(true)
             self.reloadCharacters()
+        }).disposed(by: disposeBag)
+    }
+    
+    private func subscribeForCharactersSubjectToUpdateIsLoading() {
+        charactersSubject.subscribe(onNext: { _ in
+            self.isLoadingSubject.onNext(false)
         }).disposed(by: disposeBag)
     }
     
