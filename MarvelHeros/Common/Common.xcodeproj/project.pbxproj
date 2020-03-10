@@ -56,7 +56,8 @@
 		CFAD3F0A2417B6030096C7AB /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				CFAD3F132417B6130096C7AB /* Nibless Components */,
+				CFAD3FE32417E7AF0096C7AB /* UIKit */,
+				CFAD3FE22417E7A40096C7AB /* Extensions */,
 				CFAD3F0B2417B6030096C7AB /* Common.h */,
 				CFAD3F0C2417B6030096C7AB /* Info.plist */,
 			);
@@ -73,6 +74,21 @@
 				CFAD3F1C2417B6DF0096C7AB /* NiblessCollectionViewCell.swift */,
 			);
 			path = "Nibless Components";
+			sourceTree = "<group>";
+		};
+		CFAD3FE22417E7A40096C7AB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CFAD3FE32417E7AF0096C7AB /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				CFAD3F132417B6130096C7AB /* Nibless Components */,
+			);
+			path = UIKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

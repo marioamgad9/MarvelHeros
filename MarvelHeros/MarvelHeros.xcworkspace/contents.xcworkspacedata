@@ -11,6 +11,9 @@
       location = "container:"
       name = "Features">
       <FileRef
+         location = "group:HerosList/HerosList.xcodeproj">
+      </FileRef>
+      <FileRef
          location = "group:MarvelHerosKit/MarvelHerosKit.xcodeproj">
       </FileRef>
    </Group>

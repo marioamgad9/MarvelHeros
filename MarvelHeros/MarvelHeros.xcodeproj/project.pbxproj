@@ -16,6 +16,9 @@
 		CFAD3F242417B98A0096C7AB /* MHCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CFAD3F222417B98A0096C7AB /* MHCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CFAD3F732417CADA0096C7AB /* MarvelHerosKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFAD3F722417CADA0096C7AB /* MarvelHerosKit.framework */; };
 		CFAD3F742417CADA0096C7AB /* MarvelHerosKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CFAD3F722417CADA0096C7AB /* MarvelHerosKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CFAD3FC62417DA000096C7AB /* HerosList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFAD3FC52417DA000096C7AB /* HerosList.framework */; };
+		CFAD3FC72417DA000096C7AB /* HerosList.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CFAD3FC52417DA000096C7AB /* HerosList.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CFAD3FE72417E7EC0096C7AB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CFAD3FE62417E7EC0096C7AB /* Localizable.strings */; };
 		E7C566086DAE3D4E18E146E1 /* Pods_MarvelHeros.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D59D7745566A82C8BD743A4 /* Pods_MarvelHeros.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +29,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				CFAD3FC72417DA000096C7AB /* HerosList.framework in Embed Frameworks */,
 				CFAD3F242417B98A0096C7AB /* MHCore.framework in Embed Frameworks */,
 				CFAD3F202417B7600096C7AB /* Common.framework in Embed Frameworks */,
 				CFAD3F742417CADA0096C7AB /* MarvelHerosKit.framework in Embed Frameworks */,
@@ -47,6 +51,8 @@
 		CFAD3F1E2417B7600096C7AB /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFAD3F222417B98A0096C7AB /* MHCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MHCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFAD3F722417CADA0096C7AB /* MarvelHerosKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MarvelHerosKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFAD3FC52417DA000096C7AB /* HerosList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = HerosList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFAD3FE62417E7EC0096C7AB /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,7 @@
 				E7C566086DAE3D4E18E146E1 /* Pods_MarvelHeros.framework in Frameworks */,
 				CFAD3F232417B98A0096C7AB /* MHCore.framework in Frameworks */,
 				CFAD3F1F2417B7600096C7AB /* Common.framework in Frameworks */,
+				CFAD3FC62417DA000096C7AB /* HerosList.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +74,7 @@
 		97BF1D16DF4F5FDAE813ECC9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CFAD3FC52417DA000096C7AB /* HerosList.framework */,
 				CFAD3F722417CADA0096C7AB /* MarvelHerosKit.framework */,
 				CFAD3F222417B98A0096C7AB /* MHCore.framework */,
 				CFAD3F1E2417B7600096C7AB /* Common.framework */,
@@ -109,6 +117,7 @@
 				CFAD3EBB2417ADA70096C7AB /* Assets.xcassets */,
 				CFAD3EBD2417ADA70096C7AB /* LaunchScreen.storyboard */,
 				CFAD3EC02417ADA70096C7AB /* Info.plist */,
+				CFAD3FE62417E7EC0096C7AB /* Localizable.strings */,
 			);
 			path = MarvelHeros;
 			sourceTree = "<group>";
@@ -175,6 +184,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFAD3EBF2417ADA70096C7AB /* LaunchScreen.storyboard in Resources */,
+				CFAD3FE72417E7EC0096C7AB /* Localizable.strings in Resources */,
 				CFAD3EBC2417ADA70096C7AB /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -376,7 +386,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mouris.mario.MarvelHeros;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -396,7 +406,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mouris.mario.MarvelHeros;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

@@ -1,0 +1,6 @@
+// Error dialog defaults
+"btn.default_okay" = "Okay";
+
+// Heros list
+"error_title.cannot_load_characters" = "Failed to load characters";
+"error_message.cannot_load_characters" = "Opps, There was a problem while loading the characters. Can you try again, please?";
