@@ -13,6 +13,9 @@
 		CFAD3F192417B6860096C7AB /* NiblessNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD3F182417B6860096C7AB /* NiblessNavigationController.swift */; };
 		CFAD3F1B2417B6AC0096C7AB /* NiblessTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD3F1A2417B6AC0096C7AB /* NiblessTableViewCell.swift */; };
 		CFAD3F1D2417B6DF0096C7AB /* NiblessCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD3F1C2417B6DF0096C7AB /* NiblessCollectionViewCell.swift */; };
+		CFAD3FF42417F0D30096C7AB /* MarvelNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD3FF32417F0D30096C7AB /* MarvelNavigationBar.swift */; };
+		CFAD3FF82417F1F80096C7AB /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD3FF72417F1F80096C7AB /* Colors.swift */; };
+		CFAD3FFB2417F5050096C7AB /* UIView+Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD3FFA2417F5050096C7AB /* UIView+Configuration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		CFAD3F182417B6860096C7AB /* NiblessNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiblessNavigationController.swift; sourceTree = "<group>"; };
 		CFAD3F1A2417B6AC0096C7AB /* NiblessTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiblessTableViewCell.swift; sourceTree = "<group>"; };
 		CFAD3F1C2417B6DF0096C7AB /* NiblessCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiblessCollectionViewCell.swift; sourceTree = "<group>"; };
+		CFAD3FF32417F0D30096C7AB /* MarvelNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelNavigationBar.swift; sourceTree = "<group>"; };
+		CFAD3FF72417F1F80096C7AB /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		CFAD3FFA2417F5050096C7AB /* UIView+Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Configuration.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,9 +92,44 @@
 		CFAD3FE32417E7AF0096C7AB /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				CFAD3FF22417F0C10096C7AB /* Custom Views */,
 				CFAD3F132417B6130096C7AB /* Nibless Components */,
+				CFAD3FF92417F4EE0096C7AB /* Extensions */,
+				CFAD3FF62417F1EC0096C7AB /* Style */,
 			);
 			path = UIKit;
+			sourceTree = "<group>";
+		};
+		CFAD3FF22417F0C10096C7AB /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				CFAD3FF52417F0D80096C7AB /* Navigation Bars */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		CFAD3FF52417F0D80096C7AB /* Navigation Bars */ = {
+			isa = PBXGroup;
+			children = (
+				CFAD3FF32417F0D30096C7AB /* MarvelNavigationBar.swift */,
+			);
+			path = "Navigation Bars";
+			sourceTree = "<group>";
+		};
+		CFAD3FF62417F1EC0096C7AB /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				CFAD3FF72417F1F80096C7AB /* Colors.swift */,
+			);
+			path = Style;
+			sourceTree = "<group>";
+		};
+		CFAD3FF92417F4EE0096C7AB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CFAD3FFA2417F5050096C7AB /* UIView+Configuration.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,10 +213,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFAD3F1B2417B6AC0096C7AB /* NiblessTableViewCell.swift in Sources */,
+				CFAD3FFB2417F5050096C7AB /* UIView+Configuration.swift in Sources */,
 				CFAD3F192417B6860096C7AB /* NiblessNavigationController.swift in Sources */,
 				CFAD3F152417B6250096C7AB /* NiblessView.swift in Sources */,
+				CFAD3FF82417F1F80096C7AB /* Colors.swift in Sources */,
 				CFAD3F1D2417B6DF0096C7AB /* NiblessCollectionViewCell.swift in Sources */,
 				CFAD3F172417B65C0096C7AB /* NiblessViewController.swift in Sources */,
+				CFAD3FF42417F0D30096C7AB /* MarvelNavigationBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
