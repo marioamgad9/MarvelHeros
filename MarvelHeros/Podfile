@@ -1,0 +1,25 @@
+platform :ios, '11.0'
+
+# ignore all warnings from all pods
+inhibit_all_warnings!
+
+use_frameworks!
+workspace 'MarvelHeros'
+
+def reactivePods 
+    # Pods for RxSwift & RxCocoa
+    pod 'RxSwift', '~> 5'
+    pod 'RxCocoa', '~> 5'
+    
+    # Pods for PromiseKit
+    pod 'PromiseKit', '~> 6.8'
+end
+
+target 'MarvelHeros' do
+    project 'MarvelHeros'
+    
+    reactivePods
+
+    # Pod for alamofire
+    pod 'Alamofire', '~> 5.0.0-rc.3'
+end
