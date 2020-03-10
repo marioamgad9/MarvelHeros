@@ -20,6 +20,7 @@
 		CFAD400C2418066B0096C7AB /* UIFonts+Accessors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD400B2418066B0096C7AB /* UIFonts+Accessors.swift */; };
 		CFAD4023241813AC0096C7AB /* ParallelogramView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD4022241813AC0096C7AB /* ParallelogramView.swift */; };
 		CFAD4025241817CF0096C7AB /* UITableViewCell+Dequeue.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD4024241817CF0096C7AB /* UITableViewCell+Dequeue.swift */; };
+		CFAD402B24184E310096C7AB /* UIScrollView+IsAtBottom.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD402A24184E310096C7AB /* UIScrollView+IsAtBottom.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		CFAD400B2418066B0096C7AB /* UIFonts+Accessors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFonts+Accessors.swift"; sourceTree = "<group>"; };
 		CFAD4022241813AC0096C7AB /* ParallelogramView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParallelogramView.swift; sourceTree = "<group>"; };
 		CFAD4024241817CF0096C7AB /* UITableViewCell+Dequeue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Dequeue.swift"; sourceTree = "<group>"; };
+		CFAD402A24184E310096C7AB /* UIScrollView+IsAtBottom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScrollView+IsAtBottom.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +142,7 @@
 				CFAD3FFA2417F5050096C7AB /* UIView+Configuration.swift */,
 				CFAD400B2418066B0096C7AB /* UIFonts+Accessors.swift */,
 				CFAD4024241817CF0096C7AB /* UITableViewCell+Dequeue.swift */,
+				CFAD402A24184E310096C7AB /* UIScrollView+IsAtBottom.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -232,6 +235,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFAD402B24184E310096C7AB /* UIScrollView+IsAtBottom.swift in Sources */,
 				CFAD3F1B2417B6AC0096C7AB /* NiblessTableViewCell.swift in Sources */,
 				CFAD3FFB2417F5050096C7AB /* UIView+Configuration.swift in Sources */,
 				CFAD3F192417B6860096C7AB /* NiblessNavigationController.swift in Sources */,

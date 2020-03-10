@@ -26,8 +26,8 @@ public class HerosListViewModel: ViewModelType {
     private let disposeBag = DisposeBag()
     
     // MARK: - Subjects
-    private let charactersSubject = PublishSubject<MarvelCharactersAPIResponse>()
-    private let isLoadingSubject = PublishSubject<Bool>()
+    private let charactersSubject = BehaviorSubject<[MarvelCharacter]>(value: [])
+    private let isLoadingSubject = BehaviorSubject<Bool>(value: false)
     private let errorMessageSubject = PublishSubject<ErrorMessage>()
     
     // MARK: - Initializer
@@ -37,9 +37,7 @@ public class HerosListViewModel: ViewModelType {
         self.herosListNavigator = herosListNavigator
         
         input = Input()
-        output = Output(characters: charactersSubject
-            .map({$0.data.results})
-            .asDriver(onErrorJustReturn: []),
+        output = Output(characters: charactersSubject.asDriver(onErrorJustReturn: []),
                         isLoading: isLoadingSubject.asDriver(onErrorJustReturn: false),
                         errorMessage: errorMessageSubject.asObservable())
         
@@ -53,9 +51,12 @@ public class HerosListViewModel: ViewModelType {
     }
     
     private func subscribeForFetch() {
-        input.fetch.subscribe(onNext: {
-            self.isLoadingSubject.onNext(true)
-            self.reloadCharacters()
+        input.fetch
+            .withLatestFrom(Observable.combineLatest(output.isLoading.asObservable(), output.characters.asObservable()))
+            .subscribe(onNext: { (isLoading, characters) in
+                guard !isLoading else { return }
+                self.isLoadingSubject.onNext(true)
+                self.reloadCharacters(offsetBy: characters.count)
         }).disposed(by: disposeBag)
     }
     
@@ -65,10 +66,18 @@ public class HerosListViewModel: ViewModelType {
         }).disposed(by: disposeBag)
     }
     
-    private func reloadCharacters() {
-        contentRepository.getMarvelCharacters(nameStartsWith: nil, offset: 0).done {
-            self.charactersSubject.onNext($0)
+    private func reloadCharacters(offsetBy offset: Int) {
+        contentRepository.getMarvelCharacters(nameStartsWith: nil, offset: offset).done {
+            self.charactersSubject.onNext(self.getCharactersValue() + $0.data.results)
         }.catch(handleError)
+    }
+    
+    private func getCharactersValue() -> [MarvelCharacter] {
+        if let value = try? charactersSubject.value() {
+            return value
+        } else {
+            return []
+        }
     }
     
     private func handleError(_ error: Error) {

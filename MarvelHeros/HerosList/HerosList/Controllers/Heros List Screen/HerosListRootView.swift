@@ -1,6 +1,11 @@
 import UIKit
 import Common
 
+protocol HerosListRootViewResponder {
+    func searchTapped()
+    func tableViewDidReachEnd()
+}
+
 typealias CharactersTableViewConfigurator = (UITableView) -> ()
 
 /// The root view for HerosListViewController
@@ -20,8 +25,13 @@ class HerosListRootView: NiblessView {
         return activityIndicator
     }()
     
+    // MARK: - Properties
+    private let responder: HerosListRootViewResponder
+    
     // MARK: - Methods
-    init(charactersTableViewConfigurator: CharactersTableViewConfigurator) {
+    init(charactersTableViewConfigurator: CharactersTableViewConfigurator,
+         responder: HerosListRootViewResponder) {
+        self.responder = responder
         super.init(frame: .zero)
         
         charactersTableViewConfigurator(charactersTableView)
@@ -69,10 +79,16 @@ extension HerosListRootView: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 180
     }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        if scrollView.contentOffset.y >= (scrollView.contentSize.height - scrollView.frame.size.height) {
+            responder.tableViewDidReachEnd()
+        }
+    }
 }
 
 extension HerosListRootView: MarvelNavigationBarDelegate {
     func searchTapped() {
-        print("TEST - Search tapped")
+        responder.searchTapped()
     }
 }

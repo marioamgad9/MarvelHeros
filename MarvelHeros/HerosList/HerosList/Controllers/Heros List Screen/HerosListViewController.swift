@@ -20,7 +20,8 @@ public class HerosListViewController: NiblessViewController {
     }
     
     public override func loadView() {
-        rootView = HerosListRootView(charactersTableViewConfigurator: configureCharactersTableView(_:))
+        rootView = HerosListRootView(charactersTableViewConfigurator: configureCharactersTableView(_:),
+                                     responder: self)
         view = rootView
     }
     
@@ -42,5 +43,16 @@ public class HerosListViewController: NiblessViewController {
                                       cellType: CharacterTableViewCell.self)) { (_, character, cell) in
                                         cell.configure(withViewModel: self.viewModel.characterCellViewModel(for: character))
             }.disposed(by: disposeBag)
+    }
+}
+
+// MARK: - HerosListRootViewResponder
+extension HerosListViewController: HerosListRootViewResponder {
+    func searchTapped() {
+        
+    }
+    
+    func tableViewDidReachEnd() {
+        viewModel.input.fetch.onNext(())
     }
 }
