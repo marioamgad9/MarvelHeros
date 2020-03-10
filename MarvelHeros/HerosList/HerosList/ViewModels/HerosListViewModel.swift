@@ -1,6 +1,7 @@
 import MarvelHerosKit
 import RxSwift
 import RxCocoa
+import PromiseKit
 
 /// The view model for HerosListViewController
 public class HerosListViewModel: ViewModelType {
@@ -14,7 +15,7 @@ public class HerosListViewModel: ViewModelType {
     }
     
     public struct Output {
-        let characters: Observable<MarvelCharactersAPIResponse>
+        let characters: Driver<[MarvelCharacter]>
         let errorMessage: Observable<ErrorMessage>
     }
     
@@ -34,13 +35,18 @@ public class HerosListViewModel: ViewModelType {
         self.herosListNavigator = herosListNavigator
         
         input = Input()
-        output = Output(characters: charactersSubject.asObservable(),
+        output = Output(characters: charactersSubject
+            .map({$0.data.results})
+            .asDriver(onErrorJustReturn: []),
                         errorMessage: errorMessageSubject.asObservable())
         
         subscribeForFetch()
     }
     
     // MARK: - Methods
+    func characterCellViewModel(for character: MarvelCharacter) -> CharacterTableViewCellViewModel {
+        return CharacterTableViewCellViewModel(character: character, imageLoader: self)
+    }
     private func subscribeForFetch() {
         input.fetch.subscribe(onNext: {
             self.reloadCharacters()
@@ -59,5 +65,11 @@ public class HerosListViewModel: ViewModelType {
             errorMessageSubject.onNext(ErrorMessage(title: "error_title.cannot_load_characters".localized,
                                                     message: "error_message.cannot_load_characters".localized))
         }
+    }
+}
+
+extension HerosListViewModel: ImageLoader {
+    func loadImage(url: URL) -> Promise<UIImage> {
+        contentRepository.getImage(url: url)
     }
 }

@@ -1,6 +1,7 @@
 import UIKit
 import Common
 import RxSwift
+import RxCocoa
 
 /// Handles showing the list of characters and filtering them
 public class HerosListViewController: NiblessViewController {
@@ -16,10 +17,21 @@ public class HerosListViewController: NiblessViewController {
     public init(viewModel: HerosListViewModel) {
         self.viewModel = viewModel
         super.init()
+        
+        viewModel.input.fetch.onNext(())
     }
     
     public override func loadView() {
-        rootView = HerosListRootView()
+        rootView = HerosListRootView(charactersTableViewConfigurator: configureCharactersTableView(_:))
         view = rootView
+    }
+    
+    private func configureCharactersTableView(_ tableView: UITableView) {
+        
+        viewModel.output.characters
+            .drive(tableView.rx.items(cellIdentifier: CharacterTableViewCell.reuseIdentifier,
+                                      cellType: CharacterTableViewCell.self)) { (_, character, cell) in
+                                        cell.configure(withViewModel: self.viewModel.characterCellViewModel(for: character))
+            }.disposed(by: disposeBag)
     }
 }

@@ -3,7 +3,7 @@ import UIKit
 public class ParallelogramView: UIView {
     
     // MARK: - Properties
-    public var offset:    CGFloat = 30 { didSet { setNeedsDisplay() } }
+    public var offset:    CGFloat = 10 { didSet { setNeedsDisplay() } }
     public var fillColor: UIColor = Colors.Backgrounds.marvelCharacterName { didSet { setNeedsDisplay() } }
     
     // MARK: - Methods

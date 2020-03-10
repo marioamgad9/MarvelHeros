@@ -23,7 +23,12 @@ public class MHContentRepository: ContentRepository {
                             return
                     }
                     seal.fulfill(image)
-                case .failure:
+                case .failure(let error):
+                    print("API Error - An error occured, status code: \(response.response?.statusCode ?? 0)")
+                    print("API Error - Alamofire error: \(error)")
+                    if let data = response.data {
+                        print("API Error - Returned JSON: \(String(describing: String(data: data, encoding: String.Encoding.utf8)))")
+                    }
                     seal.reject(MarvelHerosKitError.unknown)
                 }
             }
