@@ -11,6 +11,8 @@ class HerosListRootView: NiblessView {
     // MARK: - Methods
     override init(frame: CGRect = .zero) {
         super.init(frame: frame)
+        
+        marvelNavigationBar.delegate = self
     }
     
     override func configureViewHierarchy() {
@@ -23,8 +25,10 @@ class HerosListRootView: NiblessView {
             ])
         })
     }
-    
-    override func viewHierarchyDidConfigure() {
-        backgroundColor = .blue
+}
+
+extension HerosListRootView: MarvelNavigationBarDelegate {
+    func searchTapped() {
+        print("TEST - Search tapped")
     }
 }

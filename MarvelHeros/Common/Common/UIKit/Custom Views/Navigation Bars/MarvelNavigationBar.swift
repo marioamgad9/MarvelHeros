@@ -1,5 +1,9 @@
 import UIKit
 
+public protocol MarvelNavigationBarDelegate {
+    func searchTapped()
+}
+
 /// The default navigation bar for the app
 public class MarvelNavigationBar: NiblessView {
     
@@ -23,9 +27,13 @@ public class MarvelNavigationBar: NiblessView {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFit
         imageView.image = UIImage(named: "ic-search")
+        imageView.isUserInteractionEnabled = true
         
         return imageView
     }()
+    
+    // MARK: - Properties
+    public var delegate: MarvelNavigationBarDelegate?
     
     // MARK: - Methods
     public override func configureViewHierarchy() {
@@ -58,5 +66,16 @@ public class MarvelNavigationBar: NiblessView {
                 $0.centerYAnchor.constraint(equalTo: marvelLogoImageView.centerYAnchor)
             ])
         })
+    }
+    
+    public override func viewHierarchyDidConfigure() {
+        // Register tap gesture recognizer on search imageview
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(searchImageViewTapped))
+        searchImageView.addGestureRecognizer(tapGestureRecognizer)
+    }
+    
+    @objc
+    private func searchImageViewTapped() {
+        delegate?.searchTapped()
     }
 }
