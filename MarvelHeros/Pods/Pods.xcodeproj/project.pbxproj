@@ -132,6 +132,7 @@
 		4CC073100B7A3E7B46CBD8F2FBB8C802 /* Process+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E771D37586CC0AE5420592B1A0F0BA /* Process+Promise.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		4DB33755A2F475C3EF460DFBFD59BCD2 /* SynchronizedDisposeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6D72FC92170206021B7B04BD91495D /* SynchronizedDisposeType.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		4E940CC31F39483E97270D357952F946 /* RxTextViewDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A399D3B922B7678BDB614E209D79CD /* RxTextViewDelegateProxy.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		4EB1D1A3D3BF7111B6B9AA4EBBFE7075 /* Pods-MarvelHerosKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 29DEE840F68045415FD2768A44537C46 /* Pods-MarvelHerosKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4F1D77A470A45F00D76CE43AB042FF44 /* URLEncodedFormEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C150CD689E056D2CD94BC576528CC7 /* URLEncodedFormEncoder.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		4FB02A75062658E5EBFB1935F23FC5C1 /* RxCollectionViewDataSourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E2D4C0C2EB0B18A93CF3B642E4E2A5 /* RxCollectionViewDataSourceType.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		4FEAAD720A195E18ABF28765CF62157E /* UIDatePicker+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1FCE69AACE262434F05375D64EAE20 /* UIDatePicker+Rx.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -158,7 +159,7 @@
 		5D171525CAB8F71090B4A01AFA147EB6 /* Driver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EA74F00F5DD67ECB67BB82B349D513 /* Driver.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		5D2D358E754D92564B259BBACFBA8271 /* PMKFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = E79C3FC53E4530637538B9D4D4C45C15 /* PMKFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D666D5BF5178D08EC3A5C4746BDD0BD /* _RXKVOObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = A41908B009493B6FB852B49D7A703D4C /* _RXKVOObserver.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5DB7E37AFE58C4CE2A2BB0EA8C252709 /* Pods-MarvelHeros-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 11387031B6EC39B2BB680D1397CC4141 /* Pods-MarvelHeros-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5DB7E37AFE58C4CE2A2BB0EA8C252709 /* Pods-MarvelHeros-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CFDEA5CF64F311ABFFC225725C33D84 /* Pods-MarvelHeros-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5E20432B90EEF4FB50B0F95F4CDBA8DF /* hang.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A26300E212929AC157CE90E5F9C190 /* hang.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		5EBC7AEF3A7F9B35B4ED932E3BEF4B59 /* UISearchController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D36B80DAAC733A1423841AA0C2B8BFD /* UISearchController+Rx.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		5F31E543171DD25FEFA6167F790F1D1E /* Deferred.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4ADD02DD91F5C93C91830A291F9BD6 /* Deferred.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -166,6 +167,7 @@
 		5FC56CDF737380E7363595FA29F1482C /* Enumerated.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABCC08405C7D9AC4A5733843A6F5CFB /* Enumerated.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		6040472CAA01E0379FC4CB015840A30B /* Timeout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813A479113BEF71E3BD26FAEFD6B7431 /* Timeout.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		60F874ED0F6234A4417CAFDE554D088D /* PMKUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 5892018803C80B0573AC6BF6E04BE230 /* PMKUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		622C1EFCC473E6EAFE4A0ADCA9484BB0 /* Pods-MarvelHerosKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5BC77D8874F5055CC183F101C174C7 /* Pods-MarvelHerosKit-dummy.m */; };
 		622E5E15B659748B403E179EE52C7DD4 /* HistoricalScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A7480EB9537187412C516991C66EBF /* HistoricalScheduler.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		623F0AC996B366ECAEA4D372857CB750 /* Observable+Bind.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA76069F7D7671CB9AE6595CF3510294 /* Observable+Bind.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		62E497A44BAF4A1A09311CA247654F63 /* ObserverType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26718679EC17C9F8B3FCA7F271F32612 /* ObserverType.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -316,7 +318,7 @@
 		C99A704DBB3FD0AF366449DD76CC9EAF /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E1380CFEEFC62B0785FC96FA10FD4D /* Box.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		CA110BD7B45814F688AA26CF11995389 /* DispatchQueue+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB764524B22AE50373CB399E87A0C20 /* DispatchQueue+Extensions.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		CB357311EF523E1368F9E0C8F8E86C9F /* UIWebView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405CA2858874274B2417C0BFB57078EA /* UIWebView+Rx.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		CB8A04BDAA0A9ADAC363C401538EF606 /* Pods-MarvelHeros-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BAAFD890B3A57AC301323DFD0D291C7 /* Pods-MarvelHeros-dummy.m */; };
+		CB8A04BDAA0A9ADAC363C401538EF606 /* Pods-MarvelHeros-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EDA03E3099253EBB87F94E96787685F6 /* Pods-MarvelHeros-dummy.m */; };
 		CB93D4A45BE5B103A5B733D9E2206AEE /* UIStepper+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4D01968265DECE411D8967007D816F /* UIStepper+Rx.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		CBFCEE1CDDBCB1DBDE66FBC27987FE3D /* Switch.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79A9C7E8681B5F202AE2CC8809DEA2C /* Switch.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		CC6D46C0E2823EB67061A87BC688F9B6 /* Binder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991D9452D0D8629C683DBE5EE92EF7D1 /* Binder.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -367,6 +369,7 @@
 		F273CF023DC4017A776C1FD2B3D232F9 /* RedirectHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E338B46EB73B62527B4F6A7DA91C88 /* RedirectHandler.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		F2A08F50EBCE4431E5E20D0C55131590 /* Buffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0A1DB1879E0F0396D86DE4789CB68D /* Buffer.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		F2CAA85608EC6683A889FA86AFA6E8E0 /* race.m in Sources */ = {isa = PBXBuildFile; fileRef = A88B69D7F46829EA85990945F3696250 /* race.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		F3AA81960E81993099CA6961324A2E16 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F609956841845B03DB3A239A067E63DE /* Foundation.framework */; };
 		F43A84B9970ECA2B03ABA2162A430E91 /* Deprecations.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D5067B8ACE77983994A45CDC2B09A6 /* Deprecations.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		F4C039988CD95E5838BE5FBE740AC06B /* Skip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1D4C206536BE5FCBC1FD32F68B68BC /* Skip.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		F5864A09FC0A173AB64D9127DA1BB9AC /* Take.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11F395846E1DF18E541CE59550B272E /* Take.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -431,6 +434,13 @@
 			remoteGlobalIDString = EAAA1AD3A8A1B59AB91319EE40752C6D;
 			remoteInfo = Alamofire;
 		};
+		31A514656E601B29C8180DFC1943F824 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4622BFEF3DC16E8BD15EEFC30D4D0084;
+			remoteInfo = RxRelay;
+		};
 		3AA5F122E4B6C1CDC8306AE3F5C627D8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -445,10 +455,38 @@
 			remoteGlobalIDString = EA9EA43B3B503823EE36C60D9C8A865F;
 			remoteInfo = RxSwift;
 		};
+		72C4972A72F7ACA2FAD8636AE00D8076 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAAA1AD3A8A1B59AB91319EE40752C6D;
+			remoteInfo = Alamofire;
+		};
+		952F8EC39C91FC0152191544205B8521 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7C579CE66A1E7A9AA33CA5F97F9C22C5;
+			remoteInfo = PromiseKit;
+		};
+		C0D681D4CF3D30373D85504BCD94CB85 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA9EA43B3B503823EE36C60D9C8A865F;
+			remoteInfo = RxSwift;
+		};
+		C4F020320C2637EF978950A916FDE558 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7AD0C6DCDC9CEC8A3C7C10C7FEE07BE6;
+			remoteInfo = RxCocoa;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		002B1E88BA14EBF633CD66EBFBA107E9 /* PromiseKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PromiseKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		002B1E88BA14EBF633CD66EBFBA107E9 /* PromiseKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PromiseKit.framework; path = PromiseKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		002C0E68E2563AC078306BFE7DF2F812 /* OperationQueueScheduler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OperationQueueScheduler.swift; path = RxSwift/Schedulers/OperationQueueScheduler.swift; sourceTree = "<group>"; };
 		00DF676EF7504E66986BB98AF2AEC33F /* RxCocoa-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "RxCocoa-Info.plist"; sourceTree = "<group>"; };
 		03B3651CC89805DB4CBF419D970BEC77 /* UIPickerView+Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIPickerView+Rx.swift"; path = "RxCocoa/iOS/UIPickerView+Rx.swift"; sourceTree = "<group>"; };
@@ -461,7 +499,6 @@
 		07D0467FA99838A1A15083D67E5CB107 /* TakeUntil.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TakeUntil.swift; path = RxSwift/Observables/TakeUntil.swift; sourceTree = "<group>"; };
 		08DF90F86DD5B04B418FBCDB4C06001C /* Producer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Producer.swift; path = RxSwift/Observables/Producer.swift; sourceTree = "<group>"; };
 		0B424DDFB94649EE7D33E0BC0604DC51 /* StartWith.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StartWith.swift; path = RxSwift/Observables/StartWith.swift; sourceTree = "<group>"; };
-		0BAAFD890B3A57AC301323DFD0D291C7 /* Pods-MarvelHeros-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MarvelHeros-dummy.m"; sourceTree = "<group>"; };
 		0D22DE7E82ADE94FF0149BE7336BCD85 /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
 		0D36B80DAAC733A1423841AA0C2B8BFD /* UISearchController+Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UISearchController+Rx.swift"; path = "RxCocoa/iOS/UISearchController+Rx.swift"; sourceTree = "<group>"; };
 		0D5060E671CD39FD38BB91286BBA2193 /* Protector.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Protector.swift; path = Source/Protector.swift; sourceTree = "<group>"; };
@@ -472,7 +509,6 @@
 		104BA3E8691E46EECB7E7812CA0D2314 /* SingleAsync.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SingleAsync.swift; path = RxSwift/Observables/SingleAsync.swift; sourceTree = "<group>"; };
 		10545C34D09EABDDC71858D1626E89E9 /* CombineLatest+Collection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CombineLatest+Collection.swift"; path = "RxSwift/Observables/CombineLatest+Collection.swift"; sourceTree = "<group>"; };
 		10A1CC06C96FAAB606AC34C86DB6680F /* PromiseKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PromiseKit.xcconfig; sourceTree = "<group>"; };
-		11387031B6EC39B2BB680D1397CC4141 /* Pods-MarvelHeros-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MarvelHeros-umbrella.h"; sourceTree = "<group>"; };
 		11430D334A08B5FC5387792CAA8D67C5 /* SkipUntil.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkipUntil.swift; path = RxSwift/Observables/SkipUntil.swift; sourceTree = "<group>"; };
 		1191575805132322E8957BDB59C4788B /* ObservableType+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ObservableType+Extensions.swift"; path = "RxSwift/ObservableType+Extensions.swift"; sourceTree = "<group>"; };
 		1258D9B86C312E16EA31EDFFCB78CAE8 /* Reduce.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Reduce.swift; path = RxSwift/Observables/Reduce.swift; sourceTree = "<group>"; };
@@ -488,15 +524,19 @@
 		19A3EBB93B8756C75F919C9B36322475 /* AsyncLock.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AsyncLock.swift; path = RxSwift/Concurrency/AsyncLock.swift; sourceTree = "<group>"; };
 		1A8686F5358FB5429C11044D8D0A235F /* firstly.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = firstly.swift; path = Sources/firstly.swift; sourceTree = "<group>"; };
 		1AC8FCD46D6DBD00135E02486AA0A8E0 /* ControlEvent+Driver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ControlEvent+Driver.swift"; path = "RxCocoa/Traits/Driver/ControlEvent+Driver.swift"; sourceTree = "<group>"; };
+		1CFDEA5CF64F311ABFFC225725C33D84 /* Pods-MarvelHeros-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MarvelHeros-umbrella.h"; sourceTree = "<group>"; };
+		1DCDC9518EBC054DBAC31E992366849F /* Pods-MarvelHerosKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MarvelHerosKit.debug.xcconfig"; sourceTree = "<group>"; };
 		1E05045C26BEA1177101BC975A3470BB /* URLRequest+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLRequest+Alamofire.swift"; path = "Source/URLRequest+Alamofire.swift"; sourceTree = "<group>"; };
 		1E2BD1CBF882029CDD95A87A9E02439E /* ShareReplayScope.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ShareReplayScope.swift; path = RxSwift/Observables/ShareReplayScope.swift; sourceTree = "<group>"; };
 		1F2F14DDFBF501639819F14609549734 /* Deprecated.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Deprecated.swift; path = RxCocoa/Deprecated.swift; sourceTree = "<group>"; };
+		2059D7934A62A3E009A1C98E249B4069 /* Pods-MarvelHeros-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MarvelHeros-Info.plist"; sourceTree = "<group>"; };
 		20E1380CFEEFC62B0785FC96FA10FD4D /* Box.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Box.swift; path = Sources/Box.swift; sourceTree = "<group>"; };
 		2104D30765216534A036B9F575BD1B25 /* PromiseKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PromiseKit.modulemap; sourceTree = "<group>"; };
 		2170963721467DE6E94F9860884E7457 /* Maybe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Maybe.swift; path = RxSwift/Traits/Maybe.swift; sourceTree = "<group>"; };
 		21BA147EB6DC907040E2D0F86312EACA /* Window.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Window.swift; path = RxSwift/Observables/Window.swift; sourceTree = "<group>"; };
 		22E771D37586CC0AE5420592B1A0F0BA /* Process+Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Process+Promise.swift"; path = "Extensions/Foundation/Sources/Process+Promise.swift"; sourceTree = "<group>"; };
 		23DBD8AF64399DFE63D56B42BA9E798D /* RxPickerViewDelegateProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RxPickerViewDelegateProxy.swift; path = RxCocoa/iOS/Proxies/RxPickerViewDelegateProxy.swift; sourceTree = "<group>"; };
+		23DC61CFEB003584D21A6408D4865341 /* Pods-MarvelHeros.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MarvelHeros.modulemap"; sourceTree = "<group>"; };
 		24527D7B2D0655FEFF0B25230F8633CD /* PromiseKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PromiseKit-umbrella.h"; sourceTree = "<group>"; };
 		245C933054CE7951326271BB51DE34D9 /* CompactMap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CompactMap.swift; path = RxSwift/Observables/CompactMap.swift; sourceTree = "<group>"; };
 		24B7E4F34663894B208383F55147EE76 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
@@ -511,6 +551,7 @@
 		2808638EB4A3D379F390A5A3C4AD7708 /* PublishRelay.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PublishRelay.swift; path = RxRelay/PublishRelay.swift; sourceTree = "<group>"; };
 		2945C168E46DD835898216FB19A59715 /* AlamofireExtended.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlamofireExtended.swift; path = Source/AlamofireExtended.swift; sourceTree = "<group>"; };
 		298FAA4A4F7A8879AAD84EC9D3237051 /* NSObject+Rx+KVORepresentable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSObject+Rx+KVORepresentable.swift"; path = "RxCocoa/Foundation/NSObject+Rx+KVORepresentable.swift"; sourceTree = "<group>"; };
+		29DEE840F68045415FD2768A44537C46 /* Pods-MarvelHerosKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MarvelHerosKit-umbrella.h"; sourceTree = "<group>"; };
 		2A4E4EBFD8D6A5399799C72665CFB3BB /* Throttle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Throttle.swift; path = RxSwift/Observables/Throttle.swift; sourceTree = "<group>"; };
 		2AD59CE5E8081D884C2638C0037E7CDC /* Create.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Create.swift; path = RxSwift/Observables/Create.swift; sourceTree = "<group>"; };
 		2B0109B3C5BD90D8DE03FB8D35E564CC /* RxRelay.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RxRelay.xcconfig; sourceTree = "<group>"; };
@@ -547,7 +588,6 @@
 		3C07203F3E8AEE7C8573E7EF93F90BB0 /* RxPickerViewDataSourceProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RxPickerViewDataSourceProxy.swift; path = RxCocoa/iOS/Proxies/RxPickerViewDataSourceProxy.swift; sourceTree = "<group>"; };
 		3C88224A2EF58F422A4E2FEBB14DF147 /* BinaryDisposable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BinaryDisposable.swift; path = RxSwift/Disposables/BinaryDisposable.swift; sourceTree = "<group>"; };
 		3D4432C7369CC63E5BAE523C3DB50C6E /* ToArray.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ToArray.swift; path = RxSwift/Observables/ToArray.swift; sourceTree = "<group>"; };
-		3DA56A6D218D5D3A51CF5A9C4FCD8BBA /* Pods-MarvelHeros.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MarvelHeros.modulemap"; sourceTree = "<group>"; };
 		3FE0E643EE8AA7BAC003BE916275A0C7 /* RxCocoaRuntime.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RxCocoaRuntime.h; path = RxCocoa/Runtime/include/RxCocoaRuntime.h; sourceTree = "<group>"; };
 		404A37CC164149B4C00261AD180A4C9D /* NSTextField+Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSTextField+Rx.swift"; path = "RxCocoa/macOS/NSTextField+Rx.swift"; sourceTree = "<group>"; };
 		405CA2858874274B2417C0BFB57078EA /* UIWebView+Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIWebView+Rx.swift"; path = "RxCocoa/iOS/UIWebView+Rx.swift"; sourceTree = "<group>"; };
@@ -561,7 +601,6 @@
 		458BFFBB4298BE44E1183737062F3E65 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		45CC3DB765A93D66779A901E36D437F6 /* ControlEvent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ControlEvent.swift; path = RxCocoa/Traits/ControlEvent.swift; sourceTree = "<group>"; };
 		464C17860E0A38583ADB33E7665F263F /* RequestTaskMap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestTaskMap.swift; path = Source/RequestTaskMap.swift; sourceTree = "<group>"; };
-		467E8E0F4D2B631CEDEF393AD1F99BC7 /* Pods-MarvelHeros-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MarvelHeros-frameworks.sh"; sourceTree = "<group>"; };
 		468090D74CEEEBCE9A368725F106D3AE /* SerialDispatchQueueScheduler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SerialDispatchQueueScheduler.swift; path = RxSwift/Schedulers/SerialDispatchQueueScheduler.swift; sourceTree = "<group>"; };
 		478876FBF324B01AE2AADFF9F01501F2 /* ReplaySubject.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaySubject.swift; path = RxSwift/Subjects/ReplaySubject.swift; sourceTree = "<group>"; };
 		47F391315EEE6121C9E0679E26F7E779 /* PublishRelay+Signal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PublishRelay+Signal.swift"; path = "RxCocoa/Traits/Signal/PublishRelay+Signal.swift"; sourceTree = "<group>"; };
@@ -576,6 +615,7 @@
 		4E4ADD02DD91F5C93C91830A291F9BD6 /* Deferred.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Deferred.swift; path = RxSwift/Observables/Deferred.swift; sourceTree = "<group>"; };
 		509D97C54EDA6AAD34D51396756D399A /* Just.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Just.swift; path = RxSwift/Observables/Just.swift; sourceTree = "<group>"; };
 		50EBA4998C9B9DD5AFAD67EF7F7B934C /* dispatch_promise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = dispatch_promise.m; path = Sources/dispatch_promise.m; sourceTree = "<group>"; };
+		50F56478CECBCD9EEBB2FEC7CB85B170 /* Pods-MarvelHerosKit-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MarvelHerosKit-acknowledgements.markdown"; sourceTree = "<group>"; };
 		52029D5FE98B6AFED07EE62032D762EA /* UIApplication+Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIApplication+Rx.swift"; path = "RxCocoa/iOS/UIApplication+Rx.swift"; sourceTree = "<group>"; };
 		52FDCFEE3DE4C0E4A771E50A07A23BAE /* Result+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Result+Alamofire.swift"; path = "Source/Result+Alamofire.swift"; sourceTree = "<group>"; };
 		531C32F7F6AB511E17E481A8AE4325E8 /* UINavigationItem+Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UINavigationItem+Rx.swift"; path = "RxCocoa/iOS/UINavigationItem+Rx.swift"; sourceTree = "<group>"; };
@@ -590,12 +630,14 @@
 		5892018803C80B0573AC6BF6E04BE230 /* PMKUIKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PMKUIKit.h; path = Extensions/UIKit/Sources/PMKUIKit.h; sourceTree = "<group>"; };
 		5B56156111CE5ABF4C41CE9FE46D9A48 /* Event.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Event.swift; path = RxSwift/Event.swift; sourceTree = "<group>"; };
 		5BB980AD6AF92039FD788D8F7CF13965 /* CombineLatest+arity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CombineLatest+arity.swift"; path = "RxSwift/Observables/CombineLatest+arity.swift"; sourceTree = "<group>"; };
-		5D797E9A5C5782CE845840781FA1CC81 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C1540DCFD698D09E4EA52F40264B9E2 /* Pods-MarvelHerosKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MarvelHerosKit.release.xcconfig"; sourceTree = "<group>"; };
+		5D797E9A5C5782CE845840781FA1CC81 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DBEBFFA47F0369C5F6BEBDF9AFE6590 /* Empty.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Empty.swift; path = RxSwift/Observables/Empty.swift; sourceTree = "<group>"; };
 		61315169DB69DF6E5D4F23D76DD3BBB5 /* _RXDelegateProxy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = _RXDelegateProxy.h; path = RxCocoa/Runtime/include/_RXDelegateProxy.h; sourceTree = "<group>"; };
 		62CEBBAFEC4EF983A9E3D2CC03F2CD50 /* RxCollectionViewDataSourceProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RxCollectionViewDataSourceProxy.swift; path = RxCocoa/iOS/Proxies/RxCollectionViewDataSourceProxy.swift; sourceTree = "<group>"; };
 		63DBBEA671B5077AE2E8D94DE703507A /* RxRelay.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = RxRelay.modulemap; sourceTree = "<group>"; };
 		641093A62352ED60FA6C08B493F3E998 /* UIBarButtonItem+Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIBarButtonItem+Rx.swift"; path = "RxCocoa/iOS/UIBarButtonItem+Rx.swift"; sourceTree = "<group>"; };
+		64DEC966D5740DB80DE86D25402339B8 /* Pods-MarvelHerosKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MarvelHerosKit-Info.plist"; sourceTree = "<group>"; };
 		650BD0A40465A8E35F1ED171BD949D42 /* PriorityQueue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PriorityQueue.swift; path = Platform/DataStructures/PriorityQueue.swift; sourceTree = "<group>"; };
 		65270CFAC8BF3F71327AB5FEEBEA3760 /* SchedulerType+SharedSequence.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SchedulerType+SharedSequence.swift"; path = "RxCocoa/Traits/SharedSequence/SchedulerType+SharedSequence.swift"; sourceTree = "<group>"; };
 		6549E00A32960A681255ADA7506CD2E7 /* InvocableScheduledItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InvocableScheduledItem.swift; path = RxSwift/Schedulers/Internal/InvocableScheduledItem.swift; sourceTree = "<group>"; };
@@ -637,7 +679,7 @@
 		7E21762527DF4D091256A449BA17E997 /* CustomStringConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomStringConvertible.swift; path = Sources/CustomStringConvertible.swift; sourceTree = "<group>"; };
 		7E827F90FAFBE6C7B7C8EE1ABBCD3886 /* SwiftSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftSupport.swift; path = RxSwift/SwiftSupport/SwiftSupport.swift; sourceTree = "<group>"; };
 		7F31D117DBFEFAFFEEEE1861FB91F03C /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
-		809C5FAB588354C9BA37DC3EAB8CB45C /* RxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		809C5FAB588354C9BA37DC3EAB8CB45C /* RxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RxSwift.framework; path = RxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		809DFDDC9E1684B93B899E8A35443914 /* Optional.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Optional.swift; path = RxSwift/Observables/Optional.swift; sourceTree = "<group>"; };
 		80A26300E212929AC157CE90E5F9C190 /* hang.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = hang.swift; path = Sources/hang.swift; sourceTree = "<group>"; };
 		80C667C6B5863239FBD01BF7818FBE3F /* SharedSequence.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SharedSequence.swift; path = RxCocoa/Traits/SharedSequence/SharedSequence.swift; sourceTree = "<group>"; };
@@ -660,6 +702,7 @@
 		8AC9DA571CE6288E2EBDCB4AB112AA89 /* PrimitiveSequence+Zip+arity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PrimitiveSequence+Zip+arity.swift"; path = "RxSwift/Traits/PrimitiveSequence+Zip+arity.swift"; sourceTree = "<group>"; };
 		8B2070BEC2DD44F3441CCC39D383DA29 /* Map.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Map.swift; path = RxSwift/Observables/Map.swift; sourceTree = "<group>"; };
 		8C01AA202618065F5514A8D2184637D9 /* RxPickerViewAdapter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RxPickerViewAdapter.swift; path = RxCocoa/iOS/DataSources/RxPickerViewAdapter.swift; sourceTree = "<group>"; };
+		8C1A3340492B00B6FF72EE76942BD3C9 /* Pods-MarvelHeros-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MarvelHeros-frameworks.sh"; sourceTree = "<group>"; };
 		8CAA04ADE3C24625AABAB0AC097D459E /* Reactive.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Reactive.swift; path = RxSwift/Reactive.swift; sourceTree = "<group>"; };
 		8CF106777497033C30E91E2C45E04D2A /* BehaviorRelay.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BehaviorRelay.swift; path = RxRelay/BehaviorRelay.swift; sourceTree = "<group>"; };
 		8D5B84AA2FDA25F072A4C20A6D53C6FB /* DispatchQueue+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Extensions.swift"; path = "Platform/DispatchQueue+Extensions.swift"; sourceTree = "<group>"; };
@@ -685,6 +728,7 @@
 		9754D784E54005C082DC986F88B9F2A9 /* ObservableConvertibleType+Signal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ObservableConvertibleType+Signal.swift"; path = "RxCocoa/Traits/Signal/ObservableConvertibleType+Signal.swift"; sourceTree = "<group>"; };
 		97A860C098D99AB49FD5B0F26B074EC1 /* NSNotificationCenter+AnyPromise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSNotificationCenter+AnyPromise.h"; path = "Extensions/Foundation/Sources/NSNotificationCenter+AnyPromise.h"; sourceTree = "<group>"; };
 		97E8DFED81B570414C40B02F771AB4A8 /* Platform.Linux.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Platform.Linux.swift; path = Platform/Platform.Linux.swift; sourceTree = "<group>"; };
+		988EC9385274BC3B159D55B9CFE1E8C6 /* Pods-MarvelHerosKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MarvelHerosKit.modulemap"; sourceTree = "<group>"; };
 		98F0689DE43FF81D7363A452070D2665 /* NSButton+Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSButton+Rx.swift"; path = "RxCocoa/macOS/NSButton+Rx.swift"; sourceTree = "<group>"; };
 		991D9452D0D8629C683DBE5EE92EF7D1 /* Binder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Binder.swift; path = RxCocoa/Common/Binder.swift; sourceTree = "<group>"; };
 		99754C505E838ADE4BAEAD96D7B51978 /* Zip+arity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Zip+arity.swift"; path = "RxSwift/Observables/Zip+arity.swift"; sourceTree = "<group>"; };
@@ -697,7 +741,7 @@
 		9CA237AC2D5CC11DD32553A92BD74E3E /* UIProgressView+Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIProgressView+Rx.swift"; path = "RxCocoa/iOS/UIProgressView+Rx.swift"; sourceTree = "<group>"; };
 		9D56D8990447EED45CADBCEFCA8D1077 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
 		9D6470ABB82E12DCE4149FC275A66CB0 /* Range.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Range.swift; path = RxSwift/Observables/Range.swift; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9FD8A426BAFCED95F6F262DAFCB48697 /* Bag+Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bag+Rx.swift"; path = "RxSwift/Extensions/Bag+Rx.swift"; sourceTree = "<group>"; };
 		A17DF31CB1AFDDF3A6535907665568C6 /* UITableView+Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITableView+Rx.swift"; path = "RxCocoa/iOS/UITableView+Rx.swift"; sourceTree = "<group>"; };
 		A228A5AC3070E0A06090A3A0E6A6901C /* AnonymousObserver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnonymousObserver.swift; path = RxSwift/Observers/AnonymousObserver.swift; sourceTree = "<group>"; };
@@ -706,7 +750,7 @@
 		A41908B009493B6FB852B49D7A703D4C /* _RXKVOObserver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = _RXKVOObserver.h; path = RxCocoa/Runtime/include/_RXKVOObserver.h; sourceTree = "<group>"; };
 		A57E34A6005AB4B6ABA67CB2C1D47F51 /* VirtualTimeConverterType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VirtualTimeConverterType.swift; path = RxSwift/Schedulers/VirtualTimeConverterType.swift; sourceTree = "<group>"; };
 		A6772978375F93290728735AB2E06C3B /* SynchronizedOnType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SynchronizedOnType.swift; path = RxSwift/Concurrency/SynchronizedOnType.swift; sourceTree = "<group>"; };
-		A693948508763A86C168D110489F8ACC /* Pods_MarvelHeros.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MarvelHeros.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A693948508763A86C168D110489F8ACC /* Pods_MarvelHeros.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MarvelHeros.framework; path = "Pods-MarvelHeros.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6D6B88A1C840AC4905E93FC2B80E04C /* LockOwnerType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LockOwnerType.swift; path = RxSwift/Concurrency/LockOwnerType.swift; sourceTree = "<group>"; };
 		A715D4223759AD1913DE76ED6BF53192 /* TextInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextInput.swift; path = RxCocoa/Common/TextInput.swift; sourceTree = "<group>"; };
 		A75E7365D2FB27ADA0E54E8D1898D7F6 /* NopDisposable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NopDisposable.swift; path = RxSwift/Disposables/NopDisposable.swift; sourceTree = "<group>"; };
@@ -728,7 +772,6 @@
 		B13E49A9CEFC6786E0E625500FE4DC74 /* Alamofire-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Alamofire-Info.plist"; sourceTree = "<group>"; };
 		B1E77BEE862C63A8D05200D2EDFCD1C4 /* RxRelay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxRelay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2E2D4C0C2EB0B18A93CF3B642E4E2A5 /* RxCollectionViewDataSourceType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RxCollectionViewDataSourceType.swift; path = RxCocoa/iOS/Protocols/RxCollectionViewDataSourceType.swift; sourceTree = "<group>"; };
-		B2EDF84B02EF033711A4699113E7D430 /* Pods-MarvelHeros.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MarvelHeros.release.xcconfig"; sourceTree = "<group>"; };
 		B457F95DBAA1A1E8273F05CEEF8564DE /* DefaultIfEmpty.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DefaultIfEmpty.swift; path = RxSwift/Observables/DefaultIfEmpty.swift; sourceTree = "<group>"; };
 		B46FB6555D78F9700CCDBBA9A577C89D /* InfiniteSequence.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InfiniteSequence.swift; path = Platform/DataStructures/InfiniteSequence.swift; sourceTree = "<group>"; };
 		B54F8CF02E00045FFBD349111BCB7183 /* MultipartUpload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartUpload.swift; path = Source/MultipartUpload.swift; sourceTree = "<group>"; };
@@ -743,7 +786,7 @@
 		BAED04547AA91ABFED0FC897E954008E /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
 		BB39DBFCDA1C49F4B3F8987365D3D454 /* NSTask+AnyPromise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSTask+AnyPromise.m"; path = "Extensions/Foundation/Sources/NSTask+AnyPromise.m"; sourceTree = "<group>"; };
 		BC0D80359252D3087AD40E5B71427535 /* Logging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Logging.swift; path = RxCocoa/Foundation/Logging.swift; sourceTree = "<group>"; };
-		BC432FD48A5932251F1CAFBC4BF74894 /* RxCocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC432FD48A5932251F1CAFBC4BF74894 /* RxCocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RxCocoa.framework; path = RxCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC4AF719F30953FB1DF15C2C116CF0BA /* UIAlertAction+Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIAlertAction+Rx.swift"; path = "RxCocoa/iOS/UIAlertAction+Rx.swift"; sourceTree = "<group>"; };
 		BC807A22F941864E0B41056FABEBADF6 /* RxMutableBox.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RxMutableBox.swift; path = RxSwift/RxMutableBox.swift; sourceTree = "<group>"; };
 		BDA792754ED6950A86D0F125F5836876 /* race.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = race.swift; path = Sources/race.swift; sourceTree = "<group>"; };
@@ -757,7 +800,6 @@
 		C1B0E5E102E6F3B456BA8A2400172F03 /* _RX.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = _RX.h; path = RxCocoa/Runtime/include/_RX.h; sourceTree = "<group>"; };
 		C20BABB6BDDB172D713B1F1DFBDB4417 /* fwd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = fwd.h; path = Sources/fwd.h; sourceTree = "<group>"; };
 		C2B3CA2AA7503393B770C337D0B2B17E /* String+Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+Rx.swift"; path = "RxSwift/Extensions/String+Rx.swift"; sourceTree = "<group>"; };
-		C40397031CF3BB5ACE095A0AC92A6FC7 /* Pods-MarvelHeros-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MarvelHeros-acknowledgements.markdown"; sourceTree = "<group>"; };
 		C4617DCC70EDACD09E878EF643D9A0D1 /* ControlEvent+Signal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ControlEvent+Signal.swift"; path = "RxCocoa/Traits/Signal/ControlEvent+Signal.swift"; sourceTree = "<group>"; };
 		C4CFE04964F0836BA9C883B3B5BBE0AA /* Do.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Do.swift; path = RxSwift/Observables/Do.swift; sourceTree = "<group>"; };
 		C50F6B19DB1060D87CE19AAB468085DA /* Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Rx.swift; path = RxSwift/Rx.swift; sourceTree = "<group>"; };
@@ -766,6 +808,7 @@
 		C78E23C2115E410FE6AF4AB4F11C931E /* RecursiveLock.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RecursiveLock.swift; path = Platform/RecursiveLock.swift; sourceTree = "<group>"; };
 		C8E240E2ADF788B1F0B01D2F32ED406F /* Sink.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Sink.swift; path = RxSwift/Observables/Sink.swift; sourceTree = "<group>"; };
 		C8EAD3280402D42C578DD5D05BE350DE /* RxPickerViewDataSourceType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RxPickerViewDataSourceType.swift; path = RxCocoa/iOS/Protocols/RxPickerViewDataSourceType.swift; sourceTree = "<group>"; };
+		C92FF37417EE576546C8582ADCFF56AC /* Pods-MarvelHerosKit-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MarvelHerosKit-acknowledgements.plist"; sourceTree = "<group>"; };
 		C95DED471AEE383C58461381728DEA01 /* RxTextStorageDelegateProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RxTextStorageDelegateProxy.swift; path = RxCocoa/iOS/Proxies/RxTextStorageDelegateProxy.swift; sourceTree = "<group>"; };
 		C9E6488A7F1DC5F53D784C1021F63E44 /* AsSingle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AsSingle.swift; path = RxSwift/Observables/AsSingle.swift; sourceTree = "<group>"; };
 		CACE13BBF6EC5F1EDB057EE78DF935AA /* RetryPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RetryPolicy.swift; path = Source/RetryPolicy.swift; sourceTree = "<group>"; };
@@ -773,14 +816,15 @@
 		CCAA7AB42B91A92804E6C81CBF94CEAF /* ObserverBase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ObserverBase.swift; path = RxSwift/Observers/ObserverBase.swift; sourceTree = "<group>"; };
 		CD48A679936091A920ED47248BCCDAF0 /* CombineLatest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CombineLatest.swift; path = RxSwift/Observables/CombineLatest.swift; sourceTree = "<group>"; };
 		CDBAD4D6EBDCEA7546560A28C1C1172A /* Session.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Session.swift; path = Source/Session.swift; sourceTree = "<group>"; };
+		CE5BC77D8874F5055CC183F101C174C7 /* Pods-MarvelHerosKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MarvelHerosKit-dummy.m"; sourceTree = "<group>"; };
 		CF1AB59CEF8C35925CC3DD9F41ACF6A4 /* DispatchQueueConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DispatchQueueConfiguration.swift; path = RxSwift/Schedulers/Internal/DispatchQueueConfiguration.swift; sourceTree = "<group>"; };
+		CF471B88ADCDB93A1CB437D4D03B4C2F /* Pods_MarvelHerosKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MarvelHerosKit.framework; path = "Pods-MarvelHerosKit.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D11347F45122B467E3EAD24580243E5D /* RxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D16DB2996C9F54A8AD26AFFB75CC678F /* RxTabBarDelegateProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RxTabBarDelegateProxy.swift; path = RxCocoa/iOS/Proxies/RxTabBarDelegateProxy.swift; sourceTree = "<group>"; };
 		D1A10A4583DC22192F38BEAC243369B3 /* UIButton+Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIButton+Rx.swift"; path = "RxCocoa/iOS/UIButton+Rx.swift"; sourceTree = "<group>"; };
 		D1BBAE19D151D2013A8AC020A27B47EF /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Alamofire.modulemap; sourceTree = "<group>"; };
 		D1CC365B25985C7527F4B815332C4FA2 /* UILabel+Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILabel+Rx.swift"; path = "RxCocoa/iOS/UILabel+Rx.swift"; sourceTree = "<group>"; };
 		D213E7481D7CFA2F04B79205ED178A8F /* Zip.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Zip.swift; path = RxSwift/Observables/Zip.swift; sourceTree = "<group>"; };
-		D337388259AC47C28E4EE5DE84099309 /* Pods-MarvelHeros-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MarvelHeros-acknowledgements.plist"; sourceTree = "<group>"; };
 		D3E45E19F4A6B93521126CD86A95D5A8 /* SynchronizedUnsubscribeType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SynchronizedUnsubscribeType.swift; path = RxSwift/Concurrency/SynchronizedUnsubscribeType.swift; sourceTree = "<group>"; };
 		D3FCA8A28A720CF4AD66D4BBA0AA5507 /* Timer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timer.swift; path = RxSwift/Observables/Timer.swift; sourceTree = "<group>"; };
 		D444F7426876D8A6489A37DC9F6B5F6B /* Resolver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Resolver.swift; path = Sources/Resolver.swift; sourceTree = "<group>"; };
@@ -793,10 +837,10 @@
 		DB595C5CADD38B64795F2B38A7EA7F91 /* ScheduledItemType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScheduledItemType.swift; path = RxSwift/Schedulers/Internal/ScheduledItemType.swift; sourceTree = "<group>"; };
 		DB60743379E31EEB02FCD6FAAA3C13F3 /* UISwitch+Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UISwitch+Rx.swift"; path = "RxCocoa/iOS/UISwitch+Rx.swift"; sourceTree = "<group>"; };
 		DBDEAC4665C99BAE324DA3CCEF020F9F /* Deprecated.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Deprecated.swift; path = RxSwift/Deprecated.swift; sourceTree = "<group>"; };
-		DC381FBAF169CF4D8B83A88C60D259E7 /* Pods-MarvelHeros.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MarvelHeros.debug.xcconfig"; sourceTree = "<group>"; };
 		DC8BC1D2EDC9CBD9309B26231E1D019D /* UINavigationController+Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UINavigationController+Rx.swift"; path = "RxCocoa/iOS/UINavigationController+Rx.swift"; sourceTree = "<group>"; };
 		DC9555B4AE802BD4122D70F8CEE3C1DD /* ItemEvents.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ItemEvents.swift; path = RxCocoa/iOS/Events/ItemEvents.swift; sourceTree = "<group>"; };
 		DEE98EBC907F73CAAFF017E4761A801C /* RxSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = RxSwift.modulemap; sourceTree = "<group>"; };
+		DF199DDDB5EB86C2A1AAAA268D72FA5E /* Pods-MarvelHeros.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MarvelHeros.release.xcconfig"; sourceTree = "<group>"; };
 		DFC54B495EC1833CA63CA16438A2F983 /* CurrentThreadScheduler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CurrentThreadScheduler.swift; path = RxSwift/Schedulers/CurrentThreadScheduler.swift; sourceTree = "<group>"; };
 		E0F5BB877DEFC876C53AFE1003F8D85C /* NSURLSession+AnyPromise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSURLSession+AnyPromise.m"; path = "Extensions/Foundation/Sources/NSURLSession+AnyPromise.m"; sourceTree = "<group>"; };
 		E10177782C99127B1A49B859FA498D42 /* Filter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Filter.swift; path = RxSwift/Observables/Filter.swift; sourceTree = "<group>"; };
@@ -804,6 +848,7 @@
 		E3BAB90E4D04F2003FAA38A02AC42A66 /* UIView+Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Promise.swift"; path = "Extensions/UIKit/Sources/UIView+Promise.swift"; sourceTree = "<group>"; };
 		E42FF5E7811F026A055E1F69496AE347 /* AddRef.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AddRef.swift; path = RxSwift/Observables/AddRef.swift; sourceTree = "<group>"; };
 		E45F3F7AD747499B6CC83D1A83F41B48 /* SubscribeOn.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SubscribeOn.swift; path = RxSwift/Observables/SubscribeOn.swift; sourceTree = "<group>"; };
+		E4B5EBDCBB30B83DBACF92EBE574627A /* Pods-MarvelHeros-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MarvelHeros-acknowledgements.plist"; sourceTree = "<group>"; };
 		E5128245483B6F1AA704EDAAFB912AF2 /* Platform.Darwin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Platform.Darwin.swift; path = Platform/Platform.Darwin.swift; sourceTree = "<group>"; };
 		E527C066E59BCBE6D4C855EC8DAED692 /* RxCollectionViewDataSourcePrefetchingProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RxCollectionViewDataSourcePrefetchingProxy.swift; path = RxCocoa/iOS/Proxies/RxCollectionViewDataSourcePrefetchingProxy.swift; sourceTree = "<group>"; };
 		E5B8AFA04116F9BC4A984EF05518D1DE /* SharedSequence+Operators+arity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SharedSequence+Operators+arity.swift"; path = "RxCocoa/Traits/SharedSequence/SharedSequence+Operators+arity.swift"; sourceTree = "<group>"; };
@@ -823,6 +868,8 @@
 		EBA62679EF40C6D1982AE0554EC7C0F7 /* ControlProperty+Driver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ControlProperty+Driver.swift"; path = "RxCocoa/Traits/Driver/ControlProperty+Driver.swift"; sourceTree = "<group>"; };
 		ED3DD1F5AB65EF64A6E746533D32FFB7 /* RxCocoa.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RxCocoa.h; path = RxCocoa/RxCocoa.h; sourceTree = "<group>"; };
 		ED6B8C81B39342AF1DD3A93A28873D85 /* SingleAssignmentDisposable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SingleAssignmentDisposable.swift; path = RxSwift/Disposables/SingleAssignmentDisposable.swift; sourceTree = "<group>"; };
+		EDA03E3099253EBB87F94E96787685F6 /* Pods-MarvelHeros-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MarvelHeros-dummy.m"; sourceTree = "<group>"; };
+		EDFFE5F9C5E59974DB03C64293364183 /* Pods-MarvelHeros-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MarvelHeros-acknowledgements.markdown"; sourceTree = "<group>"; };
 		EE443B90CC83B7D7E61979609B9C20DD /* BehaviorRelay+Driver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "BehaviorRelay+Driver.swift"; path = "RxCocoa/Traits/Driver/BehaviorRelay+Driver.swift"; sourceTree = "<group>"; };
 		EE55860ACCC22F70B32CB975CC137441 /* afterlife.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = afterlife.swift; path = Extensions/Foundation/Sources/afterlife.swift; sourceTree = "<group>"; };
 		EFECEAA566A77DCF5109FECCCD1AED8F /* NSTextView+Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSTextView+Rx.swift"; path = "RxCocoa/macOS/NSTextView+Rx.swift"; sourceTree = "<group>"; };
@@ -837,7 +884,7 @@
 		F5DFD2EA39B2B03595A91716A36898E3 /* RxRelay-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "RxRelay-Info.plist"; sourceTree = "<group>"; };
 		F605F711862076CCB5AAD813D8F9304F /* UIPageControl+Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIPageControl+Rx.swift"; path = "RxCocoa/iOS/UIPageControl+Rx.swift"; sourceTree = "<group>"; };
 		F609956841845B03DB3A239A067E63DE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		F7C1D909FBACAB212F9DCB8026C1234A /* Pods-MarvelHeros-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MarvelHeros-Info.plist"; sourceTree = "<group>"; };
+		F6AA1CA0C46B1A97ED1FA6E2A35F8113 /* Pods-MarvelHeros.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MarvelHeros.debug.xcconfig"; sourceTree = "<group>"; };
 		F7F1BB58589101E4E6C2DDBE803A433E /* ControlTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ControlTarget.swift; path = RxCocoa/Common/ControlTarget.swift; sourceTree = "<group>"; };
 		F7F9513463667DA27F4260BBBE70B01A /* Configuration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Configuration.swift; path = Sources/Configuration.swift; sourceTree = "<group>"; };
 		F9759608065C68BE7EBA52D85BA322BA /* Materialize.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Materialize.swift; path = RxSwift/Observables/Materialize.swift; sourceTree = "<group>"; };
@@ -854,7 +901,7 @@
 		FF23FCC7116ACD9563F25B2F62340241 /* First.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = First.swift; path = RxSwift/Observables/First.swift; sourceTree = "<group>"; };
 		FF30D8248E268210DE9C00B51211BD1B /* SwitchIfEmpty.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwitchIfEmpty.swift; path = RxSwift/Observables/SwitchIfEmpty.swift; sourceTree = "<group>"; };
 		FF4D01968265DECE411D8967007D816F /* UIStepper+Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIStepper+Rx.swift"; path = "RxCocoa/iOS/UIStepper+Rx.swift"; sourceTree = "<group>"; };
-		FF8B264DFE802855D5D67E7CDDABFC3C /* RxRelay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxRelay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF8B264DFE802855D5D67E7CDDABFC3C /* RxRelay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RxRelay.framework; path = RxRelay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -881,6 +928,14 @@
 			files = (
 				4A613C22671DE0E90BC4F1B70CB3B479 /* Foundation.framework in Frameworks */,
 				56D8783CBF33646ECBF610FCC8EFC43E /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B1BF2118B6FD177F432DEBF9FA0FA9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3AA81960E81993099CA6961324A2E16 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -914,6 +969,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		17A336A7218A43874084E92B406C51A5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5D797E9A5C5782CE845840781FA1CC81 /* Alamofire.framework */,
+				A693948508763A86C168D110489F8ACC /* Pods_MarvelHeros.framework */,
+				CF471B88ADCDB93A1CB437D4D03B4C2F /* Pods_MarvelHerosKit.framework */,
+				002B1E88BA14EBF633CD66EBFBA107E9 /* PromiseKit.framework */,
+				BC432FD48A5932251F1CAFBC4BF74894 /* RxCocoa.framework */,
+				FF8B264DFE802855D5D67E7CDDABFC3C /* RxRelay.framework */,
+				809C5FAB588354C9BA37DC3EAB8CB45C /* RxSwift.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		1F318D5B6169F71A4EF6CAD94E65DEFD /* RxRelay */ = {
 			isa = PBXGroup;
 			children = (
@@ -923,6 +992,7 @@
 				EB11AD0C5F426BA808C25E570AC95CC4 /* Utils.swift */,
 				5930994141FBCDD62A94CAEF8A231F40 /* Support Files */,
 			);
+			name = RxRelay;
 			path = RxRelay;
 			sourceTree = "<group>";
 		};
@@ -1068,6 +1138,7 @@
 				A9F02F7047729AB55483841C57180D60 /* URLSession+Rx.swift */,
 				BE0254E3A185981D210AF8E1BA7A1E1B /* Support Files */,
 			);
+			name = RxCocoa;
 			path = RxCocoa;
 			sourceTree = "<group>";
 		};
@@ -1108,6 +1179,7 @@
 				9D56D8990447EED45CADBCEFCA8D1077 /* Validation.swift */,
 				FC1511E78AF6BBCA557C085EF63D808F /* Support Files */,
 			);
+			name = Alamofire;
 			path = Alamofire;
 			sourceTree = "<group>";
 		};
@@ -1125,12 +1197,37 @@
 			path = "../Target Support Files/PromiseKit";
 			sourceTree = "<group>";
 		};
-		48C5820B1CA44FB9DC63AA84A7E1927C /* Targets Support Files */ = {
+		48268C45704EEED6CA8700B233943122 /* Pods-MarvelHeros */ = {
 			isa = PBXGroup;
 			children = (
-				7BC46EE2BACA6796F113C23DF9969A90 /* Pods-MarvelHeros */,
+				23DC61CFEB003584D21A6408D4865341 /* Pods-MarvelHeros.modulemap */,
+				EDFFE5F9C5E59974DB03C64293364183 /* Pods-MarvelHeros-acknowledgements.markdown */,
+				E4B5EBDCBB30B83DBACF92EBE574627A /* Pods-MarvelHeros-acknowledgements.plist */,
+				EDA03E3099253EBB87F94E96787685F6 /* Pods-MarvelHeros-dummy.m */,
+				8C1A3340492B00B6FF72EE76942BD3C9 /* Pods-MarvelHeros-frameworks.sh */,
+				2059D7934A62A3E009A1C98E249B4069 /* Pods-MarvelHeros-Info.plist */,
+				1CFDEA5CF64F311ABFFC225725C33D84 /* Pods-MarvelHeros-umbrella.h */,
+				F6AA1CA0C46B1A97ED1FA6E2A35F8113 /* Pods-MarvelHeros.debug.xcconfig */,
+				DF199DDDB5EB86C2A1AAAA268D72FA5E /* Pods-MarvelHeros.release.xcconfig */,
 			);
-			name = "Targets Support Files";
+			name = "Pods-MarvelHeros";
+			path = "Target Support Files/Pods-MarvelHeros";
+			sourceTree = "<group>";
+		};
+		56B49BF30FDB6BAC5C6CC33BD34751B3 /* Pods-MarvelHerosKit */ = {
+			isa = PBXGroup;
+			children = (
+				988EC9385274BC3B159D55B9CFE1E8C6 /* Pods-MarvelHerosKit.modulemap */,
+				50F56478CECBCD9EEBB2FEC7CB85B170 /* Pods-MarvelHerosKit-acknowledgements.markdown */,
+				C92FF37417EE576546C8582ADCFF56AC /* Pods-MarvelHerosKit-acknowledgements.plist */,
+				CE5BC77D8874F5055CC183F101C174C7 /* Pods-MarvelHerosKit-dummy.m */,
+				64DEC966D5740DB80DE86D25402339B8 /* Pods-MarvelHerosKit-Info.plist */,
+				29DEE840F68045415FD2768A44537C46 /* Pods-MarvelHerosKit-umbrella.h */,
+				1DCDC9518EBC054DBAC31E992366849F /* Pods-MarvelHerosKit.debug.xcconfig */,
+				5C1540DCFD698D09E4EA52F40264B9E2 /* Pods-MarvelHerosKit.release.xcconfig */,
+			);
+			name = "Pods-MarvelHerosKit";
+			path = "Target Support Files/Pods-MarvelHerosKit";
 			sourceTree = "<group>";
 		};
 		5930994141FBCDD62A94CAEF8A231F40 /* Support Files */ = {
@@ -1161,6 +1258,15 @@
 			name = UIKit;
 			sourceTree = "<group>";
 		};
+		6C55F6634DE4897B87714530B36F7A45 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				48268C45704EEED6CA8700B233943122 /* Pods-MarvelHeros */,
+				56B49BF30FDB6BAC5C6CC33BD34751B3 /* Pods-MarvelHerosKit */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
 		6C9ED5A2DDC0411AB6C2B44A235FF6D9 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -1171,23 +1277,6 @@
 				B73C7891F60BD9AB653932197E01CB72 /* RxSwift */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		7BC46EE2BACA6796F113C23DF9969A90 /* Pods-MarvelHeros */ = {
-			isa = PBXGroup;
-			children = (
-				3DA56A6D218D5D3A51CF5A9C4FCD8BBA /* Pods-MarvelHeros.modulemap */,
-				C40397031CF3BB5ACE095A0AC92A6FC7 /* Pods-MarvelHeros-acknowledgements.markdown */,
-				D337388259AC47C28E4EE5DE84099309 /* Pods-MarvelHeros-acknowledgements.plist */,
-				0BAAFD890B3A57AC301323DFD0D291C7 /* Pods-MarvelHeros-dummy.m */,
-				467E8E0F4D2B631CEDEF393AD1F99BC7 /* Pods-MarvelHeros-frameworks.sh */,
-				F7C1D909FBACAB212F9DCB8026C1234A /* Pods-MarvelHeros-Info.plist */,
-				11387031B6EC39B2BB680D1397CC4141 /* Pods-MarvelHeros-umbrella.h */,
-				DC381FBAF169CF4D8B83A88C60D259E7 /* Pods-MarvelHeros.debug.xcconfig */,
-				B2EDF84B02EF033711A4699113E7D430 /* Pods-MarvelHeros.release.xcconfig */,
-			);
-			name = "Pods-MarvelHeros";
-			path = "Target Support Files/Pods-MarvelHeros";
 			sourceTree = "<group>";
 		};
 		90855CEBA1EC1DC88788039E687CEE66 /* CorePromise */ = {
@@ -1224,19 +1313,6 @@
 			name = CorePromise;
 			sourceTree = "<group>";
 		};
-		991EED1B98B52412909532458E85B371 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				5D797E9A5C5782CE845840781FA1CC81 /* Alamofire.framework */,
-				A693948508763A86C168D110489F8ACC /* Pods_MarvelHeros.framework */,
-				002B1E88BA14EBF633CD66EBFBA107E9 /* PromiseKit.framework */,
-				BC432FD48A5932251F1CAFBC4BF74894 /* RxCocoa.framework */,
-				FF8B264DFE802855D5D67E7CDDABFC3C /* RxRelay.framework */,
-				809C5FAB588354C9BA37DC3EAB8CB45C /* RxSwift.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		A2120F03BA507D4721EBA9F9FABC3F0D /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -1265,6 +1341,7 @@
 				41A40BFB51AFFB057762B8848633BABA /* Support Files */,
 				6129E8059853764821952449701ED02B /* UIKit */,
 			);
+			name = PromiseKit;
 			path = PromiseKit;
 			sourceTree = "<group>";
 		};
@@ -1424,6 +1501,7 @@
 				729EC5F21BD6C7742A214867F98B2DE3 /* Zip+Collection.swift */,
 				21790F0ADA1A5FB90746A1109E02D4C0 /* Support Files */,
 			);
+			name = RxSwift;
 			path = RxSwift;
 			sourceTree = "<group>";
 		};
@@ -1447,8 +1525,8 @@
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				A8F9E170D80A0123A71AC4FD09FFAA24 /* Frameworks */,
 				6C9ED5A2DDC0411AB6C2B44A235FF6D9 /* Pods */,
-				991EED1B98B52412909532458E85B371 /* Products */,
-				48C5820B1CA44FB9DC63AA84A7E1927C /* Targets Support Files */,
+				17A336A7218A43874084E92B406C51A5 /* Products */,
+				6C55F6634DE4897B87714530B36F7A45 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1536,6 +1614,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		91F250DFA25C5793896BE9052A602D5D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EB1D1A3D3BF7111B6B9AA4EBBFE7075 /* Pods-MarvelHerosKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9A1E15C79C102B61B0B0EBF34FB6889E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -1612,6 +1698,29 @@
 			productReference = 002B1E88BA14EBF633CD66EBFBA107E9 /* PromiseKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		CABF6B2740F9A88FA75D00AB7A2A9D0F /* Pods-MarvelHerosKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F1870771E0E459234BDFBD867446B61 /* Build configuration list for PBXNativeTarget "Pods-MarvelHerosKit" */;
+			buildPhases = (
+				91F250DFA25C5793896BE9052A602D5D /* Headers */,
+				64E2AF0A1C1B408D9C3EC24852B61098 /* Sources */,
+				5B1BF2118B6FD177F432DEBF9FA0FA9F /* Frameworks */,
+				9DCC5892665B9E7DF0BB573D7C0F6B94 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FCEC9ABD097D18358C58D2A6FB1D04CD /* PBXTargetDependency */,
+				7500BFAF1784A39979272B88E0D79F3A /* PBXTargetDependency */,
+				E4D6EBAD35E34CFAC1719714EAA0AD68 /* PBXTargetDependency */,
+				84F55BE1540E2FED468CA03FE34AB924 /* PBXTargetDependency */,
+				310080E075A2A80679AFFB76C77878F5 /* PBXTargetDependency */,
+			);
+			name = "Pods-MarvelHerosKit";
+			productName = "Pods-MarvelHerosKit";
+			productReference = CF471B88ADCDB93A1CB437D4D03B4C2F /* Pods_MarvelHerosKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		E60AE76327AAD11C81F0D6A106825850 /* Pods-MarvelHeros */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D64A0D0E65015474CAFDB7B3889AA00A /* Build configuration list for PBXNativeTarget "Pods-MarvelHeros" */;
@@ -1686,15 +1795,15 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 991EED1B98B52412909532458E85B371 /* Products */;
+			productRefGroup = 17A336A7218A43874084E92B406C51A5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */,
 				E60AE76327AAD11C81F0D6A106825850 /* Pods-MarvelHeros */,
+				CABF6B2740F9A88FA75D00AB7A2A9D0F /* Pods-MarvelHerosKit */,
 				7C579CE66A1E7A9AA33CA5F97F9C22C5 /* PromiseKit */,
 				7AD0C6DCDC9CEC8A3C7C10C7FEE07BE6 /* RxCocoa */,
 				4622BFEF3DC16E8BD15EEFC30D4D0084 /* RxRelay */,
@@ -1726,6 +1835,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		4D555B61B9A436E1A45D1A35B8FC3D80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DCC5892665B9E7DF0BB573D7C0F6B94 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1790,6 +1906,14 @@
 				A84EE261FBDDB0870D355A3FD6EB6C1A /* UIViewPropertyAnimator+Promise.swift in Sources */,
 				2773E59569FD988B70E487C57791067E /* when.m in Sources */,
 				102B6945509E1CA7ECE87ECE4F12A725 /* when.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64E2AF0A1C1B408D9C3EC24852B61098 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				622C1EFCC473E6EAFE4A0ADCA9484BB0 /* Pods-MarvelHerosKit-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2146,6 +2270,12 @@
 			target = 7C579CE66A1E7A9AA33CA5F97F9C22C5 /* PromiseKit */;
 			targetProxy = 017F770548BF0205510B02E13E4CCAA8 /* PBXContainerItemProxy */;
 		};
+		310080E075A2A80679AFFB76C77878F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RxSwift;
+			target = EA9EA43B3B503823EE36C60D9C8A865F /* RxSwift */;
+			targetProxy = C0D681D4CF3D30373D85504BCD94CB85 /* PBXContainerItemProxy */;
+		};
 		36647059F11FA5C0F7633B56F20E8291 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Alamofire;
@@ -2157,6 +2287,18 @@
 			name = RxRelay;
 			target = 4622BFEF3DC16E8BD15EEFC30D4D0084 /* RxRelay */;
 			targetProxy = 07E45B0AFEEED2846D13571956E582B3 /* PBXContainerItemProxy */;
+		};
+		7500BFAF1784A39979272B88E0D79F3A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PromiseKit;
+			target = 7C579CE66A1E7A9AA33CA5F97F9C22C5 /* PromiseKit */;
+			targetProxy = 952F8EC39C91FC0152191544205B8521 /* PBXContainerItemProxy */;
+		};
+		84F55BE1540E2FED468CA03FE34AB924 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RxRelay;
+			target = 4622BFEF3DC16E8BD15EEFC30D4D0084 /* RxRelay */;
+			targetProxy = 31A514656E601B29C8180DFC1943F824 /* PBXContainerItemProxy */;
 		};
 		9CC239530FF1F8F22ED406CAD9C614F6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -2187,6 +2329,18 @@
 			name = RxSwift;
 			target = EA9EA43B3B503823EE36C60D9C8A865F /* RxSwift */;
 			targetProxy = 3AA5F122E4B6C1CDC8306AE3F5C627D8 /* PBXContainerItemProxy */;
+		};
+		E4D6EBAD35E34CFAC1719714EAA0AD68 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RxCocoa;
+			target = 7AD0C6DCDC9CEC8A3C7C10C7FEE07BE6 /* RxCocoa */;
+			targetProxy = C4F020320C2637EF978950A916FDE558 /* PBXContainerItemProxy */;
+		};
+		FCEC9ABD097D18358C58D2A6FB1D04CD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */;
+			targetProxy = 72C4972A72F7ACA2FAD8636AE00D8076 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -2430,6 +2584,44 @@
 			};
 			name = Debug;
 		};
+		57663347CF74112D78CD19F88940E4A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DCDC9518EBC054DBAC31E992366849F /* Pods-MarvelHerosKit.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MarvelHerosKit/Pods-MarvelHerosKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MarvelHerosKit/Pods-MarvelHerosKit.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		9016C9943ECEB1CF289FBEE8D298C5AF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 80ED8D86CB2E880E8DEB676A7435709D /* RxCocoa.xcconfig */;
@@ -2464,6 +2656,45 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		A7064E3159806C61ABE6F30917A55587 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C1540DCFD698D09E4EA52F40264B9E2 /* Pods-MarvelHerosKit.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MarvelHerosKit/Pods-MarvelHerosKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MarvelHerosKit/Pods-MarvelHerosKit.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		A7A33F316E1C126A3599C2BEF3B229EA /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -2538,7 +2769,7 @@
 		};
 		CB1AEBC90271623C7962A182305EE98C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B2EDF84B02EF033711A4699113E7D430 /* Pods-MarvelHeros.release.xcconfig */;
+			baseConfigurationReference = DF199DDDB5EB86C2A1AAAA268D72FA5E /* Pods-MarvelHeros.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -2577,7 +2808,7 @@
 		};
 		D152DC523E061C49978BD34679F5FA5A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DC381FBAF169CF4D8B83A88C60D259E7 /* Pods-MarvelHeros.debug.xcconfig */;
+			baseConfigurationReference = F6AA1CA0C46B1A97ED1FA6E2A35F8113 /* Pods-MarvelHeros.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -2766,6 +2997,15 @@
 			buildConfigurations = (
 				3F6CD0C09CBF5209073CC4166032DB60 /* Debug */,
 				A7A33F316E1C126A3599C2BEF3B229EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F1870771E0E459234BDFBD867446B61 /* Build configuration list for PBXNativeTarget "Pods-MarvelHerosKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57663347CF74112D78CD19F88940E4A2 /* Debug */,
+				A7064E3159806C61ABE6F30917A55587 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

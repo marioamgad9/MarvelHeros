@@ -23,3 +23,12 @@ target 'MarvelHeros' do
     # Pod for alamofire
     pod 'Alamofire', '~> 5.0.0-rc.3'
 end
+
+target 'MarvelHerosKit' do
+    project 'MarvelHerosKit/MarvelHerosKit'
+    
+    reactivePods
+    
+    # Pod for alamofire
+    pod 'Alamofire', '~> 5.0.0-rc.3'
+end

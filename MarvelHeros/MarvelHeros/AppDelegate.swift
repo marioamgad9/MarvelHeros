@@ -1,5 +1,6 @@
 import UIKit
 import MHCore
+import PromiseKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

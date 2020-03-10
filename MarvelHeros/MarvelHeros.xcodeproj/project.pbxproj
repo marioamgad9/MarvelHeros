@@ -14,6 +14,8 @@
 		CFAD3F202417B7600096C7AB /* Common.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CFAD3F1E2417B7600096C7AB /* Common.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CFAD3F232417B98A0096C7AB /* MHCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFAD3F222417B98A0096C7AB /* MHCore.framework */; };
 		CFAD3F242417B98A0096C7AB /* MHCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CFAD3F222417B98A0096C7AB /* MHCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CFAD3F732417CADA0096C7AB /* MarvelHerosKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFAD3F722417CADA0096C7AB /* MarvelHerosKit.framework */; };
+		CFAD3F742417CADA0096C7AB /* MarvelHerosKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CFAD3F722417CADA0096C7AB /* MarvelHerosKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E7C566086DAE3D4E18E146E1 /* Pods_MarvelHeros.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D59D7745566A82C8BD743A4 /* Pods_MarvelHeros.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +28,7 @@
 			files = (
 				CFAD3F242417B98A0096C7AB /* MHCore.framework in Embed Frameworks */,
 				CFAD3F202417B7600096C7AB /* Common.framework in Embed Frameworks */,
+				CFAD3F742417CADA0096C7AB /* MarvelHerosKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -43,6 +46,7 @@
 		CFAD3EC02417ADA70096C7AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CFAD3F1E2417B7600096C7AB /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFAD3F222417B98A0096C7AB /* MHCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MHCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFAD3F722417CADA0096C7AB /* MarvelHerosKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MarvelHerosKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFAD3F732417CADA0096C7AB /* MarvelHerosKit.framework in Frameworks */,
 				E7C566086DAE3D4E18E146E1 /* Pods_MarvelHeros.framework in Frameworks */,
 				CFAD3F232417B98A0096C7AB /* MHCore.framework in Frameworks */,
 				CFAD3F1F2417B7600096C7AB /* Common.framework in Frameworks */,
@@ -62,6 +67,7 @@
 		97BF1D16DF4F5FDAE813ECC9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CFAD3F722417CADA0096C7AB /* MarvelHerosKit.framework */,
 				CFAD3F222417B98A0096C7AB /* MHCore.framework */,
 				CFAD3F1E2417B7600096C7AB /* Common.framework */,
 				8D59D7745566A82C8BD743A4 /* Pods_MarvelHeros.framework */,
@@ -362,7 +368,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E35QS8KXV6;
 				INFOPLIST_FILE = MarvelHeros/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -382,7 +388,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E35QS8KXV6;
 				INFOPLIST_FILE = MarvelHeros/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

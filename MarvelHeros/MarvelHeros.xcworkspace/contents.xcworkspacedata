@@ -5,14 +5,17 @@
       location = "group:MarvelHeros.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:../MHCore/MHCore.xcodeproj">
+      location = "group:MHCore/MHCore.xcodeproj">
    </FileRef>
    <Group
       location = "container:"
       name = "Features">
+      <FileRef
+         location = "group:MarvelHerosKit/MarvelHerosKit.xcodeproj">
+      </FileRef>
    </Group>
    <FileRef
-      location = "group:../Common/Common.xcodeproj">
+      location = "group:Common/Common.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
