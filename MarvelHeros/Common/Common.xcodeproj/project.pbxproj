@@ -16,6 +16,8 @@
 		CFAD3FF42417F0D30096C7AB /* MarvelNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD3FF32417F0D30096C7AB /* MarvelNavigationBar.swift */; };
 		CFAD3FF82417F1F80096C7AB /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD3FF72417F1F80096C7AB /* Colors.swift */; };
 		CFAD3FFB2417F5050096C7AB /* UIView+Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD3FFA2417F5050096C7AB /* UIView+Configuration.swift */; };
+		CFAD400A241805EB0096C7AB /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD4009241805EB0096C7AB /* Fonts.swift */; };
+		CFAD400C2418066B0096C7AB /* UIFonts+Accessors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD400B2418066B0096C7AB /* UIFonts+Accessors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		CFAD3FF32417F0D30096C7AB /* MarvelNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelNavigationBar.swift; sourceTree = "<group>"; };
 		CFAD3FF72417F1F80096C7AB /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		CFAD3FFA2417F5050096C7AB /* UIView+Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Configuration.swift"; sourceTree = "<group>"; };
+		CFAD4009241805EB0096C7AB /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		CFAD400B2418066B0096C7AB /* UIFonts+Accessors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFonts+Accessors.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				CFAD3FF72417F1F80096C7AB /* Colors.swift */,
+				CFAD4009241805EB0096C7AB /* Fonts.swift */,
 			);
 			path = Style;
 			sourceTree = "<group>";
@@ -128,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				CFAD3FFA2417F5050096C7AB /* UIView+Configuration.swift */,
+				CFAD400B2418066B0096C7AB /* UIFonts+Accessors.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -219,7 +225,9 @@
 				CFAD3FF82417F1F80096C7AB /* Colors.swift in Sources */,
 				CFAD3F1D2417B6DF0096C7AB /* NiblessCollectionViewCell.swift in Sources */,
 				CFAD3F172417B65C0096C7AB /* NiblessViewController.swift in Sources */,
+				CFAD400A241805EB0096C7AB /* Fonts.swift in Sources */,
 				CFAD3FF42417F0D30096C7AB /* MarvelNavigationBar.swift in Sources */,
+				CFAD400C2418066B0096C7AB /* UIFonts+Accessors.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
