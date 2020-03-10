@@ -12,6 +12,8 @@
 		CFAD3EBF2417ADA70096C7AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFAD3EBD2417ADA70096C7AB /* LaunchScreen.storyboard */; };
 		CFAD3F1F2417B7600096C7AB /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFAD3F1E2417B7600096C7AB /* Common.framework */; };
 		CFAD3F202417B7600096C7AB /* Common.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CFAD3F1E2417B7600096C7AB /* Common.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CFAD3F232417B98A0096C7AB /* MHCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFAD3F222417B98A0096C7AB /* MHCore.framework */; };
+		CFAD3F242417B98A0096C7AB /* MHCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CFAD3F222417B98A0096C7AB /* MHCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E7C566086DAE3D4E18E146E1 /* Pods_MarvelHeros.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D59D7745566A82C8BD743A4 /* Pods_MarvelHeros.framework */; };
 /* End PBXBuildFile section */
 
@@ -22,6 +24,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				CFAD3F242417B98A0096C7AB /* MHCore.framework in Embed Frameworks */,
 				CFAD3F202417B7600096C7AB /* Common.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -39,6 +42,7 @@
 		CFAD3EBE2417ADA70096C7AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CFAD3EC02417ADA70096C7AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CFAD3F1E2417B7600096C7AB /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFAD3F222417B98A0096C7AB /* MHCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MHCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +51,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7C566086DAE3D4E18E146E1 /* Pods_MarvelHeros.framework in Frameworks */,
+				CFAD3F232417B98A0096C7AB /* MHCore.framework in Frameworks */,
 				CFAD3F1F2417B7600096C7AB /* Common.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -57,6 +62,7 @@
 		97BF1D16DF4F5FDAE813ECC9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CFAD3F222417B98A0096C7AB /* MHCore.framework */,
 				CFAD3F1E2417B7600096C7AB /* Common.framework */,
 				8D59D7745566A82C8BD743A4 /* Pods_MarvelHeros.framework */,
 			);
