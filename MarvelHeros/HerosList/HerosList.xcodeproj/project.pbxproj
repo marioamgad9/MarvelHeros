@@ -16,6 +16,9 @@
 		CFAD3FDB2417DA910096C7AB /* MarvelHerosKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CFAD3FD92417DA910096C7AB /* MarvelHerosKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CFAD3FE92417E97F0096C7AB /* HerosListViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD3FE82417E97F0096C7AB /* HerosListViewState.swift */; };
 		CFAD3FEB2417E9E60096C7AB /* HerosListNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD3FEA2417E9E60096C7AB /* HerosListNavigator.swift */; };
+		CFAD3FED2417EAD90096C7AB /* HerosListRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD3FEC2417EAD90096C7AB /* HerosListRootView.swift */; };
+		CFAD3FEF2417EB8A0096C7AB /* HerosListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD3FEE2417EB8A0096C7AB /* HerosListViewController.swift */; };
+		CFAD3FF12417EC800096C7AB /* HerosListNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD3FF02417EC800096C7AB /* HerosListNavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -44,6 +47,9 @@
 		CFAD3FD92417DA910096C7AB /* MarvelHerosKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MarvelHerosKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFAD3FE82417E97F0096C7AB /* HerosListViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HerosListViewState.swift; sourceTree = "<group>"; };
 		CFAD3FEA2417E9E60096C7AB /* HerosListNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HerosListNavigator.swift; sourceTree = "<group>"; };
+		CFAD3FEC2417EAD90096C7AB /* HerosListRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HerosListRootView.swift; sourceTree = "<group>"; };
+		CFAD3FEE2417EB8A0096C7AB /* HerosListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HerosListViewController.swift; sourceTree = "<group>"; };
+		CFAD3FF02417EC800096C7AB /* HerosListNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HerosListNavigationController.swift; sourceTree = "<group>"; };
 		EBD441625796A763BC54EB4B /* Pods_HerosList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HerosList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -139,6 +145,7 @@
 		CFAD3FD12417DA420096C7AB /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				CFAD3FF02417EC800096C7AB /* HerosListNavigationController.swift */,
 				CFAD3FD22417DA470096C7AB /* Heros List Screen */,
 			);
 			path = Controllers;
@@ -147,6 +154,8 @@
 		CFAD3FD22417DA470096C7AB /* Heros List Screen */ = {
 			isa = PBXGroup;
 			children = (
+				CFAD3FEE2417EB8A0096C7AB /* HerosListViewController.swift */,
+				CFAD3FEC2417EAD90096C7AB /* HerosListRootView.swift */,
 			);
 			path = "Heros List Screen";
 			sourceTree = "<group>";
@@ -259,8 +268,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFAD3FE92417E97F0096C7AB /* HerosListViewState.swift in Sources */,
+				CFAD3FF12417EC800096C7AB /* HerosListNavigationController.swift in Sources */,
 				CFAD3FD42417DA610096C7AB /* HerosListViewModel.swift in Sources */,
+				CFAD3FED2417EAD90096C7AB /* HerosListRootView.swift in Sources */,
 				CFAD3FEB2417E9E60096C7AB /* HerosListNavigator.swift in Sources */,
+				CFAD3FEF2417EB8A0096C7AB /* HerosListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

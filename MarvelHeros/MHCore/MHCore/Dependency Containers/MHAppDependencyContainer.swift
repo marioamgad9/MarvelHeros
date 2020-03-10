@@ -10,26 +10,33 @@ public class MHAppDependencyContainer {
     
     // MARK: - Long-lived dependencies
     /// The shared root app coordinator
-    public let sharedAppCoordinator: MHAppCoordinator
+    public private(set) lazy var sharedAppCoordinator: MHAppCoordinator = {
+        return MHAppCoordinator(rootVc: NiblessViewController(),
+        herosListNavigationController: makeHerosListNavigationController(),
+        herosListVcFactory: makeHerosListViewController)
+    }()
     
     /// The shared repository that feeds content from API
     public let sharedContentRepository: ContentRepository
     
     // MARK: - Initializer
     public init() {
-        func makeAppCoordinator() -> MHAppCoordinator {
-            return MHAppCoordinator(rootVc: NiblessViewController())
-        }
-        
         func makeContentRepository() -> MHContentRepository {
             return MHContentRepository()
         }
         
-        sharedAppCoordinator = makeAppCoordinator()
         sharedContentRepository = makeContentRepository()
     }
     
     // MARK: - Heros List
+    public func makeHerosListNavigationController() -> HerosListNavigationController {
+        return HerosListNavigationController()
+    }
+    
+    public func makeHerosListViewController() -> HerosListViewController {
+        return HerosListViewController(viewModel: makeHerosListViewModel())
+    }
+    
     public func makeHerosListViewModel() -> HerosListViewModel {
         return HerosListViewModel(contentRepository: sharedContentRepository,
                                   herosListNavigator: sharedAppCoordinator)
