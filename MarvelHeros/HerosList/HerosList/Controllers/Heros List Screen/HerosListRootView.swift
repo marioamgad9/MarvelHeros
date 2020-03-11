@@ -75,6 +75,7 @@ class HerosListRootView: NiblessView {
     }
 }
 
+// MARK: - UITableViewDelegate
 extension HerosListRootView: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 180

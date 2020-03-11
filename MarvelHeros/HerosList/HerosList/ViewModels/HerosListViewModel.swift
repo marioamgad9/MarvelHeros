@@ -31,7 +31,7 @@ public class HerosListViewModel: ViewModelType {
     private let isLoadingSubject = BehaviorSubject<Bool>(value: false)
     private let errorMessageSubject = PublishSubject<ErrorMessage>()
     
-    // MARK: - Initializer
+    // MARK: - Methods
     public init(contentRepository: ContentRepository,
                 herosListNavigator: HerosListNavigator) {
         self.contentRepository = contentRepository
@@ -47,7 +47,6 @@ public class HerosListViewModel: ViewModelType {
         subscribeForCharactersSubjectToUpdateIsLoading()
     }
     
-    // MARK: - Methods
     func characterCellViewModel(for character: MarvelCharacter) -> CharacterTableViewCellViewModel {
         return CharacterTableViewCellViewModel(character: character)
     }

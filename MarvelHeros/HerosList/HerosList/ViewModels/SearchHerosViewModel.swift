@@ -14,8 +14,13 @@ public class SearchHerosViewModel: ViewModelType {
     }
     
     public struct Output {
-        
+        let characters: Driver<[MarvelCharacter]>
+        let errorMessage: Observable<ErrorMessage>
     }
+    
+    // MARK: - Subjects
+    private let charactersSubject = BehaviorSubject<[MarvelCharacter]>(value: [])
+    private let errorMessageSubject = PublishSubject<ErrorMessage>()
     
     // MARK: - Properties
     private let contentRepository: ContentRepository
@@ -29,15 +34,35 @@ public class SearchHerosViewModel: ViewModelType {
         self.herosListNavigator = herosListNavigator
         
         input = Input()
-        output = Output()
+        output = Output(characters: charactersSubject.asDriver(onErrorJustReturn: []),
+                        errorMessage: errorMessageSubject.asObservable())
         
         // Subscribe for input events
         subscribeForSearchTextChanges()
     }
     
+    func characterCellViewModel(for character: MarvelCharacter) -> CharacterTableViewCellViewModel {
+        return CharacterTableViewCellViewModel(character: character)
+    }
+    
+    private func reloadCharacters(nameStartsWith searchText: String) {
+        contentRepository.getMarvelCharacters(nameStartsWith: searchText, offset: 0).done {
+            self.charactersSubject.onNext($0.data.results)
+        }.catch(handleError)
+    }
+    
     private func subscribeForSearchTextChanges() {
         input.searchText.subscribe(onNext: {
             print("TEST - Search text changed: \($0)")
+            self.reloadCharacters(nameStartsWith: $0)
         }).disposed(by: disposeBag)
+    }
+    
+    private func handleError(_ error: Error) {
+        switch error {
+        default:
+            errorMessageSubject.onNext(ErrorMessage(title: "error_title.cannot_load_characters".localized,
+                                                    message: "error_message.cannot_load_characters".localized))
+        }
     }
 }

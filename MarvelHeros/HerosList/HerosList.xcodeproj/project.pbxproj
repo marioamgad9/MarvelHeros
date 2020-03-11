@@ -24,6 +24,7 @@
 		CFAD402E241972920096C7AB /* SearchHerosRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD402D241972920096C7AB /* SearchHerosRootView.swift */; };
 		CFAD4036241977AE0096C7AB /* SearchHerosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD4035241977AE0096C7AB /* SearchHerosViewController.swift */; };
 		CFAD4038241978100096C7AB /* SearchHerosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD4037241978100096C7AB /* SearchHerosViewModel.swift */; };
+		CFAD403A241990540096C7AB /* SearchCharacterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD4039241990540096C7AB /* SearchCharacterTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -60,6 +61,7 @@
 		CFAD402D241972920096C7AB /* SearchHerosRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHerosRootView.swift; sourceTree = "<group>"; };
 		CFAD4035241977AE0096C7AB /* SearchHerosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHerosViewController.swift; sourceTree = "<group>"; };
 		CFAD4037241978100096C7AB /* SearchHerosViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHerosViewModel.swift; sourceTree = "<group>"; };
+		CFAD4039241990540096C7AB /* SearchCharacterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCharacterTableViewCell.swift; sourceTree = "<group>"; };
 		EBD441625796A763BC54EB4B /* Pods_HerosList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HerosList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -186,6 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				CFAD3FFE2417FAB80096C7AB /* CharacterTableViewCell.swift */,
+				CFAD4039241990540096C7AB /* SearchCharacterTableViewCell.swift */,
 			);
 			path = MarvelCharactersTableView;
 			sourceTree = "<group>";
@@ -317,6 +320,7 @@
 				CFAD3FEB2417E9E60096C7AB /* HerosListNavigator.swift in Sources */,
 				CFAD3FFF2417FAB80096C7AB /* CharacterTableViewCell.swift in Sources */,
 				CFAD3FEF2417EB8A0096C7AB /* HerosListViewController.swift in Sources */,
+				CFAD403A241990540096C7AB /* SearchCharacterTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

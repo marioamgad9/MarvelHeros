@@ -24,7 +24,7 @@ public class SearchHerosViewController: NiblessViewController {
     }
     
     public override func loadView() {
-        rootView = SearchHerosRootView()
+        rootView = SearchHerosRootView(charactersTableViewConfigurator: configureCharactersTableView(_:))
         view = rootView
     }
     
@@ -41,6 +41,14 @@ public class SearchHerosViewController: NiblessViewController {
         // Subscribe for UI events
         subscribeForCancelButtonTap()
         subscribeForSearchTextField()
+    }
+    
+    private func configureCharactersTableView(_ tableView: UITableView) {
+        viewModel.output.characters
+            .drive(tableView.rx.items(cellIdentifier: SearchCharacterTableViewCell.reuseIdentifier,
+                                      cellType: SearchCharacterTableViewCell.self)) { (_, character, cell) in
+                                        cell.configure(withViewModel: self.viewModel.characterCellViewModel(for: character))
+            }.disposed(by: disposeBag)
     }
     
     private func subscribeForSearchTextField() {
