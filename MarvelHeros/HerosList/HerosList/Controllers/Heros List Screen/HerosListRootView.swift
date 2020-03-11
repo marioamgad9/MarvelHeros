@@ -80,8 +80,13 @@ extension HerosListRootView: UITableViewDelegate {
         return 180
     }
     
+    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 180
+    }
+    
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        if scrollView.contentOffset.y >= (scrollView.contentSize.height - scrollView.frame.size.height) {
+        let offset: CGFloat = 180
+        if scrollView.contentOffset.y >= (scrollView.contentSize.height - scrollView.frame.size.height - offset) {
             responder.tableViewDidReachEnd()
         }
     }
