@@ -21,6 +21,9 @@
 		CFAD3FF12417EC800096C7AB /* HerosListNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD3FF02417EC800096C7AB /* HerosListNavigationController.swift */; };
 		CFAD3FFF2417FAB80096C7AB /* CharacterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD3FFE2417FAB80096C7AB /* CharacterTableViewCell.swift */; };
 		CFAD401A24180AB90096C7AB /* CharacterTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD401924180AB90096C7AB /* CharacterTableViewCellViewModel.swift */; };
+		CFAD402E241972920096C7AB /* SearchHerosRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD402D241972920096C7AB /* SearchHerosRootView.swift */; };
+		CFAD4036241977AE0096C7AB /* SearchHerosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD4035241977AE0096C7AB /* SearchHerosViewController.swift */; };
+		CFAD4038241978100096C7AB /* SearchHerosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD4037241978100096C7AB /* SearchHerosViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -54,6 +57,9 @@
 		CFAD3FF02417EC800096C7AB /* HerosListNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HerosListNavigationController.swift; sourceTree = "<group>"; };
 		CFAD3FFE2417FAB80096C7AB /* CharacterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterTableViewCell.swift; sourceTree = "<group>"; };
 		CFAD401924180AB90096C7AB /* CharacterTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterTableViewCellViewModel.swift; sourceTree = "<group>"; };
+		CFAD402D241972920096C7AB /* SearchHerosRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHerosRootView.swift; sourceTree = "<group>"; };
+		CFAD4035241977AE0096C7AB /* SearchHerosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHerosViewController.swift; sourceTree = "<group>"; };
+		CFAD4037241978100096C7AB /* SearchHerosViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHerosViewModel.swift; sourceTree = "<group>"; };
 		EBD441625796A763BC54EB4B /* Pods_HerosList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HerosList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -127,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				CFAD3FD32417DA610096C7AB /* HerosListViewModel.swift */,
+				CFAD4037241978100096C7AB /* SearchHerosViewModel.swift */,
 				CFAD401924180AB90096C7AB /* CharacterTableViewCellViewModel.swift */,
 			);
 			path = ViewModels;
@@ -153,6 +160,7 @@
 			children = (
 				CFAD3FF02417EC800096C7AB /* HerosListNavigationController.swift */,
 				CFAD3FD22417DA470096C7AB /* Heros List Screen */,
+				CFAD402C241972790096C7AB /* Search Heros Screen */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -180,6 +188,15 @@
 				CFAD3FFE2417FAB80096C7AB /* CharacterTableViewCell.swift */,
 			);
 			path = MarvelCharactersTableView;
+			sourceTree = "<group>";
+		};
+		CFAD402C241972790096C7AB /* Search Heros Screen */ = {
+			isa = PBXGroup;
+			children = (
+				CFAD4035241977AE0096C7AB /* SearchHerosViewController.swift */,
+				CFAD402D241972920096C7AB /* SearchHerosRootView.swift */,
+			);
+			path = "Search Heros Screen";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,8 +307,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFAD401A24180AB90096C7AB /* CharacterTableViewCellViewModel.swift in Sources */,
+				CFAD402E241972920096C7AB /* SearchHerosRootView.swift in Sources */,
 				CFAD3FE92417E97F0096C7AB /* HerosListViewState.swift in Sources */,
 				CFAD3FF12417EC800096C7AB /* HerosListNavigationController.swift in Sources */,
+				CFAD4036241977AE0096C7AB /* SearchHerosViewController.swift in Sources */,
+				CFAD4038241978100096C7AB /* SearchHerosViewModel.swift in Sources */,
 				CFAD3FD42417DA610096C7AB /* HerosListViewModel.swift in Sources */,
 				CFAD3FED2417EAD90096C7AB /* HerosListRootView.swift in Sources */,
 				CFAD3FEB2417E9E60096C7AB /* HerosListNavigator.swift in Sources */,

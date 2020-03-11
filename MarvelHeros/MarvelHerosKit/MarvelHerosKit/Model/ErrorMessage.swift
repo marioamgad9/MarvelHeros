@@ -1,4 +1,5 @@
 import Foundation
+import Common
 
 /// Represents an error message ready for presenting
 public struct ErrorMessage: Error {

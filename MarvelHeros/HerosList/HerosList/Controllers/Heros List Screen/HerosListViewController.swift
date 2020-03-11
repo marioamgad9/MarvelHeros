@@ -49,7 +49,7 @@ public class HerosListViewController: NiblessViewController {
 // MARK: - HerosListRootViewResponder
 extension HerosListViewController: HerosListRootViewResponder {
     func searchTapped() {
-        
+        viewModel.input.searchButtonTapped.onNext(())
     }
     
     func tableViewDidReachEnd() {

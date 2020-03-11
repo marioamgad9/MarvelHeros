@@ -11,5 +11,6 @@ public struct Colors {
     /// Holds all text colors
     public struct Text {
         public static let marvelCharacterName = UIColor(named: "text-marvel-character-name")!
+        public static let navigationBarButton = UIColor(named: "text-navigation-bar-button")!
     }
 }

@@ -32,7 +32,6 @@
 		CFAD3F9A2417D57D0096C7AB /* MHContentRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD3F992417D57D0096C7AB /* MHContentRepository.swift */; };
 		CFAD3FDF2417DCAF0096C7AB /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD3FDE2417DCAF0096C7AB /* ViewModelType.swift */; };
 		CFAD3FE12417E7730096C7AB /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD3FE02417E7730096C7AB /* ErrorMessage.swift */; };
-		CFAD3FE52417E7BE0096C7AB /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD3FE42417E7BE0096C7AB /* String+Localized.swift */; };
 		CFAD401D24180CA40096C7AB /* Thumbnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD401C24180CA40096C7AB /* Thumbnail.swift */; };
 /* End PBXBuildFile section */
 
@@ -79,7 +78,6 @@
 		CFAD3F992417D57D0096C7AB /* MHContentRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHContentRepository.swift; sourceTree = "<group>"; };
 		CFAD3FDE2417DCAF0096C7AB /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
 		CFAD3FE02417E7730096C7AB /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
-		CFAD3FE42417E7BE0096C7AB /* String+Localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localized.swift"; sourceTree = "<group>"; };
 		CFAD401C24180CA40096C7AB /* Thumbnail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thumbnail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -246,7 +244,6 @@
 		CFAD3FDC2417DC9E0096C7AB /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				CFAD3FE42417E7BE0096C7AB /* String+Localized.swift */,
 				CFAD3F682417C80F0096C7AB /* String+MD5Hashing.swift */,
 				CFAD3F942417D4480096C7AB /* Alamofire+PromiseKit.swift */,
 			);
@@ -391,7 +388,6 @@
 				CFAD3F8C2417CDD20096C7AB /* NetworkConstants.swift in Sources */,
 				CFAD3F7F2417CC8A0096C7AB /* SeriesAPIResponse.swift in Sources */,
 				CFAD3F9A2417D57D0096C7AB /* MHContentRepository.swift in Sources */,
-				CFAD3FE52417E7BE0096C7AB /* String+Localized.swift in Sources */,
 				CFAD3F892417CDAB0096C7AB /* EventsAPIResponse.swift in Sources */,
 				CFAD3F7D2417CC200096C7AB /* Series.swift in Sources */,
 				CFAD401D24180CA40096C7AB /* Thumbnail.swift in Sources */,

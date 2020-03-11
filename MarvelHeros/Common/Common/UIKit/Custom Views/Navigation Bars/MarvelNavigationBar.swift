@@ -12,14 +12,12 @@ public class MarvelNavigationBar: NiblessView {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFit
         imageView.image = UIImage(named: "marvel-logo")
-        
         return imageView
     }()
     
     private let backgroundView: UIView = {
         let view = UIView()
         view.backgroundColor = Colors.Backgrounds.marvelNavigationBar
-        
         return view
     }()
     
@@ -28,7 +26,6 @@ public class MarvelNavigationBar: NiblessView {
         imageView.contentMode = .scaleAspectFit
         imageView.image = UIImage(named: "ic-search")
         imageView.isUserInteractionEnabled = true
-        
         return imageView
     }()
     

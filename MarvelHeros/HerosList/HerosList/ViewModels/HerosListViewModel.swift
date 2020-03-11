@@ -12,6 +12,7 @@ public class HerosListViewModel: ViewModelType {
     
     public struct Input {
         let fetch = PublishSubject<()>()
+        let searchButtonTapped = PublishSubject<()>()
     }
     
     public struct Output {
@@ -41,6 +42,7 @@ public class HerosListViewModel: ViewModelType {
                         isLoading: isLoadingSubject.asDriver(onErrorJustReturn: false),
                         errorMessage: errorMessageSubject.asObservable())
         
+        subscribeForSearchButtonTapped()
         subscribeForFetch()
         subscribeForCharactersSubjectToUpdateIsLoading()
     }
@@ -48,6 +50,12 @@ public class HerosListViewModel: ViewModelType {
     // MARK: - Methods
     func characterCellViewModel(for character: MarvelCharacter) -> CharacterTableViewCellViewModel {
         return CharacterTableViewCellViewModel(character: character)
+    }
+    
+    private func subscribeForSearchButtonTapped() {
+        input.searchButtonTapped.subscribe(onNext: {
+            self.herosListNavigator.navigate(to: .searchHeros)
+        }).disposed(by: disposeBag)
     }
     
     private func subscribeForFetch() {

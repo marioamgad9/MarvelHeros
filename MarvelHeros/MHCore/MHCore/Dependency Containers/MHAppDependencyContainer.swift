@@ -13,7 +13,8 @@ public class MHAppDependencyContainer {
     public private(set) lazy var sharedAppCoordinator: MHAppCoordinator = {
         return MHAppCoordinator(rootVc: NiblessViewController(),
         herosListNavigationController: makeHerosListNavigationController(),
-        herosListVcFactory: makeHerosListViewController)
+        herosListVcFactory: makeHerosListViewController,
+        searchHerosVcFactory: makeSearchHerosViewController)
     }()
     
     /// The shared repository that feeds content from API
@@ -40,5 +41,15 @@ public class MHAppDependencyContainer {
     public func makeHerosListViewModel() -> HerosListViewModel {
         return HerosListViewModel(contentRepository: sharedContentRepository,
                                   herosListNavigator: sharedAppCoordinator)
+    }
+    
+    // MARK: - Search Heros
+    public func makeSearchHerosViewController() -> SearchHerosViewController {
+        return SearchHerosViewController(viewModel: makeSearchHerosViewModel())
+    }
+    
+    public func makeSearchHerosViewModel() -> SearchHerosViewModel {
+        return SearchHerosViewModel(contentRepository: sharedContentRepository,
+                                    herosListNavigator: sharedAppCoordinator)
     }
 }

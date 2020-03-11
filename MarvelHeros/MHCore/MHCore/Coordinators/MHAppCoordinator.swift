@@ -2,6 +2,7 @@ import Common
 import HerosList
 
 typealias HerosListVcFactory = () -> HerosListViewController
+typealias SearchHerosVcFactory = () -> SearchHerosViewController
 
 /**
  Handles coordination between the main app states (Heros list, and hero detail)
@@ -18,15 +19,18 @@ public class MHAppCoordinator: Coordinator {
     
     // MARK: - Factories
     private let herosListVcFactory: HerosListVcFactory
+    private let searchHerosVcFactory: SearchHerosVcFactory
     
     // MARK: - Methods
     /// Initializes a new app coordinators with the provided root view controller
     init(rootVc: NiblessViewController,
          herosListNavigationController: HerosListNavigationController,
-         herosListVcFactory: @escaping HerosListVcFactory) {
+         herosListVcFactory: @escaping HerosListVcFactory,
+         searchHerosVcFactory: @escaping SearchHerosVcFactory) {
         self.rootVc = rootVc
         self.herosListNavigationController = herosListNavigationController
         self.herosListVcFactory = herosListVcFactory
+        self.searchHerosVcFactory = searchHerosVcFactory
     }
     
     /// Starts the app coordinator flow, with attaching the heros list vc to the root
@@ -43,6 +47,11 @@ public class MHAppCoordinator: Coordinator {
     private func goToHerosListView() {
         herosListNavigationController.pushViewController(herosListVcFactory(), animated: true)
     }
+    
+    /// Navigates to the search heros view
+    private func goToSearchHerosView() {
+        herosListNavigationController.present(searchHerosVcFactory(), animated: true)
+    }
 }
 
 // MARK: - HerosListNavigator
@@ -51,6 +60,8 @@ extension MHAppCoordinator: HerosListNavigator {
         switch view {
         case .herosList:
             goToHerosListView()
+        case .searchHeros:
+            goToSearchHerosView()
         default:
             fatalError("Unsupported view navigation attempted")
         }

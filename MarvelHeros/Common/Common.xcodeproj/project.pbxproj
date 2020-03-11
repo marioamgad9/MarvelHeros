@@ -21,6 +21,9 @@
 		CFAD4023241813AC0096C7AB /* ParallelogramView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD4022241813AC0096C7AB /* ParallelogramView.swift */; };
 		CFAD4025241817CF0096C7AB /* UITableViewCell+Dequeue.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD4024241817CF0096C7AB /* UITableViewCell+Dequeue.swift */; };
 		CFAD402B24184E310096C7AB /* UIScrollView+IsAtBottom.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD402A24184E310096C7AB /* UIScrollView+IsAtBottom.swift */; };
+		CFAD4030241973580096C7AB /* SearchNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD402F241973580096C7AB /* SearchNavigationBar.swift */; };
+		CFAD4032241974A00096C7AB /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD4031241974A00096C7AB /* String+Localized.swift */; };
+		CFAD4034241974D70096C7AB /* Dimens.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD4033241974D70096C7AB /* Dimens.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +43,9 @@
 		CFAD4022241813AC0096C7AB /* ParallelogramView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParallelogramView.swift; sourceTree = "<group>"; };
 		CFAD4024241817CF0096C7AB /* UITableViewCell+Dequeue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Dequeue.swift"; sourceTree = "<group>"; };
 		CFAD402A24184E310096C7AB /* UIScrollView+IsAtBottom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScrollView+IsAtBottom.swift"; sourceTree = "<group>"; };
+		CFAD402F241973580096C7AB /* SearchNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchNavigationBar.swift; sourceTree = "<group>"; };
+		CFAD4031241974A00096C7AB /* String+Localized.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Localized.swift"; sourceTree = "<group>"; };
+		CFAD4033241974D70096C7AB /* Dimens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dimens.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +101,7 @@
 		CFAD3FE22417E7A40096C7AB /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				CFAD4031241974A00096C7AB /* String+Localized.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -123,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				CFAD3FF32417F0D30096C7AB /* MarvelNavigationBar.swift */,
+				CFAD402F241973580096C7AB /* SearchNavigationBar.swift */,
 			);
 			path = "Navigation Bars";
 			sourceTree = "<group>";
@@ -132,6 +140,7 @@
 			children = (
 				CFAD3FF72417F1F80096C7AB /* Colors.swift */,
 				CFAD4009241805EB0096C7AB /* Fonts.swift */,
+				CFAD4033241974D70096C7AB /* Dimens.swift */,
 			);
 			path = Style;
 			sourceTree = "<group>";
@@ -242,10 +251,13 @@
 				CFAD3F152417B6250096C7AB /* NiblessView.swift in Sources */,
 				CFAD3FF82417F1F80096C7AB /* Colors.swift in Sources */,
 				CFAD3F1D2417B6DF0096C7AB /* NiblessCollectionViewCell.swift in Sources */,
+				CFAD4034241974D70096C7AB /* Dimens.swift in Sources */,
 				CFAD3F172417B65C0096C7AB /* NiblessViewController.swift in Sources */,
 				CFAD400A241805EB0096C7AB /* Fonts.swift in Sources */,
+				CFAD4032241974A00096C7AB /* String+Localized.swift in Sources */,
 				CFAD3FF42417F0D30096C7AB /* MarvelNavigationBar.swift in Sources */,
 				CFAD400C2418066B0096C7AB /* UIFonts+Accessors.swift in Sources */,
+				CFAD4030241973580096C7AB /* SearchNavigationBar.swift in Sources */,
 				CFAD4025241817CF0096C7AB /* UITableViewCell+Dequeue.swift in Sources */,
 				CFAD4023241813AC0096C7AB /* ParallelogramView.swift in Sources */,
 			);
