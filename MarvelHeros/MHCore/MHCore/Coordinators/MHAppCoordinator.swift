@@ -50,7 +50,9 @@ public class MHAppCoordinator: Coordinator {
     
     /// Navigates to the search heros view
     private func goToSearchHerosView() {
-        herosListNavigationController.present(searchHerosVcFactory(), animated: true)
+        let searchHerosVc = searchHerosVcFactory()
+        searchHerosVc.modalPresentationStyle = .overFullScreen
+        herosListNavigationController.present(searchHerosVc, animated: false)
     }
 }
 

@@ -13,6 +13,11 @@ public class HerosListViewController: NiblessViewController {
     private let viewModel: HerosListViewModel
     private let disposeBag = DisposeBag()
     
+    // Status bar style
+    public override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
     // MARK: - Methods
     public init(viewModel: HerosListViewModel) {
         self.viewModel = viewModel

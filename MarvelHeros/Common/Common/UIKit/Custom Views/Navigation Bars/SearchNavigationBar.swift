@@ -10,12 +10,12 @@ public class SearchNavigationBar: NiblessView {
         return view
     }()
     
-    private let searchTextField: UITextField = {
+    public let searchTextField: UITextField = {
         let textField = UITextField()
-        textField.placeholder = "placeholder.search_characters".localized
         textField.font = UIFont.regular(size: .normal)
         textField.backgroundColor = .clear
-        textField.tintColor = .gray
+        textField.attributedPlaceholder = NSAttributedString(string: "placeholder.search_characters".localized,
+                                                             attributes: [NSAttributedString.Key.foregroundColor: UIColor.gray])
         return textField
     }()
     
@@ -30,12 +30,13 @@ public class SearchNavigationBar: NiblessView {
     private let searchImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFit
-        imageView.image = UIImage(named: "ic-search")
+        let image = UIImage(named: "ic-search")!
+        imageView.image = image.withRenderingMode(.alwaysTemplate)
         imageView.tintColor = .gray
         return imageView
     }()
     
-    private let cancelButton: UIButton = {
+    public let cancelButton: UIButton = {
         let button = UIButton()
         button.setTitleColor(Colors.Text.navigationBarButton, for: .normal)
         button.titleLabel?.font = UIFont.semiBold(size: .normal)
@@ -60,7 +61,7 @@ public class SearchNavigationBar: NiblessView {
         searchTextFieldBackground.add(searchTextField, then: {
             $0.translatesAutoresizingMaskIntoConstraints = false
             NSLayoutConstraint.activate([
-                $0.leadingAnchor.constraint(equalTo: searchImageView.trailingAnchor, constant: 16),
+                $0.leadingAnchor.constraint(equalTo: searchImageView.trailingAnchor, constant: 8),
                 $0.topAnchor.constraint(equalTo: searchTextFieldBackground.topAnchor, constant: 8),
                 $0.bottomAnchor.constraint(equalTo: searchTextFieldBackground.bottomAnchor, constant: -8),
                 $0.trailingAnchor.constraint(equalTo: searchTextFieldBackground.trailingAnchor, constant: -16)
@@ -70,9 +71,9 @@ public class SearchNavigationBar: NiblessView {
         backgroundView.add(searchTextFieldBackground, then: {
             $0.translatesAutoresizingMaskIntoConstraints = false
             NSLayoutConstraint.activate([
-                $0.leadingAnchor.constraint(equalTo: backgroundView.leadingAnchor, constant: 8),
-                $0.topAnchor.constraint(equalTo: backgroundView.topAnchor, constant: 8),
-                $0.bottomAnchor.constraint(equalTo: backgroundView.bottomAnchor, constant: -8)
+                $0.leadingAnchor.constraint(equalTo: backgroundView.safeAreaLayoutGuide.leadingAnchor, constant: 8),
+                $0.topAnchor.constraint(equalTo: backgroundView.safeAreaLayoutGuide.topAnchor, constant: 8),
+                $0.bottomAnchor.constraint(equalTo: backgroundView.safeAreaLayoutGuide.bottomAnchor, constant: -8)
             ])
         })
         
@@ -80,10 +81,10 @@ public class SearchNavigationBar: NiblessView {
         backgroundView.add(cancelButton, then: {
             $0.translatesAutoresizingMaskIntoConstraints = false
             NSLayoutConstraint.activate([
-                $0.leadingAnchor.constraint(equalTo: searchTextFieldBackground.trailingAnchor, constant: 16),
-                $0.topAnchor.constraint(equalTo: backgroundView.topAnchor, constant: 8),
-                $0.bottomAnchor.constraint(equalTo: backgroundView.bottomAnchor, constant: -8),
-                $0.trailingAnchor.constraint(equalTo: backgroundView.trailingAnchor, constant: -16)
+                $0.leadingAnchor.constraint(equalTo: searchTextFieldBackground.safeAreaLayoutGuide.trailingAnchor, constant: 16),
+                $0.topAnchor.constraint(equalTo: backgroundView.safeAreaLayoutGuide.topAnchor, constant: 8),
+                $0.bottomAnchor.constraint(equalTo: backgroundView.safeAreaLayoutGuide.bottomAnchor, constant: -8),
+                $0.trailingAnchor.constraint(equalTo: backgroundView.safeAreaLayoutGuide.trailingAnchor, constant: -16)
             ])
         })
         

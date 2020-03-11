@@ -6,6 +6,7 @@ public struct Colors {
     public struct Backgrounds {
         public static let marvelNavigationBar = UIColor(named: "background-marvel-navigation-bar")!
         public static let marvelCharacterName = UIColor(named: "background-marvel-character-name")!
+        public static let main = UIColor(named: "background-main")!
     }
     
     /// Holds all text colors
