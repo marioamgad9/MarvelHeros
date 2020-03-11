@@ -30,14 +30,14 @@ class SearchHerosRootView: NiblessView {
     }
     
     func animateEntrance() {
-        UIView.animate(withDuration: 1) {
+        UIView.animate(withDuration: 0.5) {
             self.searchNavigationBar.transform = CGAffineTransform(translationX: 0, y: 0)
             self.backgroundColor = Colors.Backgrounds.main
         }
     }
     
     func animateOutro(completionHandler: @escaping (Bool) -> ()) {
-        UIView.animate(withDuration: 1, animations: {
+        UIView.animate(withDuration: 0.5, animations: {
             self.searchNavigationBar.transform = CGAffineTransform(translationX: 0, y: -500)
             self.backgroundColor = .clear
         }, completion: completionHandler)

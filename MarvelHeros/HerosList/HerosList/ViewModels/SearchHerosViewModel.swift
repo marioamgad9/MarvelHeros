@@ -10,7 +10,7 @@ public class SearchHerosViewModel: ViewModelType {
     public let output: SearchHerosViewModel.Output
     
     public struct Input {
-        
+        let searchText = PublishSubject<String>()
     }
     
     public struct Output {
@@ -30,5 +30,14 @@ public class SearchHerosViewModel: ViewModelType {
         
         input = Input()
         output = Output()
+        
+        // Subscribe for input events
+        subscribeForSearchTextChanges()
+    }
+    
+    private func subscribeForSearchTextChanges() {
+        input.searchText.subscribe(onNext: {
+            print("TEST - Search text changed: \($0)")
+        }).disposed(by: disposeBag)
     }
 }

@@ -40,6 +40,17 @@ public class SearchHerosViewController: NiblessViewController {
         
         // Subscribe for UI events
         subscribeForCancelButtonTap()
+        subscribeForSearchTextField()
+    }
+    
+    private func subscribeForSearchTextField() {
+        rootView.searchNavigationBar.searchTextField.rx.text
+            .compactMap { $0 }
+            .filter { $0 != "" }
+            .distinctUntilChanged()
+            .throttle(RxTimeInterval.seconds(2), scheduler: MainScheduler())
+            .bind(to: viewModel.input.searchText)
+            .disposed(by: disposeBag)
     }
     
     private func subscribeForCancelButtonTap() {
