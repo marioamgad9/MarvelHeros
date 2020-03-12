@@ -24,7 +24,7 @@ public class HeroDetailsViewController: NiblessViewController {
     }
     
     public override func loadView() {
-        rootView = HeroDetailsRootView()
+        rootView = HeroDetailsRootView(responder: self)
         view = rootView
     }
     
@@ -45,8 +45,19 @@ public class HeroDetailsViewController: NiblessViewController {
     
     private func subscribeForCharacter() {
         viewModel.output.character.drive(onNext: {
+            // Configure background
+            self.rootView.background.sd_setImage(with: $0.thumbnail.getUrl(quality: .fullSize))
+            
+            // Configure header
             let viewModel = HeroDetailsHeaderViewModel(character: $0)
             self.rootView.header.configure(withViewModel: viewModel)
         }).disposed(by: disposeBag)
+    }
+}
+
+// MARK: - HeroDetailsRootViewResponder
+extension HeroDetailsViewController: HeroDetailsRootViewResponder {
+    func backTapped() {
+        navigationController?.popViewController(animated: true)
     }
 }

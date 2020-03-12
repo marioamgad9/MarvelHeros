@@ -1,5 +1,10 @@
 import Foundation
 
+public enum ThumbnailQuality: String {
+    case landscapeIncredible = "/landscape_incredible"
+    case fullSize = ""
+}
+
 /// The thumbnail of a marvel character
 public struct Thumbnail: Codable {
     
@@ -7,9 +12,9 @@ public struct Thumbnail: Codable {
     let path: String
     let fileExtension: String
     
-    // MARK: - Computed properties
-    public var url: URL? {
-        let httpsPath = "https" + path.dropFirst(4) + "/landscape_incredible"
+    // MARK: - Methods
+    public func getUrl(quality: ThumbnailQuality) -> URL? {
+        let httpsPath = "https" + path.dropFirst(4) + quality.rawValue
         return URL(string: "\(httpsPath).\(fileExtension)")
     }
 }

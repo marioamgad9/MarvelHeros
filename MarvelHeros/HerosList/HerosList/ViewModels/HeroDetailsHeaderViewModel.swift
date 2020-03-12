@@ -19,6 +19,7 @@ class HeroDetailsHeaderViewModel: ViewModelType {
     // MARK: - Methods
     init(character: MarvelCharacter) {
         input = Input()
-        output = Output(name: character.name, description: character.description, imageURL: character.thumbnail.url)
+        output = Output(name: character.name, description: character.description,
+                        imageURL: character.thumbnail.getUrl(quality: .fullSize))
     }
 }

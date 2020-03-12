@@ -1,10 +1,23 @@
 import UIKit
 import Common
 
+protocol HeroDetailsRootViewResponder {
+    func backTapped()
+}
+
 /// The rootview for HeroDetailsViewController
 class HeroDetailsRootView: NiblessView {
     
     // MARK: - Views
+    let background: UIImageView = {
+        let imageView = UIImageView()
+        imageView.contentMode = .scaleAspectFill
+        imageView.clipsToBounds = true
+        imageView.addShadeEffect()
+        imageView.addBlurEffect()
+        return imageView
+    }()
+    
     private(set) lazy var header: HeroDetailsHeader = {
         return HeroDetailsHeader(responder: self)
     }()
@@ -18,8 +31,19 @@ class HeroDetailsRootView: NiblessView {
     private let scrollView = UIScrollView()
     private let contentView = UIView()
     
+    // MARK: - Properties
+    private let responder: HeroDetailsRootViewResponder
+    
     // MARK: - Methods
+    init(responder: HeroDetailsRootViewResponder) {
+        self.responder = responder
+        super.init(frame: .zero)
+    }
+    
     override func configureViewHierarchy() {
+        // Configure background
+        addAndConstraintToEdges(background, withSpacing: 0)
+        
         // Configure activity indicator
         add(activityIndicator, then: {
             $0.translatesAutoresizingMaskIntoConstraints = false
@@ -67,6 +91,6 @@ class HeroDetailsRootView: NiblessView {
 // MARK: - HeroDetailsHeaderResponder
 extension HeroDetailsRootView: HeroDetailsHeaderResponder {
     func backTapped() {
-        print("TEST - Back tapped")
+        responder.backTapped()
     }
 }

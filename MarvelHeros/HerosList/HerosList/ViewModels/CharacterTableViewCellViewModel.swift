@@ -18,6 +18,6 @@ class CharacterTableViewCellViewModel: ViewModelType {
     // MARK: - Methods
     init(character: MarvelCharacter) {
         input = Input()
-        output = Output(name: character.name, imageURL: character.thumbnail.url)
+        output = Output(name: character.name, imageURL: character.thumbnail.getUrl(quality: .landscapeIncredible))
     }
 }
