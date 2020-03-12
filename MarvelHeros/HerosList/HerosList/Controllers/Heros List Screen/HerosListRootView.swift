@@ -4,6 +4,7 @@ import Common
 protocol HerosListRootViewResponder {
     func searchTapped()
     func tableViewDidReachEnd()
+    func tabeViewItemSelected(indexPath: IndexPath)
 }
 
 typealias CharactersTableViewConfigurator = (UITableView) -> ()
@@ -83,6 +84,10 @@ extension HerosListRootView: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
         return 180
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        responder.tabeViewItemSelected(indexPath: indexPath)
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {

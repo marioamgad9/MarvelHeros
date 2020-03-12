@@ -16,7 +16,6 @@ class SearchCharacterTableViewCell: NiblessTableViewCell {
     private let characterNameLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.bold(size: .big)
-        label.textAlignment = .center
         label.textColor = Colors.Text.marvelCharacterName
         return label
     }()

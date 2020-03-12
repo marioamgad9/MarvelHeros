@@ -1,6 +1,10 @@
 import UIKit
 import Common
 
+protocol SearchHerosRootViewResponder {
+    func tabeViewItemSelected(indexPath: IndexPath)
+}
+
 /// The root view for SearchHerosViewController
 class SearchHerosRootView: NiblessView {
     
@@ -13,8 +17,13 @@ class SearchHerosRootView: NiblessView {
         return tableView
     }()
     
+    // MARK: - Properties
+    private let responder: SearchHerosRootViewResponder
+    
     // MARK: - Methods
-    init(charactersTableViewConfigurator: CharactersTableViewConfigurator) {
+    init(charactersTableViewConfigurator: CharactersTableViewConfigurator,
+         responder: SearchHerosRootViewResponder) {
+        self.responder = responder
         super.init(frame: .zero)
         
         charactersTableViewConfigurator(charactersTableView)
@@ -60,6 +69,10 @@ extension SearchHerosRootView: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
         return 70
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        responder.tabeViewItemSelected(indexPath: indexPath)
     }
 }
 

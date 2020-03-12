@@ -24,7 +24,8 @@ public class SearchHerosViewController: NiblessViewController {
     }
     
     public override func loadView() {
-        rootView = SearchHerosRootView(charactersTableViewConfigurator: configureCharactersTableView(_:))
+        rootView = SearchHerosRootView(charactersTableViewConfigurator: configureCharactersTableView(_:),
+                                       responder: self)
         view = rootView
     }
     
@@ -68,5 +69,12 @@ public class SearchHerosViewController: NiblessViewController {
                     self.dismiss(animated: false)
                 }
             }).disposed(by: disposeBag)
+    }
+}
+
+// MARK: - SearchHerosRootViewResponder
+extension SearchHerosViewController: SearchHerosRootViewResponder {
+    func tabeViewItemSelected(indexPath: IndexPath) {
+        viewModel.input.itemSelected.onNext(indexPath)
     }
 }

@@ -13,6 +13,7 @@ public class HerosListViewModel: ViewModelType {
     public struct Input {
         let fetch = PublishSubject<()>()
         let searchButtonTapped = PublishSubject<()>()
+        let itemSelected = PublishSubject<IndexPath>()
     }
     
     public struct Output {
@@ -44,6 +45,7 @@ public class HerosListViewModel: ViewModelType {
         
         subscribeForSearchButtonTapped()
         subscribeForFetch()
+        subscribeForItemSelected()
         subscribeForCharactersSubjectToUpdateIsLoading()
     }
     
@@ -65,6 +67,15 @@ public class HerosListViewModel: ViewModelType {
                 self.isLoadingSubject.onNext(true)
                 self.reloadCharacters(offsetBy: characters.count)
         }).disposed(by: disposeBag)
+    }
+    
+    private func subscribeForItemSelected() {
+        input.itemSelected
+            .subscribe(onNext: {
+                let characters = self.getCharactersValue()
+                let selectedCharacter = characters[$0.row]
+                self.herosListNavigator.navigate(to: .heroDetails(characterId: selectedCharacter.id))
+            }).disposed(by: disposeBag)
     }
     
     private func subscribeForCharactersSubjectToUpdateIsLoading() {

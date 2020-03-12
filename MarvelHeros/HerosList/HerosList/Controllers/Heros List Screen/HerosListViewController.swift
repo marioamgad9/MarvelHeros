@@ -57,6 +57,10 @@ extension HerosListViewController: HerosListRootViewResponder {
         viewModel.input.searchButtonTapped.onNext(())
     }
     
+    func tabeViewItemSelected(indexPath: IndexPath) {
+        viewModel.input.itemSelected.onNext(indexPath)
+    }
+    
     func tableViewDidReachEnd() {
         viewModel.input.fetch.onNext(())
     }

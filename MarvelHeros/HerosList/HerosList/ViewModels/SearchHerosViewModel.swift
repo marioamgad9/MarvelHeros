@@ -11,6 +11,7 @@ public class SearchHerosViewModel: ViewModelType {
     
     public struct Input {
         let searchText = PublishSubject<String>()
+        let itemSelected = PublishSubject<IndexPath>()
     }
     
     public struct Output {
@@ -39,6 +40,7 @@ public class SearchHerosViewModel: ViewModelType {
         
         // Subscribe for input events
         subscribeForSearchTextChanges()
+        subscribeForItemSelected()
     }
     
     func characterCellViewModel(for character: MarvelCharacter) -> CharacterTableViewCellViewModel {
@@ -56,6 +58,23 @@ public class SearchHerosViewModel: ViewModelType {
             print("TEST - Search text changed: \($0)")
             self.reloadCharacters(nameStartsWith: $0)
         }).disposed(by: disposeBag)
+    }
+    
+    private func subscribeForItemSelected() {
+        input.itemSelected
+            .subscribe(onNext: {
+                let characters = self.getCharactersValue()
+                let selectedCharacter = characters[$0.row]
+                self.herosListNavigator.navigate(to: .heroDetails(characterId: selectedCharacter.id))
+            }).disposed(by: disposeBag)
+    }
+    
+    private func getCharactersValue() -> [MarvelCharacter] {
+        if let value = try? charactersSubject.value() {
+            return value
+        } else {
+            return []
+        }
     }
     
     private func handleError(_ error: Error) {
