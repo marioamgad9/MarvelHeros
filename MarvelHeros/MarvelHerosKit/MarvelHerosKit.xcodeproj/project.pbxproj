@@ -17,12 +17,6 @@
 		CFAD3F712417CA590096C7AB /* MarvelCharactersData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD3F702417CA590096C7AB /* MarvelCharactersData.swift */; };
 		CFAD3F782417CB450096C7AB /* ComicsAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD3F772417CB450096C7AB /* ComicsAPIResponse.swift */; };
 		CFAD3F7A2417CBC30096C7AB /* Comic.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD3F792417CBC30096C7AB /* Comic.swift */; };
-		CFAD3F7D2417CC200096C7AB /* Series.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD3F7C2417CC200096C7AB /* Series.swift */; };
-		CFAD3F7F2417CC8A0096C7AB /* SeriesAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD3F7E2417CC8A0096C7AB /* SeriesAPIResponse.swift */; };
-		CFAD3F822417CCDC0096C7AB /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD3F812417CCDC0096C7AB /* Story.swift */; };
-		CFAD3F842417CCEF0096C7AB /* StoryAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD3F832417CCEF0096C7AB /* StoryAPIResponse.swift */; };
-		CFAD3F872417CD1F0096C7AB /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD3F862417CD1F0096C7AB /* Event.swift */; };
-		CFAD3F892417CDAB0096C7AB /* EventsAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD3F882417CDAA0096C7AB /* EventsAPIResponse.swift */; };
 		CFAD3F8C2417CDD20096C7AB /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD3F8B2417CDD20096C7AB /* NetworkConstants.swift */; };
 		CFAD3F8E2417CE8D0096C7AB /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD3F8D2417CE8D0096C7AB /* APIRouter.swift */; };
 		CFAD3F902417D0260096C7AB /* APIKeysProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD3F8F2417D0260096C7AB /* APIKeysProvider.swift */; };
@@ -33,6 +27,7 @@
 		CFAD3FDF2417DCAF0096C7AB /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD3FDE2417DCAF0096C7AB /* ViewModelType.swift */; };
 		CFAD3FE12417E7730096C7AB /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD3FE02417E7730096C7AB /* ErrorMessage.swift */; };
 		CFAD401D24180CA40096C7AB /* Thumbnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD401C24180CA40096C7AB /* Thumbnail.swift */; };
+		CFAD405D241A5A600096C7AB /* ComicsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD405C241A5A600096C7AB /* ComicsData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -63,12 +58,6 @@
 		CFAD3F702417CA590096C7AB /* MarvelCharactersData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelCharactersData.swift; sourceTree = "<group>"; };
 		CFAD3F772417CB450096C7AB /* ComicsAPIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicsAPIResponse.swift; sourceTree = "<group>"; };
 		CFAD3F792417CBC30096C7AB /* Comic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comic.swift; sourceTree = "<group>"; };
-		CFAD3F7C2417CC200096C7AB /* Series.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Series.swift; sourceTree = "<group>"; };
-		CFAD3F7E2417CC8A0096C7AB /* SeriesAPIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeriesAPIResponse.swift; sourceTree = "<group>"; };
-		CFAD3F812417CCDC0096C7AB /* Story.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
-		CFAD3F832417CCEF0096C7AB /* StoryAPIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryAPIResponse.swift; sourceTree = "<group>"; };
-		CFAD3F862417CD1F0096C7AB /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
-		CFAD3F882417CDAA0096C7AB /* EventsAPIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsAPIResponse.swift; sourceTree = "<group>"; };
 		CFAD3F8B2417CDD20096C7AB /* NetworkConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
 		CFAD3F8D2417CE8D0096C7AB /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
 		CFAD3F8F2417D0260096C7AB /* APIKeysProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKeysProvider.swift; sourceTree = "<group>"; };
@@ -79,6 +68,7 @@
 		CFAD3FDE2417DCAF0096C7AB /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
 		CFAD3FE02417E7730096C7AB /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
 		CFAD401C24180CA40096C7AB /* Thumbnail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thumbnail.swift; sourceTree = "<group>"; };
+		CFAD405C241A5A600096C7AB /* ComicsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicsData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,9 +148,6 @@
 			children = (
 				CFAD3F752417CAE80096C7AB /* MarvelCharacter */,
 				CFAD3F762417CAF10096C7AB /* Comic */,
-				CFAD3F7B2417CC150096C7AB /* Series */,
-				CFAD3F802417CCCC0096C7AB /* Story */,
-				CFAD3F852417CD120096C7AB /* Event */,
 				CFAD401B24180C940096C7AB /* Thumbnail */,
 				CFAD3F962417D4660096C7AB /* MarvelHerosError.swift */,
 				CFAD3FE02417E7730096C7AB /* ErrorMessage.swift */,
@@ -183,35 +170,9 @@
 			children = (
 				CFAD3F792417CBC30096C7AB /* Comic.swift */,
 				CFAD3F772417CB450096C7AB /* ComicsAPIResponse.swift */,
+				CFAD405C241A5A600096C7AB /* ComicsData.swift */,
 			);
 			path = Comic;
-			sourceTree = "<group>";
-		};
-		CFAD3F7B2417CC150096C7AB /* Series */ = {
-			isa = PBXGroup;
-			children = (
-				CFAD3F7C2417CC200096C7AB /* Series.swift */,
-				CFAD3F7E2417CC8A0096C7AB /* SeriesAPIResponse.swift */,
-			);
-			path = Series;
-			sourceTree = "<group>";
-		};
-		CFAD3F802417CCCC0096C7AB /* Story */ = {
-			isa = PBXGroup;
-			children = (
-				CFAD3F812417CCDC0096C7AB /* Story.swift */,
-				CFAD3F832417CCEF0096C7AB /* StoryAPIResponse.swift */,
-			);
-			path = Story;
-			sourceTree = "<group>";
-		};
-		CFAD3F852417CD120096C7AB /* Event */ = {
-			isa = PBXGroup;
-			children = (
-				CFAD3F862417CD1F0096C7AB /* Event.swift */,
-				CFAD3F882417CDAA0096C7AB /* EventsAPIResponse.swift */,
-			);
-			path = Event;
 			sourceTree = "<group>";
 		};
 		CFAD3F8A2417CDBF0096C7AB /* Network */ = {
@@ -373,9 +334,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFAD405D241A5A600096C7AB /* ComicsData.swift in Sources */,
 				CFAD3F6C2417C87C0096C7AB /* MarvelCharacter.swift in Sources */,
 				CFAD3FE12417E7730096C7AB /* ErrorMessage.swift in Sources */,
-				CFAD3F872417CD1F0096C7AB /* Event.swift in Sources */,
 				CFAD3F7A2417CBC30096C7AB /* Comic.swift in Sources */,
 				CFAD3F782417CB450096C7AB /* ComicsAPIResponse.swift in Sources */,
 				CFAD3F6F2417C9400096C7AB /* MarvelCharactersAPIResponse.swift in Sources */,
@@ -386,15 +347,10 @@
 				CFAD3F8E2417CE8D0096C7AB /* APIRouter.swift in Sources */,
 				CFAD3F902417D0260096C7AB /* APIKeysProvider.swift in Sources */,
 				CFAD3F8C2417CDD20096C7AB /* NetworkConstants.swift in Sources */,
-				CFAD3F7F2417CC8A0096C7AB /* SeriesAPIResponse.swift in Sources */,
 				CFAD3F9A2417D57D0096C7AB /* MHContentRepository.swift in Sources */,
-				CFAD3F892417CDAB0096C7AB /* EventsAPIResponse.swift in Sources */,
-				CFAD3F7D2417CC200096C7AB /* Series.swift in Sources */,
 				CFAD401D24180CA40096C7AB /* Thumbnail.swift in Sources */,
 				CFAD3F932417D4360096C7AB /* ContentRepository.swift in Sources */,
-				CFAD3F822417CCDC0096C7AB /* Story.swift in Sources */,
 				CFAD3F952417D4480096C7AB /* Alamofire+PromiseKit.swift in Sources */,
-				CFAD3F842417CCEF0096C7AB /* StoryAPIResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

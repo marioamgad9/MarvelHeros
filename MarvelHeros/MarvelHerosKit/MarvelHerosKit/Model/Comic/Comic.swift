@@ -4,6 +4,7 @@ import Foundation
 public struct Comic: Codable {
     
     // MARK: - Properties
-    public let name: String
-    public let resourceURI: URL
+    public let id: Int
+    public let title: String
+    public let thumbnail: Thumbnail
 }

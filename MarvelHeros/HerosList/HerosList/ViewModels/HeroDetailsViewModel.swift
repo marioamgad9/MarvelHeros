@@ -46,6 +46,7 @@ public class HeroDetailsViewModel: ViewModelType {
         input.fetch
             .subscribe(onNext: {
                 self.reloadCharacterDetails()
+                self.loadComics()
         }).disposed(by: disposeBag)
     }
     
@@ -58,6 +59,12 @@ public class HeroDetailsViewModel: ViewModelType {
         .finally {
             self.isLoadingSubject.onNext(false)
         }
+    }
+    
+    private func loadComics() {
+        contentRepository.getComicsForCharacter(id: characterId).done {
+            print("TEST - Comics: \($0)")
+        }.catch(handleError)
     }
     
     private func handleError(_ error: Error) {

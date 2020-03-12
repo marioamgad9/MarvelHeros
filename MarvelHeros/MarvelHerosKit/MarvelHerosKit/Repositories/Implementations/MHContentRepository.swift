@@ -15,4 +15,8 @@ public class MHContentRepository: ContentRepository {
     public func getMarvelCharacterDetails(id: Int) -> Promise<MarvelCharactersAPIResponse> {
         return AF.requestWithPromise(APIRouter.getMarvelCharacterDetails(id: id))
     }
+    
+    public func getComicsForCharacter(id: Int) -> Promise<ComicsAPIResponse> {
+        return AF.requestWithPromise(APIRouter.getComicsForCharacter(id: id))
+    }
 }

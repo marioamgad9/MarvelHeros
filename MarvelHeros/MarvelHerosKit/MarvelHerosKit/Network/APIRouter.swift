@@ -6,6 +6,7 @@ enum APIRouter: URLRequestConvertible {
     // MARK: - Endpoints
     case getMarvelCharacters(nameStartsWith: String?, offset: Int)
     case getMarvelCharacterDetails(id: Int)
+    case getComicsForCharacter(id: Int)
     
     // MARK: - Methods
     func asURLRequest() throws -> URLRequest {
@@ -34,7 +35,8 @@ enum APIRouter: URLRequestConvertible {
     private var method: HTTPMethod {
         switch self {
         case .getMarvelCharacters,
-             .getMarvelCharacterDetails:
+             .getMarvelCharacterDetails,
+             .getComicsForCharacter:
             return .get
         }
     }
@@ -45,6 +47,8 @@ enum APIRouter: URLRequestConvertible {
             return "characters"
         case .getMarvelCharacterDetails(let id):
             return "characters/\(id)"
+        case .getComicsForCharacter(let id):
+            return "characters/\(id)/comics"
         }
     }
     
@@ -65,6 +69,8 @@ enum APIRouter: URLRequestConvertible {
                 return parameters
             }
         case .getMarvelCharacterDetails:
+            return commonParameters
+        case.getComicsForCharacter:
             return commonParameters
         }
     }

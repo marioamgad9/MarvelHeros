@@ -2,6 +2,7 @@ import Foundation
 
 public enum ThumbnailQuality: String {
     case landscapeIncredible = "/landscape_incredible"
+    case portraitIncredible = "/portrait_incredible"
     case fullSize = ""
 }
 
