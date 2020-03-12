@@ -16,10 +16,10 @@ Home Screen                |  Details Screen           |  Search Screen
 This app was built using a modular version of MVVM.
 
 ### Modules
-* Common: Holds all the common code that is used by all of the project.
-* MHCore: Holds the dependency containers and coordinators for the project.
-* MarvelHerosKit: Holds all the business logic, networking part of the project.
-* HerosList: Holds the UI part of the app.
+* **Common**: Holds all the common code that is used by all of the project.
+* **MHCore**: Holds the dependency containers and coordinators for the project.
+* **MarvelHerosKit**: Holds all the business logic, networking part of the project.
+* **HerosList**: Holds the UI part of the app.
 
 ## Author
 Mario Mouris, marioamgad9@gmail.com
