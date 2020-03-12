@@ -3,6 +3,7 @@ import HerosList
 
 typealias HerosListVcFactory = () -> HerosListViewController
 typealias SearchHerosVcFactory = () -> SearchHerosViewController
+typealias HeroDetailsVcFactory = (Int) -> HeroDetailsViewController
 
 /**
  Handles coordination between the main app states (Heros list, and hero detail)
@@ -20,17 +21,20 @@ public class MHAppCoordinator: Coordinator {
     // MARK: - Factories
     private let herosListVcFactory: HerosListVcFactory
     private let searchHerosVcFactory: SearchHerosVcFactory
+    private let heroDetailsVcFactory: HeroDetailsVcFactory
     
     // MARK: - Methods
     /// Initializes a new app coordinators with the provided root view controller
     init(rootVc: NiblessViewController,
          herosListNavigationController: HerosListNavigationController,
          herosListVcFactory: @escaping HerosListVcFactory,
-         searchHerosVcFactory: @escaping SearchHerosVcFactory) {
+         searchHerosVcFactory: @escaping SearchHerosVcFactory,
+         heroDetailsVcFactory: @escaping HeroDetailsVcFactory) {
         self.rootVc = rootVc
         self.herosListNavigationController = herosListNavigationController
         self.herosListVcFactory = herosListVcFactory
         self.searchHerosVcFactory = searchHerosVcFactory
+        self.heroDetailsVcFactory = heroDetailsVcFactory
     }
     
     /// Starts the app coordinator flow, with attaching the heros list vc to the root
@@ -54,6 +58,11 @@ public class MHAppCoordinator: Coordinator {
         searchHerosVc.modalPresentationStyle = .overFullScreen
         herosListNavigationController.present(searchHerosVc, animated: false)
     }
+    
+    /// Navigates to the hero details view
+    private func goToHeroDetailsView(characterId: Int) {
+        herosListNavigationController.pushViewController(heroDetailsVcFactory(characterId), animated: true)
+    }
 }
 
 // MARK: - HerosListNavigator
@@ -64,8 +73,8 @@ extension MHAppCoordinator: HerosListNavigator {
             goToHerosListView()
         case .searchHeros:
             goToSearchHerosView()
-        default:
-            fatalError("Unsupported view navigation attempted")
+        case .heroDetails(let characterId):
+            goToHeroDetailsView(characterId: characterId)
         }
     }
 }

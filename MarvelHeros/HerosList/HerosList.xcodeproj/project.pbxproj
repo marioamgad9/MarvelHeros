@@ -25,6 +25,9 @@
 		CFAD4036241977AE0096C7AB /* SearchHerosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD4035241977AE0096C7AB /* SearchHerosViewController.swift */; };
 		CFAD4038241978100096C7AB /* SearchHerosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD4037241978100096C7AB /* SearchHerosViewModel.swift */; };
 		CFAD403A241990540096C7AB /* SearchCharacterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD4039241990540096C7AB /* SearchCharacterTableViewCell.swift */; };
+		CFAD403D241A1F410096C7AB /* HeroDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD403C241A1F410096C7AB /* HeroDetailsViewController.swift */; };
+		CFAD403F241A1F4C0096C7AB /* HeroDetailsRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD403E241A1F4C0096C7AB /* HeroDetailsRootView.swift */; };
+		CFAD4041241A20730096C7AB /* HeroDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD4040241A20730096C7AB /* HeroDetailsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -62,6 +65,9 @@
 		CFAD4035241977AE0096C7AB /* SearchHerosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHerosViewController.swift; sourceTree = "<group>"; };
 		CFAD4037241978100096C7AB /* SearchHerosViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHerosViewModel.swift; sourceTree = "<group>"; };
 		CFAD4039241990540096C7AB /* SearchCharacterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCharacterTableViewCell.swift; sourceTree = "<group>"; };
+		CFAD403C241A1F410096C7AB /* HeroDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroDetailsViewController.swift; sourceTree = "<group>"; };
+		CFAD403E241A1F4C0096C7AB /* HeroDetailsRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroDetailsRootView.swift; sourceTree = "<group>"; };
+		CFAD4040241A20730096C7AB /* HeroDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroDetailsViewModel.swift; sourceTree = "<group>"; };
 		EBD441625796A763BC54EB4B /* Pods_HerosList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HerosList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -137,6 +143,7 @@
 				CFAD3FD32417DA610096C7AB /* HerosListViewModel.swift */,
 				CFAD4037241978100096C7AB /* SearchHerosViewModel.swift */,
 				CFAD401924180AB90096C7AB /* CharacterTableViewCellViewModel.swift */,
+				CFAD4040241A20730096C7AB /* HeroDetailsViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -163,6 +170,7 @@
 				CFAD3FF02417EC800096C7AB /* HerosListNavigationController.swift */,
 				CFAD3FD22417DA470096C7AB /* Heros List Screen */,
 				CFAD402C241972790096C7AB /* Search Heros Screen */,
+				CFAD403B241A1F2A0096C7AB /* Hero Details Screen */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -200,6 +208,15 @@
 				CFAD402D241972920096C7AB /* SearchHerosRootView.swift */,
 			);
 			path = "Search Heros Screen";
+			sourceTree = "<group>";
+		};
+		CFAD403B241A1F2A0096C7AB /* Hero Details Screen */ = {
+			isa = PBXGroup;
+			children = (
+				CFAD403C241A1F410096C7AB /* HeroDetailsViewController.swift */,
+				CFAD403E241A1F4C0096C7AB /* HeroDetailsRootView.swift */,
+			);
+			path = "Hero Details Screen";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,10 +330,13 @@
 				CFAD402E241972920096C7AB /* SearchHerosRootView.swift in Sources */,
 				CFAD3FE92417E97F0096C7AB /* HerosListViewState.swift in Sources */,
 				CFAD3FF12417EC800096C7AB /* HerosListNavigationController.swift in Sources */,
+				CFAD4041241A20730096C7AB /* HeroDetailsViewModel.swift in Sources */,
 				CFAD4036241977AE0096C7AB /* SearchHerosViewController.swift in Sources */,
+				CFAD403F241A1F4C0096C7AB /* HeroDetailsRootView.swift in Sources */,
 				CFAD4038241978100096C7AB /* SearchHerosViewModel.swift in Sources */,
 				CFAD3FD42417DA610096C7AB /* HerosListViewModel.swift in Sources */,
 				CFAD3FED2417EAD90096C7AB /* HerosListRootView.swift in Sources */,
+				CFAD403D241A1F410096C7AB /* HeroDetailsViewController.swift in Sources */,
 				CFAD3FEB2417E9E60096C7AB /* HerosListNavigator.swift in Sources */,
 				CFAD3FFF2417FAB80096C7AB /* CharacterTableViewCell.swift in Sources */,
 				CFAD3FEF2417EB8A0096C7AB /* HerosListViewController.swift in Sources */,
