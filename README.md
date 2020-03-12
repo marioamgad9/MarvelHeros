@@ -1,6 +1,6 @@
-![App Logo](Images/logo.png | width=100)
 # Marvel Heros
 The perfect wiki for Marvel diehards to check which comics and series each character was in.
+![App Logo](Images/logo.png)
 
 ## Screenshots
 Home Screen                |  Details Screen           |  Search Screen
