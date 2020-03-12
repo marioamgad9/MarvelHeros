@@ -1,4 +1,4 @@
-![App Logo](Images/logo.png = 250x250)
+![App Logo](Images/logo.png =250x250)
 # Marvel Heros
 The perfect wiki for Marvel diehards to check which comics and series each character was in.
 
