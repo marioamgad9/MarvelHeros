@@ -80,7 +80,7 @@ class HeroDetailsRootView: NiblessView {
             $0.translatesAutoresizingMaskIntoConstraints = false
             NSLayoutConstraint.activate([
                 $0.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
-                $0.topAnchor.constraint(equalTo: comicsCollectionView.bottomAnchor, constant: 8),
+                $0.topAnchor.constraint(equalTo: comicsCollectionView.bottomAnchor, constant: 16),
                 $0.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
                 $0.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -16)
             ])
