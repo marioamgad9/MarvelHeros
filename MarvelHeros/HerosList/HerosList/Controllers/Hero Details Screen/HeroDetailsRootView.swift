@@ -29,6 +29,7 @@ class HeroDetailsRootView: NiblessView {
     }()
     
     let comicsCollectionView = AssetsCollectionView(title: "title.details_comics".localized)
+    let seriesCollectionView = AssetsCollectionView(title: "title.details_series".localized)
     
     private let scrollView = UIScrollView()
     private let contentView = UIView()
@@ -65,14 +66,23 @@ class HeroDetailsRootView: NiblessView {
             ])
         })
         
-        // Configure comics collectionview
+        // Configure collectionviews
         contentView.add(comicsCollectionView, then: {
             $0.translatesAutoresizingMaskIntoConstraints = false
             NSLayoutConstraint.activate([
                 $0.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
                 $0.topAnchor.constraint(equalTo: header.bottomAnchor, constant: 16),
+                $0.trailingAnchor.constraint(equalTo: contentView.trailingAnchor)
+            ])
+        })
+        
+        contentView.add(seriesCollectionView, then: {
+            $0.translatesAutoresizingMaskIntoConstraints = false
+            NSLayoutConstraint.activate([
+                $0.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
+                $0.topAnchor.constraint(equalTo: comicsCollectionView.bottomAnchor, constant: 8),
                 $0.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
-                $0.bottomAnchor.constraint(equalTo: contentView.bottomAnchor)
+                $0.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -16)
             ])
         })
         

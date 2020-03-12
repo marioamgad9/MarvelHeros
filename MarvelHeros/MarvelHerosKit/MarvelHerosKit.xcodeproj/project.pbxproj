@@ -28,6 +28,9 @@
 		CFAD3FE12417E7730096C7AB /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD3FE02417E7730096C7AB /* ErrorMessage.swift */; };
 		CFAD401D24180CA40096C7AB /* Thumbnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD401C24180CA40096C7AB /* Thumbnail.swift */; };
 		CFAD405D241A5A600096C7AB /* ComicsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD405C241A5A600096C7AB /* ComicsData.swift */; };
+		CFAD4066241A64640096C7AB /* Series.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD4065241A64640096C7AB /* Series.swift */; };
+		CFAD4068241A64810096C7AB /* SeriesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD4067241A64810096C7AB /* SeriesData.swift */; };
+		CFAD406A241A649B0096C7AB /* SeriesAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD4069241A649B0096C7AB /* SeriesAPIResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -69,6 +72,9 @@
 		CFAD3FE02417E7730096C7AB /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
 		CFAD401C24180CA40096C7AB /* Thumbnail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thumbnail.swift; sourceTree = "<group>"; };
 		CFAD405C241A5A600096C7AB /* ComicsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicsData.swift; sourceTree = "<group>"; };
+		CFAD4065241A64640096C7AB /* Series.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Series.swift; sourceTree = "<group>"; };
+		CFAD4067241A64810096C7AB /* SeriesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeriesData.swift; sourceTree = "<group>"; };
+		CFAD4069241A649B0096C7AB /* SeriesAPIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeriesAPIResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +154,7 @@
 			children = (
 				CFAD3F752417CAE80096C7AB /* MarvelCharacter */,
 				CFAD3F762417CAF10096C7AB /* Comic */,
+				CFAD4064241A64560096C7AB /* Series */,
 				CFAD401B24180C940096C7AB /* Thumbnail */,
 				CFAD3F962417D4660096C7AB /* MarvelHerosError.swift */,
 				CFAD3FE02417E7730096C7AB /* ErrorMessage.swift */,
@@ -225,6 +232,16 @@
 				CFAD401C24180CA40096C7AB /* Thumbnail.swift */,
 			);
 			path = Thumbnail;
+			sourceTree = "<group>";
+		};
+		CFAD4064241A64560096C7AB /* Series */ = {
+			isa = PBXGroup;
+			children = (
+				CFAD4065241A64640096C7AB /* Series.swift */,
+				CFAD4069241A649B0096C7AB /* SeriesAPIResponse.swift */,
+				CFAD4067241A64810096C7AB /* SeriesData.swift */,
+			);
+			path = Series;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -340,9 +357,11 @@
 				CFAD3F7A2417CBC30096C7AB /* Comic.swift in Sources */,
 				CFAD3F782417CB450096C7AB /* ComicsAPIResponse.swift in Sources */,
 				CFAD3F6F2417C9400096C7AB /* MarvelCharactersAPIResponse.swift in Sources */,
+				CFAD4066241A64640096C7AB /* Series.swift in Sources */,
 				CFAD3F712417CA590096C7AB /* MarvelCharactersData.swift in Sources */,
 				CFAD3F692417C80F0096C7AB /* String+MD5Hashing.swift in Sources */,
 				CFAD3F972417D4660096C7AB /* MarvelHerosError.swift in Sources */,
+				CFAD4068241A64810096C7AB /* SeriesData.swift in Sources */,
 				CFAD3FDF2417DCAF0096C7AB /* ViewModelType.swift in Sources */,
 				CFAD3F8E2417CE8D0096C7AB /* APIRouter.swift in Sources */,
 				CFAD3F902417D0260096C7AB /* APIKeysProvider.swift in Sources */,
@@ -350,6 +369,7 @@
 				CFAD3F9A2417D57D0096C7AB /* MHContentRepository.swift in Sources */,
 				CFAD401D24180CA40096C7AB /* Thumbnail.swift in Sources */,
 				CFAD3F932417D4360096C7AB /* ContentRepository.swift in Sources */,
+				CFAD406A241A649B0096C7AB /* SeriesAPIResponse.swift in Sources */,
 				CFAD3F952417D4480096C7AB /* Alamofire+PromiseKit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

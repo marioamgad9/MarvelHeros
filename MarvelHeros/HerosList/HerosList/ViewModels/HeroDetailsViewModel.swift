@@ -16,6 +16,7 @@ public class HeroDetailsViewModel: ViewModelType {
     public struct Output {
         let character: Driver<MarvelCharacter>
         let comics: Driver<[Comic]>
+        let series: Driver<[Series]>
         let isLoading: Driver<Bool>
         let errorMessage: Observable<ErrorMessage>
     }
@@ -28,6 +29,7 @@ public class HeroDetailsViewModel: ViewModelType {
     // MARK: - Subjects
     private let characterSubject = PublishSubject<MarvelCharacter>()
     private let comicsSubject = PublishSubject<[Comic]>()
+    private let seriesSubject = PublishSubject<[Series]>()
     private let isLoadingSubject = BehaviorSubject<Bool>(value: false)
     private let errorMessageSubject = PublishSubject<ErrorMessage>()
     
@@ -39,6 +41,7 @@ public class HeroDetailsViewModel: ViewModelType {
         input = Input()
         output = Output(character: characterSubject.asDriver(onErrorJustReturn: MarvelCharacter.empty),
                         comics: comicsSubject.asDriver(onErrorJustReturn: []),
+                        series: seriesSubject.asDriver(onErrorJustReturn: []),
                         isLoading: isLoadingSubject.asDriver(onErrorJustReturn: false),
                         errorMessage: errorMessageSubject.asObservable())
         
@@ -50,6 +53,7 @@ public class HeroDetailsViewModel: ViewModelType {
             .subscribe(onNext: {
                 self.reloadCharacterDetails()
                 self.loadComics()
+                self.loadSeries()
         }).disposed(by: disposeBag)
     }
     
@@ -67,6 +71,12 @@ public class HeroDetailsViewModel: ViewModelType {
     private func loadComics() {
         contentRepository.getComicsForCharacter(id: characterId).done {
             self.comicsSubject.onNext($0.data.results)
+        }.catch(handleError)
+    }
+    
+    private func loadSeries() {
+        contentRepository.getSeriesForCharacter(id: characterId).done {
+            self.seriesSubject.onNext($0.data.results)
         }.catch(handleError)
     }
     

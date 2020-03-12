@@ -44,6 +44,7 @@ public class HeroDetailsViewController: NiblessViewController {
         
         // Configure datasources
         configureComicsDataSource()
+        configureSeriesDataSource()
     }
     
     private func subscribeForCharacter() {
@@ -61,6 +62,13 @@ public class HeroDetailsViewController: NiblessViewController {
         viewModel.output.comics.drive(rootView.comicsCollectionView
             .collectionView.rx.items(cellIdentifier: AssetCollectionViewCell.reuseIdentifier, cellType: AssetCollectionViewCell.self)) { (_, comic, cell) in
                 cell.configure(title: comic.title, imageURL: comic.thumbnail.getUrl(quality: .portraitIncredible))
+        }.disposed(by: disposeBag)
+    }
+    
+    private func configureSeriesDataSource() {
+        viewModel.output.series.drive(rootView.seriesCollectionView
+            .collectionView.rx.items(cellIdentifier: AssetCollectionViewCell.reuseIdentifier, cellType: AssetCollectionViewCell.self)) { (_, series, cell) in
+                cell.configure(title: series.title, imageURL: series.thumbnail.getUrl(quality: .portraitIncredible))
         }.disposed(by: disposeBag)
     }
 }
