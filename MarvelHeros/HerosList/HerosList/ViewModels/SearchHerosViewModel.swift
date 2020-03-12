@@ -17,11 +17,13 @@ public class SearchHerosViewModel: ViewModelType {
     public struct Output {
         let characters: Driver<[MarvelCharacter]>
         let errorMessage: Observable<ErrorMessage>
+        let dismiss: Observable<()>
     }
     
     // MARK: - Subjects
     private let charactersSubject = BehaviorSubject<[MarvelCharacter]>(value: [])
     private let errorMessageSubject = PublishSubject<ErrorMessage>()
+    private let dismissSubject = PublishSubject<()>()
     
     // MARK: - Properties
     private let contentRepository: ContentRepository
@@ -36,7 +38,8 @@ public class SearchHerosViewModel: ViewModelType {
         
         input = Input()
         output = Output(characters: charactersSubject.asDriver(onErrorJustReturn: []),
-                        errorMessage: errorMessageSubject.asObservable())
+                        errorMessage: errorMessageSubject.asObservable(),
+                        dismiss: dismissSubject.asObservable())
         
         // Subscribe for input events
         subscribeForSearchTextChanges()
@@ -65,6 +68,7 @@ public class SearchHerosViewModel: ViewModelType {
             .subscribe(onNext: {
                 let characters = self.getCharactersValue()
                 let selectedCharacter = characters[$0.row]
+                self.dismissSubject.onNext(())
                 self.herosListNavigator.navigate(to: .heroDetails(characterId: selectedCharacter.id))
             }).disposed(by: disposeBag)
     }

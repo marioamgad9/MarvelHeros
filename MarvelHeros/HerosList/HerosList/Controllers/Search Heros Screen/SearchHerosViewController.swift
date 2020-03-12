@@ -42,6 +42,9 @@ public class SearchHerosViewController: NiblessViewController {
         // Subscribe for UI events
         subscribeForCancelButtonTap()
         subscribeForSearchTextField()
+        
+        // Subscribe for viewmodel events
+        subscribeForDismiss()
     }
     
     private func configureCharactersTableView(_ tableView: UITableView) {
@@ -69,6 +72,14 @@ public class SearchHerosViewController: NiblessViewController {
                     self.dismiss(animated: false)
                 }
             }).disposed(by: disposeBag)
+    }
+    
+    private func subscribeForDismiss() {
+        viewModel.output.dismiss.subscribe(onNext: {
+            self.rootView.animateOutro { _ in
+                self.dismiss(animated: false)
+            }
+        }).disposed(by: disposeBag)
     }
 }
 
