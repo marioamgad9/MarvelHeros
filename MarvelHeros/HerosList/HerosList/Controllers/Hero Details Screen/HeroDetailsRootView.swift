@@ -18,15 +18,17 @@ class HeroDetailsRootView: NiblessView {
         return imageView
     }()
     
-    private(set) lazy var header: HeroDetailsHeader = {
-        return HeroDetailsHeader(responder: self)
-    }()
-    
     let activityIndicator: UIActivityIndicatorView = {
         let activityIndicator = UIActivityIndicatorView(style: .large)
         activityIndicator.hidesWhenStopped = true
         return activityIndicator
     }()
+    
+    private(set) lazy var header: HeroDetailsHeader = {
+        return HeroDetailsHeader(responder: self)
+    }()
+    
+    let comicsCollectionView = AssetsCollectionView(title: "title.details_comics".localized)
     
     private let scrollView = UIScrollView()
     private let contentView = UIView()
@@ -59,6 +61,16 @@ class HeroDetailsRootView: NiblessView {
             NSLayoutConstraint.activate([
                 $0.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
                 $0.topAnchor.constraint(equalTo: contentView.topAnchor),
+                $0.trailingAnchor.constraint(equalTo: contentView.trailingAnchor)
+            ])
+        })
+        
+        // Configure comics collectionview
+        contentView.add(comicsCollectionView, then: {
+            $0.translatesAutoresizingMaskIntoConstraints = false
+            NSLayoutConstraint.activate([
+                $0.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
+                $0.topAnchor.constraint(equalTo: header.bottomAnchor, constant: 16),
                 $0.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
                 $0.bottomAnchor.constraint(equalTo: contentView.bottomAnchor)
             ])

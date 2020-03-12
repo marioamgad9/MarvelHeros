@@ -25,6 +25,7 @@
 		CFAD4032241974A00096C7AB /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD4031241974A00096C7AB /* String+Localized.swift */; };
 		CFAD4034241974D70096C7AB /* Dimens.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD4033241974D70096C7AB /* Dimens.swift */; };
 		CFAD4043241A3AB70096C7AB /* UIView+VisualEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD4042241A3AB60096C7AB /* UIView+VisualEffects.swift */; };
+		CFAD4061241A5D860096C7AB /* UICollectionViewCell+Dequeue.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD4060241A5D860096C7AB /* UICollectionViewCell+Dequeue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		CFAD4031241974A00096C7AB /* String+Localized.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Localized.swift"; sourceTree = "<group>"; };
 		CFAD4033241974D70096C7AB /* Dimens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dimens.swift; sourceTree = "<group>"; };
 		CFAD4042241A3AB60096C7AB /* UIView+VisualEffects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+VisualEffects.swift"; sourceTree = "<group>"; };
+		CFAD4060241A5D860096C7AB /* UICollectionViewCell+Dequeue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+Dequeue.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +156,7 @@
 				CFAD4042241A3AB60096C7AB /* UIView+VisualEffects.swift */,
 				CFAD400B2418066B0096C7AB /* UIFonts+Accessors.swift */,
 				CFAD4024241817CF0096C7AB /* UITableViewCell+Dequeue.swift */,
+				CFAD4060241A5D860096C7AB /* UICollectionViewCell+Dequeue.swift */,
 				CFAD402A24184E310096C7AB /* UIScrollView+IsAtBottom.swift */,
 			);
 			path = Extensions;
@@ -262,6 +265,7 @@
 				CFAD400C2418066B0096C7AB /* UIFonts+Accessors.swift in Sources */,
 				CFAD4043241A3AB70096C7AB /* UIView+VisualEffects.swift in Sources */,
 				CFAD4030241973580096C7AB /* SearchNavigationBar.swift in Sources */,
+				CFAD4061241A5D860096C7AB /* UICollectionViewCell+Dequeue.swift in Sources */,
 				CFAD4025241817CF0096C7AB /* UITableViewCell+Dequeue.swift in Sources */,
 				CFAD4023241813AC0096C7AB /* ParallelogramView.swift in Sources */,
 			);
