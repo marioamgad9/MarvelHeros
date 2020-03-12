@@ -12,26 +12,7 @@ public class MHContentRepository: ContentRepository {
         return AF.requestWithPromise(APIRouter.getMarvelCharacters(nameStartsWith: nameStartsWith, offset: offset))
     }
     
-    public func getImage(url: URL) -> Promise<UIImage> {
-        return Promise<UIImage> { seal in
-            AF.request(url, method: .get).response { response in
-                switch response.result {
-                case .success(let value):
-                    guard let data = value,
-                        let image = UIImage(data: data) else {
-                            seal.reject(MarvelHerosKitError.unknown)
-                            return
-                    }
-                    seal.fulfill(image)
-                case .failure(let error):
-                    print("API Error - An error occured, status code: \(response.response?.statusCode ?? 0)")
-                    print("API Error - Alamofire error: \(error)")
-                    if let data = response.data {
-                        print("API Error - Returned JSON: \(String(describing: String(data: data, encoding: String.Encoding.utf8)))")
-                    }
-                    seal.reject(MarvelHerosKitError.unknown)
-                }
-            }
-        }
+    public func getMarvelCharacterDetails(id: Int) -> Promise<MarvelCharactersAPIResponse> {
+        return AF.requestWithPromise(APIRouter.getMarvelCharacterDetails(id: id))
     }
 }

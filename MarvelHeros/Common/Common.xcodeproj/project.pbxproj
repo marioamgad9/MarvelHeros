@@ -24,6 +24,7 @@
 		CFAD4030241973580096C7AB /* SearchNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD402F241973580096C7AB /* SearchNavigationBar.swift */; };
 		CFAD4032241974A00096C7AB /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD4031241974A00096C7AB /* String+Localized.swift */; };
 		CFAD4034241974D70096C7AB /* Dimens.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD4033241974D70096C7AB /* Dimens.swift */; };
+		CFAD4043241A3AB70096C7AB /* UIView+BlurEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD4042241A3AB60096C7AB /* UIView+BlurEffect.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		CFAD402F241973580096C7AB /* SearchNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchNavigationBar.swift; sourceTree = "<group>"; };
 		CFAD4031241974A00096C7AB /* String+Localized.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Localized.swift"; sourceTree = "<group>"; };
 		CFAD4033241974D70096C7AB /* Dimens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dimens.swift; sourceTree = "<group>"; };
+		CFAD4042241A3AB60096C7AB /* UIView+BlurEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+BlurEffect.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				CFAD3FFA2417F5050096C7AB /* UIView+Configuration.swift */,
+				CFAD4042241A3AB60096C7AB /* UIView+BlurEffect.swift */,
 				CFAD400B2418066B0096C7AB /* UIFonts+Accessors.swift */,
 				CFAD4024241817CF0096C7AB /* UITableViewCell+Dequeue.swift */,
 				CFAD402A24184E310096C7AB /* UIScrollView+IsAtBottom.swift */,
@@ -257,6 +260,7 @@
 				CFAD4032241974A00096C7AB /* String+Localized.swift in Sources */,
 				CFAD3FF42417F0D30096C7AB /* MarvelNavigationBar.swift in Sources */,
 				CFAD400C2418066B0096C7AB /* UIFonts+Accessors.swift in Sources */,
+				CFAD4043241A3AB70096C7AB /* UIView+BlurEffect.swift in Sources */,
 				CFAD4030241973580096C7AB /* SearchNavigationBar.swift in Sources */,
 				CFAD4025241817CF0096C7AB /* UITableViewCell+Dequeue.swift in Sources */,
 				CFAD4023241813AC0096C7AB /* ParallelogramView.swift in Sources */,

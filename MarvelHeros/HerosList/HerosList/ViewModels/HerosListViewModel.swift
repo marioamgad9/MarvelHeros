@@ -46,7 +46,6 @@ public class HerosListViewModel: ViewModelType {
         subscribeForSearchButtonTapped()
         subscribeForFetch()
         subscribeForItemSelected()
-        subscribeForCharactersSubjectToUpdateIsLoading()
     }
     
     func characterCellViewModel(for character: MarvelCharacter) -> CharacterTableViewCellViewModel {
@@ -64,7 +63,6 @@ public class HerosListViewModel: ViewModelType {
             .withLatestFrom(Observable.combineLatest(output.isLoading.asObservable(), output.characters.asObservable()))
             .subscribe(onNext: { (isLoading, characters) in
                 guard !isLoading else { return }
-                self.isLoadingSubject.onNext(true)
                 self.reloadCharacters(offsetBy: characters.count)
         }).disposed(by: disposeBag)
     }
@@ -78,16 +76,15 @@ public class HerosListViewModel: ViewModelType {
             }).disposed(by: disposeBag)
     }
     
-    private func subscribeForCharactersSubjectToUpdateIsLoading() {
-        charactersSubject.subscribe(onNext: { _ in
-            self.isLoadingSubject.onNext(false)
-        }).disposed(by: disposeBag)
-    }
-    
     private func reloadCharacters(offsetBy offset: Int) {
+        isLoadingSubject.onNext(true)
         contentRepository.getMarvelCharacters(nameStartsWith: nil, offset: offset).done {
             self.charactersSubject.onNext(self.getCharactersValue() + $0.data.results)
-        }.catch(handleError)
+        }
+        .catch(handleError)
+        .finally {
+            self.isLoadingSubject.onNext(false)
+        }
     }
     
     private func getCharactersValue() -> [MarvelCharacter] {

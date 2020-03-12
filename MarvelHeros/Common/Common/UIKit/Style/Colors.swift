@@ -14,5 +14,7 @@ public struct Colors {
     public struct Text {
         public static let marvelCharacterName = UIColor(named: "text-marvel-character-name")!
         public static let navigationBarButton = UIColor(named: "text-navigation-bar-button")!
+        public static let detailsTitle = UIColor(named: "text-details-title")!
+        public static let details = UIColor(named: "text-details")!
     }
 }

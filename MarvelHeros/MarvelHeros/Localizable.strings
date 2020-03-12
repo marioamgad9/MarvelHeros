@@ -8,3 +8,11 @@
 // Search heros
 "placeholder.search_characters" = "Search...";
 "btn.cancel" = "Cancel";
+
+// Hero details
+"title.details_name" = "NAME";
+"title.details_description" = "DESCRIPTION";
+"title.details_comics" = "COMICS";
+"title.details_series" = "SERIES";
+"title.details_stories" = "STORIES";
+"title.details_events" = "EVENTS";

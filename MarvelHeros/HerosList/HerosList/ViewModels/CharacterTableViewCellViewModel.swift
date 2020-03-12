@@ -1,7 +1,5 @@
 import UIKit
 import MarvelHerosKit
-import RxSwift
-import RxCocoa
 
 /// The view model for CharacterTableViewCell
 class CharacterTableViewCellViewModel: ViewModelType {
@@ -16,9 +14,6 @@ class CharacterTableViewCellViewModel: ViewModelType {
         let name: String
         let imageURL: URL?
     }
-    
-    // MARK: - Subjects
-    private let imageSubject = PublishSubject<UIImage>()
     
     // MARK: - Methods
     init(character: MarvelCharacter) {
