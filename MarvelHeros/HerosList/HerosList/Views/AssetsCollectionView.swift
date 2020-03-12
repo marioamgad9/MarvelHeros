@@ -34,7 +34,7 @@ class AssetsCollectionView: NiblessView {
             $0.translatesAutoresizingMaskIntoConstraints = false
             NSLayoutConstraint.activate([
                 $0.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor, constant: 16),
-                $0.topAnchor.constraint(equalTo: topAnchor, constant: 16),
+                $0.topAnchor.constraint(equalTo: topAnchor),
                 $0.trailingAnchor.constraint(equalTo: safeAreaLayoutGuide.trailingAnchor, constant: -16)
             ])
         })

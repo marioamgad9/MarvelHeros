@@ -133,7 +133,7 @@ class HeroDetailsHeader: NiblessView {
                 $0.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor, constant: 16),
                 $0.topAnchor.constraint(equalTo: descriptionTitleLabel.bottomAnchor, constant: 8),
                 $0.trailingAnchor.constraint(equalTo: safeAreaLayoutGuide.trailingAnchor, constant: -16),
-                $0.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor, constant: -16)
+                $0.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor)
             ])
         })
     }
