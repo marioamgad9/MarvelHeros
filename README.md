@@ -3,7 +3,7 @@
 The perfect wiki for Marvel diehards to check which comics and series each character was in.
 
 ## Screenshots
-Screenshot 1               |  Screenshot 2             |  Screenshot 3
+Home Screen                |  Details Screen           |  Search Screen
 :-------------------------:|:-------------------------:|:-------------------------:
 ![Home screen](Images/home.png)  |  ![Details screen](Images/detail.png)  |  ![Search screen](Images/search.png)
 
