@@ -9,7 +9,7 @@ Home Screen                |  Details Screen           |  Search Screen
 
 ## Features
 * All views were built programatically without the use of a single storyboard.
-* Built arount the concepts of reactive programming (RxSwift, RxCocoa).
+* Built around the concepts of reactive programming (RxSwift, RxCocoa).
 * Features a modular design with high testability and maintainability.
 
 ## Architecture
